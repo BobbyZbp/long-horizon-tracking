@@ -4,3 +4,16 @@ __pycache__/
 data/
 *.ipynb_checkpoints
 .DS_Store
+
+# big raw media (don't commit)
+data/raw/*.mp4
+data/raw/*.mkv
+data/raw/*.avi
+
+# extracted frames can be huge
+data/frames/
+
+# caches
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
