@@ -13,34 +13,6 @@ The output is a structured `events.json` dataset with:
 
 ---
 
-## What is “re-occurrence” here?
-
-We parse the screenplay into ordered non-omitted scenes:
-\[
-s \in \{0,1,\dots,N-1\}
-\]
-
-For an entity with scene indices:
-\[
-s_1 < s_2 < \dots < s_n
-\]
-
-We define:
-
-- **gap_jump**:
-\[
-\text{gap\_jump} = \max_i (s_{i+1} - s_i)
-\]
-
-- **gap_absent**:
-\[
-\text{gap\_absent} = \max(\text{gap\_jump} - 1, 0)
-\]
-
-The event uses the pair \((s_A, s_B)\) that realizes `gap_jump`.
-
----
-
 ## Pipeline Overview
 
 1) **Parse scenes** (deterministic + unit-tested)  
