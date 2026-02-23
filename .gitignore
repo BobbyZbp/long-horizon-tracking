@@ -4,6 +4,7 @@ __pycache__/
 data/
 *.ipynb_checkpoints
 .DS_Store
+.env
 
 # big raw media (don't commit)
 data/raw/*.mp4
@@ -17,3 +18,15 @@ data/frames/
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+data/llm_cache/
+
+# outputs
+data/processed/
+data/events/*.partial.json
+
+# packaging artifacts
+src/*.egg-info/
+*.egg-info/
+
+# random junk files
+0
