@@ -200,3 +200,90 @@ def scene_entity_schema() -> Dict:
         },
         "required": ["scene_idx_non_omitted", "entities"],
     }
+
+def build_scene_summary_prompt(
+    scene_idx_non_omitted: int,
+    heading: str,
+    action_text: str,
+) -> str:
+    """
+    Summarize the narrative events of a scene.
+    """
+
+    return (
+        "You are analyzing a film screenplay.\n\n"
+        "Your task is to summarize the narrative events of ONE scene.\n\n"
+        f"Scene index: {scene_idx_non_omitted}\n"
+        f"Heading: {heading}\n\n"
+
+        "Write a concise 1-2 sentence summary of the key plot events.\n"
+        "Focus only on actions and narrative developments.\n\n"
+
+        "Return JSON:\n"
+        "{\n"
+        '  "scene_idx_non_omitted": <int>,\n'
+        '  "summary": <string>\n'
+        "}\n\n"
+
+        "Scene text:\n"
+        "----- ACTION TEXT START -----\n"
+        f"{action_text}\n"
+        "----- ACTION TEXT END -----\n"
+    )
+
+def build_story_summary_prompt(scene_summaries: str) -> str:
+    """
+    Build a prompt that summarizes the entire story
+    based on scene summaries.
+    """
+
+    return (
+        "You are analyzing the narrative structure of a film.\n\n"
+        "Below are summaries of scenes in the story.\n\n"
+        "Write a concise paragraph summarizing the entire plot.\n"
+        "Focus on the major conflicts and resolution.\n\n"
+
+        "Return JSON:\n"
+        "{\n"
+        '  "story_summary": <string>\n'
+        "}\n\n"
+
+        "Scene summaries:\n"
+        "----- START -----\n"
+        f"{scene_summaries}\n"
+        "----- END -----\n"
+    )
+
+def build_climax_scoring_prompt(
+    story_summary: str,
+    scene_idx_non_omitted: int,
+    heading: str,
+    action_text: str,
+) -> str:
+    """
+    Score how climactic a scene is relative to the full story.
+    """
+
+    return (
+        "You are analyzing the narrative structure of a film.\n\n"
+
+        "Below is a summary of the entire story:\n"
+        f"{story_summary}\n\n"
+
+        "Now evaluate how climactic the following scene is.\n"
+        "A climax is typically where major conflicts peak or resolve.\n\n"
+
+        "Return JSON:\n"
+        "{\n"
+        '  "scene_idx_non_omitted": <int>,\n'
+        '  "climax_score": <integer 0-100>\n'
+        "}\n\n"
+
+        f"Scene index: {scene_idx_non_omitted}\n"
+        f"Heading: {heading}\n\n"
+
+        "Scene text:\n"
+        "----- ACTION TEXT START -----\n"
+        f"{action_text}\n"
+        "----- ACTION TEXT END -----\n"
+    )

@@ -166,3 +166,23 @@ def openai_scene_extract_entities(
 
     _save_scene_cache(cache_root, cache_key, obj)
     return obj.get("entities", [])
+
+def call_llm_json(prompt: str, model: str = "gpt-4o-mini"):
+
+    from openai import OpenAI
+    import json
+
+    client = OpenAI()
+
+    resp = client.responses.create(
+        model=model,
+        input=[{"role": "user", "content": prompt}],
+    )
+
+    text = resp.output_text.strip()
+
+    start = text.find("{")
+    end = text.rfind("}") + 1
+
+    return json.loads(text[start:end])
+                        
