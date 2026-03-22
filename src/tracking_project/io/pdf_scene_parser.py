@@ -31,8 +31,6 @@ import re
 from dataclasses import dataclass
 from typing import Any, Callable, Dict, List, Optional, Tuple
 
-import pdfplumber
-
 
 def clean_spaces(s: str) -> str:
     return re.sub(r"\s+", " ", s).strip()
@@ -114,7 +112,7 @@ def parse_pdf_scenes(
     *,
     debug: bool = False,
     dump_path: Optional[str] = None,
-    pdf_open: Callable[..., Any] = pdfplumber.open,
+    pdf_open: Optional[Callable[..., Any]] = None,
 ) -> Tuple[List[Scene], Dict]:
     """
     Parse screenplay PDF into scenes.
@@ -122,6 +120,16 @@ def parse_pdf_scenes(
     Returns (scenes, meta).
     meta includes near_miss examples to debug undercounting.
     """
+    if pdf_open is None:
+        try:
+            import pdfplumber
+        except ModuleNotFoundError as exc:  # pragma: no cover - environment-specific
+            raise ModuleNotFoundError(
+                "pdfplumber is required to parse real screenplay PDFs. "
+                "Install it from requirements.txt or pass a custom pdf_open for tests."
+            ) from exc
+
+        pdf_open = pdfplumber.open
 
     pages: List[str] = []
     with pdf_open(pdf_path) as pdf:
