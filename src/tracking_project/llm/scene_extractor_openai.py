@@ -34,7 +34,9 @@ from typing import Any, Dict, List, Optional
 
 from tracking_project.llm.prompts_scene import (
     build_scene_extraction_prompt,
+    build_scene_inventory_prompt,
     scene_entity_schema,
+    scene_inventory_schema,
 )
 
 
@@ -63,34 +65,49 @@ def _cache_dir_scene(cache_root: str) -> str:
     return path
 
 
-def _load_scene_cache(cache_root: str, key: str) -> Optional[Dict[str, Any]]:
+def _cache_dir_scene_inventory(cache_root: str) -> str:
     """
-    Load a cached scene-extraction result if it exists.
+    Resolve the subdirectory for scene-inventory cache files.
 
     Args:
-        cache_root: Root directory for LLM caches.
+        cache_root: Root directory for all LLM caches.
+
+    Returns:
+        A path like '<cache_root>/scene_inventory'.
+    """
+    path = os.path.join(cache_root, "scene_inventory")
+    os.makedirs(path, exist_ok=True)
+    return path
+
+
+def _load_json_cache(cache_dir: str, key: str) -> Optional[Dict[str, Any]]:
+    """
+    Load a cached JSON object if it exists.
+
+    Args:
+        cache_dir: Fully resolved cache directory.
         key: SHA-1 hex string identifying this (model, scene, text) combination.
 
     Returns:
         Parsed JSON object from cache, or None if no cache entry exists.
     """
-    path = os.path.join(_cache_dir_scene(cache_root), f"{key}.json")
+    path = os.path.join(cache_dir, f"{key}.json")
     if os.path.exists(path):
         with open(path, "r", encoding="utf-8") as f:
             return json.load(f)
     return None
 
 
-def _save_scene_cache(cache_root: str, key: str, obj: Dict[str, Any]) -> None:
+def _save_json_cache(cache_dir: str, key: str, obj: Dict[str, Any]) -> None:
     """
-    Save a scene-extraction result to cache.
+    Save a cached JSON object.
 
     Args:
-        cache_root: Root directory for LLM caches.
+        cache_dir: Fully resolved cache directory.
         key: SHA-1 hex string identifying the cache entry.
         obj: Parsed JSON object to be stored.
     """
-    path = os.path.join(_cache_dir_scene(cache_root), f"{key}.json")
+    path = os.path.join(cache_dir, f"{key}.json")
     with open(path, "w", encoding="utf-8") as f:
         json.dump(obj, f, indent=2)
 
@@ -135,7 +152,7 @@ def openai_scene_extract_entities(
     }
     cache_key = _sha1(json.dumps(payload, sort_keys=True))
 
-    cached = _load_scene_cache(cache_root, cache_key)
+    cached = _load_json_cache(_cache_dir_scene(cache_root), cache_key)
     if cached is not None:
         return cached.get("entities", [])
 
@@ -164,5 +181,102 @@ def openai_scene_extract_entities(
     if not isinstance(obj, dict) or "entities" not in obj:
         raise RuntimeError(f"Scene extractor returned invalid JSON: {obj}")
 
-    _save_scene_cache(cache_root, cache_key, obj)
+    _save_json_cache(_cache_dir_scene(cache_root), cache_key, obj)
     return obj.get("entities", [])
+
+
+def openai_scene_inventory_extract_entities(
+    model: str,
+    scene_idx_non_omitted: int,
+    heading: str,
+    channel_name: str,
+    channel_text: str,
+    cache_root: str,
+) -> List[Dict[str, Any]]:
+    """
+    Run the higher-recall inventory extractor for one scene channel.
+
+    This function is intended for scene inventory construction before
+    narrative validation. Compared with Stage-1 extraction, it is more
+    tolerant and can be run on either the action or dialogue channel.
+
+    Args:
+        model: OpenAI model name.
+        scene_idx_non_omitted: Non-omitted scene index.
+        heading: Scene heading.
+        channel_name: Either "action" or "dialogue".
+        channel_text: Text from the selected channel.
+        cache_root: Root cache directory.
+
+    Returns:
+        A list of entity dicts matching scene_inventory_schema().
+    """
+    if not channel_text.strip():
+        return []
+    if channel_name not in {"action", "dialogue"}:
+        raise ValueError(f"Unsupported scene inventory channel: {channel_name}")
+
+    payload = {
+        "model": model,
+        "scene_idx_non_omitted": scene_idx_non_omitted,
+        "heading": heading,
+        "channel_name": channel_name,
+        "channel_text": channel_text,
+    }
+    cache_key = _sha1(json.dumps(payload, sort_keys=True))
+    cache_dir = _cache_dir_scene_inventory(cache_root)
+
+    cached = _load_json_cache(cache_dir, cache_key)
+    if cached is not None:
+        return cached.get("entities", [])
+
+    from openai import OpenAI
+
+    client = OpenAI()
+    prompt = build_scene_inventory_prompt(
+        scene_idx_non_omitted,
+        heading,
+        channel_name,
+        channel_text,
+    )
+    schema = scene_inventory_schema()
+
+    resp = client.responses.create(
+        model=model,
+        input=[{"role": "user", "content": prompt}],
+        text={
+            "format": {
+                "type": "json_schema",
+                "name": "scene_inventory",
+                "schema": schema,
+                "strict": True,
+            }
+        },
+    )
+
+    obj = json.loads(resp.output_text)
+    if not isinstance(obj, dict) or "entities" not in obj:
+        raise RuntimeError(f"Scene inventory extractor returned invalid JSON: {obj}")
+
+    _save_json_cache(cache_dir, cache_key, obj)
+    return obj.get("entities", [])
+
+def call_llm_json(prompt: str, model: str = "gpt-4o-mini"):
+
+    from openai import OpenAI
+    import json
+
+    client = OpenAI()
+
+    resp = client.responses.create(
+        model=model,
+        input=[{"role": "user", "content": prompt}],
+    )
+
+    text = resp.output_text.strip()
+
+    start = text.find("{")
+    end = text.rfind("}") + 1
+
+    return json.loads(text[start:end])
+                        

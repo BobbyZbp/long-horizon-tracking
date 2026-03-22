@@ -14,6 +14,14 @@ It contains:
    - Defines a strict JSON Schema used with Structured Outputs.
    - Enforces well-formed, typed, and bounded LLM output.
 
+3) build_scene_inventory_prompt(...)
+   - Constructs a higher-recall scene-inventory prompt for either the action
+     or dialogue channel of a scene.
+
+4) scene_inventory_schema()
+   - Defines the structured output contract for the higher-recall inventory
+     extractor used before narrative validation.
+
 Architectural role
 ------------------
 This module is the semantic contract between:
@@ -200,3 +208,241 @@ def scene_entity_schema() -> Dict:
         },
         "required": ["scene_idx_non_omitted", "entities"],
     }
+
+
+def build_scene_inventory_prompt(
+    scene_idx_non_omitted: int,
+    heading: str,
+    channel_name: str,
+    channel_text: str,
+) -> str:
+    """
+    Build a higher-recall prompt for per-scene object inventory extraction.
+
+    Unlike the Stage-1 extractor, this prompt is intentionally tolerant:
+      - it does not ask the model to pre-filter for long-term tracking
+      - it allows objects that are only mentioned in dialogue
+      - it still restricts outputs to physical, visually-groundable entities
+
+    Args:
+        scene_idx_non_omitted: Sequential non-omitted scene index for this scene.
+        heading: Scene heading.
+        channel_name: One of {"action", "dialogue"}.
+        channel_text: Text from the selected channel.
+
+    Returns:
+        A prompt string to pass to the Responses API.
+    """
+    return (
+        "You are building a HIGH-RECALL object inventory for one screenplay scene.\n\n"
+        "Your job is NOT to decide whether an object is already a strong long-term "
+        "tracking target. Instead, include physical objects, artifacts, props, "
+        "containers, substances, creatures, vehicles, and similar entities that "
+        "could matter later in the story.\n\n"
+        "Be intentionally tolerant: we prefer to include plausible object mentions "
+        "rather than miss an important setup item.\n\n"
+        "For this scene:\n"
+        f"- scene_idx_non_omitted = {scene_idx_non_omitted}\n"
+        f"- heading = {heading}\n"
+        f"- channel = {channel_name}\n\n"
+        "Guidelines:\n"
+        "- Output PHYSICAL and VISUALLY-GROUNDABLE entities only.\n"
+        "- Do NOT output characters / people.\n"
+        "- Do NOT output abstract ideas, feelings, or plot concepts.\n"
+        "- If the channel is dialogue, it is okay to include objects that are "
+        "mentioned rather than directly manipulated, as long as they are concrete.\n"
+        "- If multiple surface forms refer to the same item, merge them under one canonical_name.\n\n"
+        "For each entity you output:\n"
+        "- canonical_name: short, specific name.\n"
+        "- surface_forms: all distinct references appearing in this channel text.\n"
+        "- category: one of {object, artifact, weapon, creature, vehicle, substance, location, other}.\n"
+        "- physical_visualizable: true if the referent is a concrete visible thing.\n"
+        "- direct_visual_evidence: true if this channel gives direct evidence the object is present or acted on in-scene.\n"
+        "- mention_strength: score in [0,1] for how strongly this channel supports keeping the object in a high-recall scene inventory.\n"
+        "- confidence: score in [0,1].\n"
+        "- evidence: 1-3 short snippets from the text.\n\n"
+        "Return a SINGLE valid JSON object with:\n"
+        "{\n"
+        '  "scene_idx_non_omitted": <int>,\n'
+        '  "channel": <"action" or "dialogue">,\n'
+        '  "entities": [\n'
+        "    {\n"
+        '      "canonical_name": <str>,\n'
+        '      "surface_forms": [<str>, ...],\n'
+        '      "category": <str>,\n'
+        '      "physical_visualizable": <bool>,\n'
+        '      "direct_visual_evidence": <bool>,\n'
+        '      "mention_strength": <float in [0,1]>,\n'
+        '      "confidence": <float in [0,1]>,\n'
+        '      "evidence": [<str>, ...]\n'
+        "    },\n"
+        "    ...\n"
+        "  ]\n"
+        "}\n\n"
+        f"Now process the following {channel_name} text:\n"
+        f"----- {channel_name.upper()} TEXT START -----\n"
+        f"{channel_text}\n"
+        f"----- {channel_name.upper()} TEXT END -----\n"
+    )
+
+
+def scene_inventory_schema() -> Dict:
+    """
+    JSON schema for the high-recall scene inventory extractor.
+
+    Returns:
+        A JSON schema used with Structured Outputs for action/dialogue channel
+        inventory extraction.
+    """
+    return {
+        "type": "object",
+        "additionalProperties": False,
+        "properties": {
+            "scene_idx_non_omitted": {"type": "integer"},
+            "channel": {
+                "type": "string",
+                "enum": ["action", "dialogue"],
+            },
+            "entities": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "additionalProperties": False,
+                    "properties": {
+                        "canonical_name": {"type": "string", "minLength": 1},
+                        "surface_forms": {
+                            "type": "array",
+                            "items": {"type": "string", "minLength": 1},
+                        },
+                        "category": {
+                            "type": "string",
+                            "enum": [
+                                "object",
+                                "artifact",
+                                "weapon",
+                                "creature",
+                                "vehicle",
+                                "substance",
+                                "location",
+                                "other",
+                            ],
+                        },
+                        "physical_visualizable": {"type": "boolean"},
+                        "direct_visual_evidence": {"type": "boolean"},
+                        "mention_strength": {
+                            "type": "number",
+                            "minimum": 0.0,
+                            "maximum": 1.0,
+                        },
+                        "confidence": {
+                            "type": "number",
+                            "minimum": 0.0,
+                            "maximum": 1.0,
+                        },
+                        "evidence": {
+                            "type": "array",
+                            "items": {"type": "string", "minLength": 1},
+                        },
+                    },
+                    "required": [
+                        "canonical_name",
+                        "surface_forms",
+                        "category",
+                        "physical_visualizable",
+                        "direct_visual_evidence",
+                        "mention_strength",
+                        "confidence",
+                        "evidence",
+                    ],
+                },
+            },
+        },
+        "required": ["scene_idx_non_omitted", "channel", "entities"],
+    }
+
+def build_scene_summary_prompt(
+    scene_idx_non_omitted: int,
+    heading: str,
+    action_text: str,
+) -> str:
+    """
+    Summarize the narrative events of a scene.
+    """
+
+    return (
+        "You are analyzing a film screenplay.\n\n"
+        "Your task is to summarize the narrative events of ONE scene.\n\n"
+        f"Scene index: {scene_idx_non_omitted}\n"
+        f"Heading: {heading}\n\n"
+
+        "Write a concise 1-2 sentence summary of the key plot events.\n"
+        "Focus only on actions and narrative developments.\n\n"
+
+        "Return JSON:\n"
+        "{\n"
+        '  "scene_idx_non_omitted": <int>,\n'
+        '  "summary": <string>\n'
+        "}\n\n"
+
+        "Scene text:\n"
+        "----- ACTION TEXT START -----\n"
+        f"{action_text}\n"
+        "----- ACTION TEXT END -----\n"
+    )
+
+def build_story_summary_prompt(scene_summaries: str) -> str:
+    """
+    Build a prompt that summarizes the entire story
+    based on scene summaries.
+    """
+
+    return (
+        "You are analyzing the narrative structure of a film.\n\n"
+        "Below are summaries of scenes in the story.\n\n"
+        "Write a concise paragraph summarizing the entire plot.\n"
+        "Focus on the major conflicts and resolution.\n\n"
+
+        "Return JSON:\n"
+        "{\n"
+        '  "story_summary": <string>\n'
+        "}\n\n"
+
+        "Scene summaries:\n"
+        "----- START -----\n"
+        f"{scene_summaries}\n"
+        "----- END -----\n"
+    )
+
+def build_climax_scoring_prompt(
+    story_summary: str,
+    scene_idx_non_omitted: int,
+    heading: str,
+    action_text: str,
+) -> str:
+    """
+    Score how climactic a scene is relative to the full story.
+    """
+
+    return (
+        "You are analyzing the narrative structure of a film.\n\n"
+
+        "Below is a summary of the entire story:\n"
+        f"{story_summary}\n\n"
+
+        "Now evaluate how climactic the following scene is.\n"
+        "A climax is typically where major conflicts peak or resolve.\n\n"
+
+        "Return JSON:\n"
+        "{\n"
+        '  "scene_idx_non_omitted": <int>,\n'
+        '  "climax_score": <integer 0-100>\n'
+        "}\n\n"
+
+        f"Scene index: {scene_idx_non_omitted}\n"
+        f"Heading: {heading}\n\n"
+
+        "Scene text:\n"
+        "----- ACTION TEXT START -----\n"
+        f"{action_text}\n"
+        "----- ACTION TEXT END -----\n"
+    )
