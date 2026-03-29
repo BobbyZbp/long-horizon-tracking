@@ -29,6 +29,7 @@ followed by meaningful re-activation.
 - Deterministic given cached LLM outputs.
 - Fully explainable: output includes field specification.
 - Threshold-controlled: explicit filtering criteria.
+
 This module defines:
     - AggregatedEntity: cross-scene statistics container.
     - mine_stage1_llm(): full pipeline execution.

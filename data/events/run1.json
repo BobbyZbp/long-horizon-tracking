@@ -1,0 +1,1033 @@
+{
+  "meta": {
+    "status": "complete",
+    "pdf": "data/raw/harry-potter-and-the-chamber-of-secrets-2002.pdf",
+    "scenes_non_omitted": 116,
+    "total_entities_aggregated": 144,
+    "events_returned": 19,
+    "gap_quantiles": {
+      "q50": 35.0,
+      "q75": 49.5
+    },
+    "gap_definition": "gap_jump(e) = max_i (s_{i+1}-s_i) over non-omitted scene indices",
+    "field_spec": {
+      "entity_key": {
+        "type": "string",
+        "description": "Normalized entity key used for aggregation. Computed as lowercased canonical_name with leading articles removed and punctuation stripped.",
+        "computation": "entity_key = normalize(canonical_name)"
+      },
+      "canonical_name": {
+        "type": "string",
+        "description": "Most frequent canonical_name string returned by the LLM for this entity across scenes.",
+        "computation": "argmax over canonical_names counter"
+      },
+      "entity_type": {
+        "type": "string",
+        "description": "Most frequent category assigned by LLM across mentions. One of {object, artifact, weapon, creature, vehicle, location, other}.",
+        "computation": "argmax over categories counter"
+      },
+      "surface_forms": {
+        "type": "list[string]",
+        "description": "Most frequent surface forms used for this entity across scenes in the screenplay.",
+        "computation": "top-k from surface_forms counter"
+      },
+      "scene_a_idx_non_omitted": {
+        "type": "int",
+        "description": "Non-omitted scene index of the earlier mention in the max-gap pair.",
+        "computation": "s_A = s_i where s_{i+1}-s_i is maximal"
+      },
+      "scene_b_idx_non_omitted": {
+        "type": "int",
+        "description": "Non-omitted scene index of the later mention in the max-gap pair.",
+        "computation": "s_B = s_{i+1} where s_{i+1}-s_i is maximal"
+      },
+      "gap_jump": {
+        "type": "int",
+        "description": "Max jump in non-omitted scene indices between adjacent mentions of the entity.",
+        "computation": "gap_jump(e) = max_i (s_{i+1} - s_i)"
+      },
+      "gap_absent": {
+        "type": "int",
+        "description": "Number of scenes strictly between the two mentions that realize gap_jump. Zero if gap_jump <= 1.",
+        "computation": "gap_absent(e) = max(gap_jump(e) - 1, 0)"
+      },
+      "freq_scenes": {
+        "type": "int",
+        "description": "Number of distinct non-omitted scenes in which the entity appears.",
+        "computation": "freq_scenes(e) = |{s_1,...,s_n}|"
+      },
+      "coverage": {
+        "type": "float",
+        "description": "Fraction of scenes in the span from first to last mention that actually mention the entity.",
+        "computation": "coverage(e) = freq_scenes / (s_n - s_1 + 1)"
+      },
+      "scene_a_label_raw": {
+        "type": "string",
+        "description": "Raw label of scene A as printed in the script (e.g. '12A')."
+      },
+      "scene_b_label_raw": {
+        "type": "string",
+        "description": "Raw label of scene B as printed in the script (e.g. '45')."
+      },
+      "page_a": {
+        "type": "int",
+        "description": "PDF page number where scene A begins."
+      },
+      "page_b": {
+        "type": "int",
+        "description": "PDF page number where scene B begins."
+      },
+      "heading_a": {
+        "type": "string",
+        "description": "Scene heading line for scene A."
+      },
+      "heading_b": {
+        "type": "string",
+        "description": "Scene heading line for scene B."
+      },
+      "context_a": {
+        "type": "list[string]",
+        "description": "Short evidence snippets for this entity taken from scene A action text, supplied by the LLM."
+      },
+      "context_b": {
+        "type": "list[string]",
+        "description": "Short evidence snippets for this entity taken from scene B action text, supplied by the LLM."
+      },
+      "scores": {
+        "type": "object",
+        "description": "Per-entity mean scores in [0,1] derived from LLM per-mention scores.",
+        "fields": {
+          "narrative_action_centrality": {
+            "type": "float",
+            "description": "How central the entity is to actions across scenes (0=background,1=drives action).",
+            "computation": "mean over mention-level narrative_action_centrality scores"
+          },
+          "visual_grounded_score": {
+            "type": "float",
+            "description": "How clearly the entity can be grounded in visual perception.",
+            "computation": "mean over mention-level visual_grounded_score scores"
+          },
+          "state_change_potential": {
+            "type": "float",
+            "description": "How likely the entity is to undergo meaningful state changes.",
+            "computation": "mean over mention-level state_change_potential scores"
+          },
+          "confidence": {
+            "type": "float",
+            "description": "LLM's mean confidence in its assessments.",
+            "computation": "mean over mention-level confidence scores"
+          }
+        }
+      },
+      "difficulty": {
+        "type": "object",
+        "description": "Difficulty bin derived from gap_jump empirical quantiles over all curated entities.",
+        "fields": {
+          "gap_level": {
+            "type": "string",
+            "description": "One of {'medium','long','extreme'} based on gap_jump.",
+            "computation": "if gap_jump <= q50 -> 'medium'; elif gap_jump <= q75 -> 'long'; else 'extreme'."
+          }
+        }
+      },
+      "provenance": {
+        "type": "object",
+        "description": "Auxiliary fields describing where this entity was observed in the screenplay.",
+        "fields": {
+          "scenes_non_omitted_list": {
+            "type": "list[int]",
+            "description": "Sorted list of all non-omitted scene indices mentioning the entity."
+          }
+        }
+      }
+    },
+    "elapsed_sec": 3.95
+  },
+  "events": [
+    {
+      "entity_key": "ford anglia",
+      "canonical_name": "Ford Anglia",
+      "entity_type": "vehicle",
+      "surface_forms": [
+        "OLD, TURQUOISE-COLORED FORD ANGLIA",
+        "Ford Anglia",
+        "the car",
+        "our car",
+        "FORD ANGLIA"
+      ],
+      "scene_a_idx_non_omitted": 13,
+      "scene_b_idx_non_omitted": 95,
+      "gap_jump": 82,
+      "gap_absent": 81,
+      "freq_scenes": 3,
+      "coverage": 0.03571428571428571,
+      "scene_a_label_raw": "13A",
+      "scene_b_label_raw": "121",
+      "page_a": 12,
+      "page_b": 112,
+      "heading_a": "EXT. DURSLEY HOUSE - NIGHT 13A",
+      "heading_b": "EXT. DARK FOREST - NIGHT",
+      "context_a": [
+        "An OLD, TURQUOISE-COLORED FORD ANGLIA floats in midair.",
+        "Fred STEPS ON the accelerator."
+      ],
+      "context_b": [
+        "Harry, it's our car!",
+        "Scratched and mud-smeared",
+        "The Forest has turned it wild"
+      ],
+      "scores": {
+        "narrative_action_centrality": 0.9,
+        "visual_grounded_score": 0.9166666666666666,
+        "state_change_potential": 0.5333333333333333,
+        "confidence": 0.9499999999999998
+      },
+      "provenance": {
+        "scenes_non_omitted_list": [
+          13,
+          95,
+          96
+        ]
+      },
+      "difficulty": {
+        "gap_level": "extreme"
+      }
+    },
+    {
+      "entity_key": "flying ford anglia",
+      "canonical_name": "Flying Ford Anglia",
+      "entity_type": "vehicle",
+      "surface_forms": [
+        "Anglia",
+        "car",
+        "Ford Anglia",
+        "the Ford Anglia",
+        "the Anglia"
+      ],
+      "scene_a_idx_non_omitted": 33,
+      "scene_b_idx_non_omitted": 97,
+      "gap_jump": 64,
+      "gap_absent": 63,
+      "freq_scenes": 11,
+      "coverage": 0.12790697674418605,
+      "scene_a_label_raw": "35",
+      "scene_b_label_raw": "121B",
+      "page_a": 31,
+      "page_b": 116,
+      "heading_a": "EXT. HOGWARTS CASTLE - FLYING CAR - NIGHT",
+      "heading_b": "EXT. ANOTHER PART OF THE FOREST - NIGHT 121B",
+      "context_a": [
+        "the Anglia ENTERS FRAME",
+        "the Anglia GROANS",
+        "the car LURCHES"
+      ],
+      "context_b": [
+        "The Anglia jets out of the hollow, lands with a THUD.",
+        "Ron puts his foot to the floor, SPINS the wheel and sends the car sliding away."
+      ],
+      "scores": {
+        "narrative_action_centrality": 0.890909090909091,
+        "visual_grounded_score": 0.9545454545454546,
+        "state_change_potential": 0.6818181818181819,
+        "confidence": 0.9636363636363636
+      },
+      "provenance": {
+        "scenes_non_omitted_list": [
+          14,
+          16,
+          17,
+          26,
+          30,
+          31,
+          32,
+          33,
+          97,
+          98,
+          99
+        ]
+      },
+      "difficulty": {
+        "gap_level": "extreme"
+      }
+    },
+    {
+      "entity_key": "harry's trunk",
+      "canonical_name": "Harry's trunk",
+      "entity_type": "object",
+      "surface_forms": [
+        "HARRY'S TRUNK",
+        "trunk"
+      ],
+      "scene_a_idx_non_omitted": 13,
+      "scene_b_idx_non_omitted": 84,
+      "gap_jump": 71,
+      "gap_absent": 70,
+      "freq_scenes": 2,
+      "coverage": 0.027777777777777776,
+      "scene_a_label_raw": "13A",
+      "scene_b_label_raw": "104",
+      "page_a": 12,
+      "page_b": 103,
+      "heading_a": "EXT. DURSLEY HOUSE - NIGHT 13A",
+      "heading_b": "INT. GRYFFINDOR TOWER DORMITORY - DAY",
+      "context_a": [
+        "CLOSEUP - HARRY'S TRUNK",
+        "The trunk CLOSES, SNAPS SHUT."
+      ],
+      "context_b": [
+        "Harry's space is a disaster: trunk riffled"
+      ],
+      "scores": {
+        "narrative_action_centrality": 0.6,
+        "visual_grounded_score": 0.8,
+        "state_change_potential": 0.6499999999999999,
+        "confidence": 0.95
+      },
+      "provenance": {
+        "scenes_non_omitted_list": [
+          13,
+          84
+        ]
+      },
+      "difficulty": {
+        "gap_level": "extreme"
+      }
+    },
+    {
+      "entity_key": "door",
+      "canonical_name": "door",
+      "entity_type": "object",
+      "surface_forms": [
+        "DOOR",
+        "the door",
+        "door",
+        "closed DOOR"
+      ],
+      "scene_a_idx_non_omitted": 11,
+      "scene_b_idx_non_omitted": 71,
+      "gap_jump": 60,
+      "gap_absent": 59,
+      "freq_scenes": 4,
+      "coverage": 0.04819277108433735,
+      "scene_a_label_raw": "12",
+      "scene_b_label_raw": "88",
+      "page_a": 11,
+      "page_b": 90,
+      "heading_a": "EXT/INT. HARRY'S BEDROOM - NEXT DAY",
+      "heading_b": "INT. SECOND FLOOR CORRIDOR - NIGHT (MOMENTS LATER)",
+      "context_a": [
+        "pulls shut the DOOR.",
+        "It closes with the DULL CLANK of a cell."
+      ],
+      "context_b": [
+        "as they hit the door"
+      ],
+      "scores": {
+        "narrative_action_centrality": 0.7,
+        "visual_grounded_score": 0.8875,
+        "state_change_potential": 0.65,
+        "confidence": 0.9125
+      },
+      "provenance": {
+        "scenes_non_omitted_list": [
+          11,
+          71,
+          80,
+          93
+        ]
+      },
+      "difficulty": {
+        "gap_level": "extreme"
+      }
+    },
+    {
+      "entity_key": "snake",
+      "canonical_name": "Snake",
+      "entity_type": "creature",
+      "surface_forms": [
+        "LONG BLACK SNAKE",
+        "snake",
+        "the snake",
+        "snake's head"
+      ],
+      "scene_a_idx_non_omitted": 56,
+      "scene_b_idx_non_omitted": 109,
+      "gap_jump": 53,
+      "gap_absent": 52,
+      "freq_scenes": 2,
+      "coverage": 0.037037037037037035,
+      "scene_a_label_raw": "70",
+      "scene_b_label_raw": "133A",
+      "page_a": 70,
+      "page_b": 135,
+      "heading_a": "INT. GREAT HALL - DAY",
+      "heading_b": "INT. CHAMBER OF SECRETS - SIDE TUNNEL - NIGHT 133A",
+      "context_a": [
+        "a LONG BLACK SNAKE SLITHERS forth.",
+        "the snake VANISHES in PUFF OF BLACK SMOKE."
+      ],
+      "context_b": [
+        "the snake eclipse the light at the far end of the tunnel",
+        "the snake slides heavily by",
+        "the snake's head weaves inside, only INCHES from Harry's face"
+      ],
+      "scores": {
+        "narrative_action_centrality": 0.9,
+        "visual_grounded_score": 0.925,
+        "state_change_potential": 0.7,
+        "confidence": 0.925
+      },
+      "provenance": {
+        "scenes_non_omitted_list": [
+          56,
+          109
+        ]
+      },
+      "difficulty": {
+        "gap_level": "extreme"
+      }
+    },
+    {
+      "entity_key": "fawkes",
+      "canonical_name": "Fawkes",
+      "entity_type": "creature",
+      "surface_forms": [
+        "FAWKES",
+        "Fawkes",
+        "OLD, DECREPIT BIRD",
+        "Phoenix",
+        "the bird"
+      ],
+      "scene_a_idx_non_omitted": 63,
+      "scene_b_idx_non_omitted": 108,
+      "gap_jump": 45,
+      "gap_absent": 44,
+      "freq_scenes": 4,
+      "coverage": 0.08,
+      "scene_a_label_raw": "77",
+      "scene_b_label_raw": "133",
+      "page_a": 78,
+      "page_b": 129,
+      "heading_a": "INT. DUMBLEDORE'S OFFICE - NIGHT",
+      "heading_b": "INT. CHAMBER OF SECRETS - NIGHT",
+      "context_a": [
+        "finds an OLD, DECREPIT BIRD (FAWKES) sitting on a GOLDEN PERCH",
+        "BURSTS INTO FLAMES",
+        "A baby Fawkes pokes out his wrinkled head"
+      ],
+      "context_b": [
+        "Flying from above is FAWKES, the Phoenix",
+        "Fawkes flies toward Harry"
+      ],
+      "scores": {
+        "narrative_action_centrality": 0.8,
+        "visual_grounded_score": 0.8875,
+        "state_change_potential": 0.525,
+        "confidence": 0.8875
+      },
+      "provenance": {
+        "scenes_non_omitted_list": [
+          63,
+          108,
+          111,
+          112
+        ]
+      },
+      "difficulty": {
+        "gap_level": "long"
+      }
+    },
+    {
+      "entity_key": "torch",
+      "canonical_name": "torch",
+      "entity_type": "object",
+      "surface_forms": [
+        "FLICKERING TORCH",
+        "torch",
+        "TORCH"
+      ],
+      "scene_a_idx_non_omitted": 61,
+      "scene_b_idx_non_omitted": 107,
+      "gap_jump": 46,
+      "gap_absent": 45,
+      "freq_scenes": 2,
+      "coverage": 0.0425531914893617,
+      "scene_a_label_raw": "75",
+      "scene_b_label_raw": "132",
+      "page_a": 77,
+      "page_b": 127,
+      "heading_a": "INT. ANOTHER CORRIDOR - NIGHT (MOMENTS LATER)",
+      "heading_b": "INT. TUNNEL - NIGHT",
+      "context_a": [
+        "in the light of a FLICKERING TORCH",
+        "the torch... goes out"
+      ],
+      "context_b": [
+        "Harry takes a TORCH from the wall",
+        "the torch blooms with a BRIGHT ORANGE FLAME"
+      ],
+      "scores": {
+        "narrative_action_centrality": 0.65,
+        "visual_grounded_score": 0.8500000000000001,
+        "state_change_potential": 0.44999999999999996,
+        "confidence": 0.925
+      },
+      "provenance": {
+        "scenes_non_omitted_list": [
+          61,
+          107
+        ]
+      },
+      "difficulty": {
+        "gap_level": "long"
+      }
+    },
+    {
+      "entity_key": "cauldron",
+      "canonical_name": "Cauldron",
+      "entity_type": "object",
+      "surface_forms": [
+        "cauldron"
+      ],
+      "scene_a_idx_non_omitted": 25,
+      "scene_b_idx_non_omitted": 67,
+      "gap_jump": 42,
+      "gap_absent": 41,
+      "freq_scenes": 2,
+      "coverage": 0.046511627906976744,
+      "scene_a_label_raw": "30",
+      "scene_b_label_raw": "81",
+      "page_a": 23,
+      "page_b": 83,
+      "heading_a": "INT. FLOURISH AND BLOTTS - DAY",
+      "heading_b": "INT. GIRLS' BATHROOM - NIGHT (MOMENTS LATER)",
+      "context_a": [
+        "drops the books into Ginny's cauldron."
+      ],
+      "context_b": [
+        "Hermione hovers over a smoking cauldron.",
+        "the potion resembles a thick, dark, bubbling mud."
+      ],
+      "scores": {
+        "narrative_action_centrality": 0.6,
+        "visual_grounded_score": 0.8500000000000001,
+        "state_change_potential": 0.5,
+        "confidence": 0.8500000000000001
+      },
+      "provenance": {
+        "scenes_non_omitted_list": [
+          25,
+          67
+        ]
+      },
+      "difficulty": {
+        "gap_level": "long"
+      }
+    },
+    {
+      "entity_key": "diary",
+      "canonical_name": "diary",
+      "entity_type": "artifact",
+      "surface_forms": [
+        "the diary",
+        "diary",
+        "a diary",
+        "book",
+        "DIARY"
+      ],
+      "scene_a_idx_non_omitted": 78,
+      "scene_b_idx_non_omitted": 113,
+      "gap_jump": 35,
+      "gap_absent": 34,
+      "freq_scenes": 5,
+      "coverage": 0.1282051282051282,
+      "scene_a_label_raw": "96",
+      "scene_b_label_raw": "135",
+      "page_a": 97,
+      "page_b": 141,
+      "heading_a": "INT. GRYFFINDOR DORMITORY/COMMON ROOM - NIGHT (LATER)",
+      "heading_b": "INT. DUMBLEDORE'S OFFICE - DAY",
+      "context_a": [
+        "Harry sitting alone, flipping through the blank pages of the diary.",
+        "Taking his QUILL, Harry dips it, and hesitates.",
+        "Excited, Harry dips his quill again, and, this time, writes: My name is Harry Potter."
+      ],
+      "context_b": [
+        "A diary that writes back to you! Honestly, Ginny!"
+      ],
+      "scores": {
+        "narrative_action_centrality": 0.8400000000000001,
+        "visual_grounded_score": 0.8700000000000001,
+        "state_change_potential": 0.5599999999999999,
+        "confidence": 0.93
+      },
+      "provenance": {
+        "scenes_non_omitted_list": [
+          76,
+          77,
+          78,
+          113,
+          114
+        ]
+      },
+      "difficulty": {
+        "gap_level": "medium"
+      }
+    },
+    {
+      "entity_key": "hedwig",
+      "canonical_name": "Hedwig",
+      "entity_type": "creature",
+      "surface_forms": [
+        "Hedwig",
+        "HEDWIG",
+        "HEDWIG pecks",
+        "Hedwig SQUAWKS",
+        "the pigeon"
+      ],
+      "scene_a_idx_non_omitted": 16,
+      "scene_b_idx_non_omitted": 58,
+      "gap_jump": 42,
+      "gap_absent": 41,
+      "freq_scenes": 4,
+      "coverage": 0.06896551724137931,
+      "scene_a_label_raw": "17",
+      "scene_b_label_raw": "72",
+      "page_a": 13,
+      "page_b": 75,
+      "heading_a": "INT/EXT. HARRY'S BEDROOM/THE CAR - MOMENTS LATER",
+      "heading_b": "EXT. HOGWARTS' LANDSCAPE - DAY",
+      "context_a": [
+        "Hedwig PECKS feverishly at the LOCK",
+        "Hedwig SWOOPS into the sky"
+      ],
+      "context_b": [
+        "Hedwig sits beside him."
+      ],
+      "scores": {
+        "narrative_action_centrality": 0.6249999999999999,
+        "visual_grounded_score": 0.8500000000000001,
+        "state_change_potential": 0.375,
+        "confidence": 0.9
+      },
+      "provenance": {
+        "scenes_non_omitted_list": [
+          1,
+          12,
+          16,
+          58
+        ]
+      },
+      "difficulty": {
+        "gap_level": "long"
+      }
+    },
+    {
+      "entity_key": "quill",
+      "canonical_name": "quill",
+      "entity_type": "artifact",
+      "surface_forms": [
+        "quill",
+        "QUILL"
+      ],
+      "scene_a_idx_non_omitted": 43,
+      "scene_b_idx_non_omitted": 78,
+      "gap_jump": 35,
+      "gap_absent": 34,
+      "freq_scenes": 2,
+      "coverage": 0.05555555555555555,
+      "scene_a_label_raw": "49",
+      "scene_b_label_raw": "96",
+      "page_a": 48,
+      "page_b": 97,
+      "heading_a": "INT. GILDEROY LOCKHART'S OFFICE - EVENING (HOURS LATER)",
+      "heading_b": "INT. GRYFFINDOR DORMITORY/COMMON ROOM - NIGHT (LATER)",
+      "context_a": [
+        "Dipping his quill, he starts to write."
+      ],
+      "context_b": [
+        "Taking his QUILL, Harry dips it, and hesitates."
+      ],
+      "scores": {
+        "narrative_action_centrality": 0.625,
+        "visual_grounded_score": 0.8,
+        "state_change_potential": 0.5,
+        "confidence": 0.875
+      },
+      "provenance": {
+        "scenes_non_omitted_list": [
+          43,
+          78
+        ]
+      },
+      "difficulty": {
+        "gap_level": "medium"
+      }
+    },
+    {
+      "entity_key": "wand",
+      "canonical_name": "wand",
+      "entity_type": "artifact",
+      "surface_forms": [
+        "wand",
+        "Lockhart's wand",
+        "broken wand",
+        "wands",
+        "his wand"
+      ],
+      "scene_a_idx_non_omitted": 80,
+      "scene_b_idx_non_omitted": 107,
+      "gap_jump": 27,
+      "gap_absent": 26,
+      "freq_scenes": 8,
+      "coverage": 0.09411764705882353,
+      "scene_a_label_raw": "100",
+      "scene_b_label_raw": "132",
+      "page_a": 99,
+      "page_b": 127,
+      "heading_a": "INT. CORRIDOR - DUNGEONS - NIGHT (MOMENTS LATER)",
+      "heading_b": "INT. TUNNEL - NIGHT",
+      "context_a": [
+        "Riddle draws his wand",
+        "Riddle points his wand at it"
+      ],
+      "context_b": [
+        "Ron draws his wand",
+        "snatches Ron's wand",
+        "Ron\u2019s WAND EXPLODES like a small BOMB"
+      ],
+      "scores": {
+        "narrative_action_centrality": 0.675,
+        "visual_grounded_score": 0.83125,
+        "state_change_potential": 0.6124999999999999,
+        "confidence": 0.8812500000000001
+      },
+      "provenance": {
+        "scenes_non_omitted_list": [
+          23,
+          39,
+          41,
+          48,
+          56,
+          77,
+          80,
+          107
+        ]
+      },
+      "difficulty": {
+        "gap_level": "medium"
+      }
+    },
+    {
+      "entity_key": "tom riddle's diary",
+      "canonical_name": "Tom Riddle's diary",
+      "entity_type": "artifact",
+      "surface_forms": [
+        "diary",
+        "Tom Riddle's diary",
+        "TOM RIDDLE'S DIARY"
+      ],
+      "scene_a_idx_non_omitted": 84,
+      "scene_b_idx_non_omitted": 108,
+      "gap_jump": 24,
+      "gap_absent": 23,
+      "freq_scenes": 3,
+      "coverage": 0.1111111111111111,
+      "scene_a_label_raw": "104",
+      "scene_b_label_raw": "133",
+      "page_a": 103,
+      "page_b": 129,
+      "heading_a": "INT. GRYFFINDOR TOWER DORMITORY - DAY",
+      "heading_b": "INT. CHAMBER OF SECRETS - NIGHT",
+      "context_a": [
+        "Tom Riddle's diary is gone"
+      ],
+      "context_b": [
+        "A pale hand clutches TOM RIDDLE'S DIARY",
+        "Harry looks to the diary in Ginny's hand"
+      ],
+      "scores": {
+        "narrative_action_centrality": 0.7666666666666666,
+        "visual_grounded_score": 0.8500000000000001,
+        "state_change_potential": 0.6333333333333333,
+        "confidence": 0.9333333333333332
+      },
+      "provenance": {
+        "scenes_non_omitted_list": [
+          84,
+          108,
+          110
+        ]
+      },
+      "difficulty": {
+        "gap_level": "medium"
+      }
+    },
+    {
+      "entity_key": "errol",
+      "canonical_name": "Errol",
+      "entity_type": "creature",
+      "surface_forms": [
+        "an OWL (ERROL)",
+        "Errol"
+      ],
+      "scene_a_idx_non_omitted": 18,
+      "scene_b_idx_non_omitted": 38,
+      "gap_jump": 20,
+      "gap_absent": 19,
+      "freq_scenes": 2,
+      "coverage": 0.09523809523809523,
+      "scene_a_label_raw": "19",
+      "scene_b_label_raw": "41",
+      "page_a": 14,
+      "page_b": 38,
+      "heading_a": "INT. FRONT ROOM - THE BURROW - MOMENTS LATER",
+      "heading_b": "INT. GREAT HALL - LUNCH - DAY",
+      "context_a": [
+        "an OWL (ERROL) soaring toward the kitchen window."
+      ],
+      "context_b": [
+        "One after another, the birds swoop gracefully down... except one, who plops beak-first into Ron's soup. Errol."
+      ],
+      "scores": {
+        "narrative_action_centrality": 0.55,
+        "visual_grounded_score": 0.8,
+        "state_change_potential": 0.55,
+        "confidence": 0.8500000000000001
+      },
+      "provenance": {
+        "scenes_non_omitted_list": [
+          18,
+          38
+        ]
+      },
+      "difficulty": {
+        "gap_level": "medium"
+      }
+    },
+    {
+      "entity_key": "circular mirror",
+      "canonical_name": "circular mirror",
+      "entity_type": "object",
+      "surface_forms": [
+        "mirror",
+        "SMALL CIRCULAR MIRROR",
+        "circular mirror"
+      ],
+      "scene_a_idx_non_omitted": 88,
+      "scene_b_idx_non_omitted": 100,
+      "gap_jump": 12,
+      "gap_absent": 11,
+      "freq_scenes": 2,
+      "coverage": 0.15384615384615385,
+      "scene_a_label_raw": "107",
+      "scene_b_label_raw": "123",
+      "page_a": 105,
+      "page_b": 118,
+      "heading_a": "INT. HOSPITAL WING - DAY",
+      "heading_b": "INT. HOSPITAL WING - DAY",
+      "context_a": [
+        "Does it mean anything to either of you? She holds up a SMALL CIRCULAR MIRROR."
+      ],
+      "context_b": [
+        "Ron picks up the circular mirror that lies on the nightstand.",
+        "the mirror in Ron's hand CATCHES the LATE AFTERNOON SUNLIGHT"
+      ],
+      "scores": {
+        "narrative_action_centrality": 0.7,
+        "visual_grounded_score": 0.8500000000000001,
+        "state_change_potential": 0.5,
+        "confidence": 0.9
+      },
+      "provenance": {
+        "scenes_non_omitted_list": [
+          88,
+          100
+        ]
+      },
+      "difficulty": {
+        "gap_level": "medium"
+      }
+    },
+    {
+      "entity_key": "small black book",
+      "canonical_name": "small black book",
+      "entity_type": "object",
+      "surface_forms": [
+        "SMALL BLACK BOOK",
+        "book"
+      ],
+      "scene_a_idx_non_omitted": 59,
+      "scene_b_idx_non_omitted": 75,
+      "gap_jump": 16,
+      "gap_absent": 15,
+      "freq_scenes": 2,
+      "coverage": 0.11764705882352941,
+      "scene_a_label_raw": "73",
+      "scene_b_label_raw": "93",
+      "page_a": 75,
+      "page_b": 93,
+      "heading_a": "INT. LIBRARY - NIGHT",
+      "heading_b": "INT. GIRLS BATHROOM - NIGHT (MOMENTS LATER)",
+      "context_a": [
+        "Ginny Weasley, tired and pale, scribbles furiously in a SMALL BLACK BOOK."
+      ],
+      "context_b": [
+        "Harry sees a SMALL BLACK BOOK on the floor.",
+        "Picks it up."
+      ],
+      "scores": {
+        "narrative_action_centrality": 0.65,
+        "visual_grounded_score": 0.8,
+        "state_change_potential": 0.25,
+        "confidence": 0.925
+      },
+      "provenance": {
+        "scenes_non_omitted_list": [
+          59,
+          75
+        ]
+      },
+      "difficulty": {
+        "gap_level": "medium"
+      }
+    },
+    {
+      "entity_key": "basilisk",
+      "canonical_name": "Basilisk",
+      "entity_type": "creature",
+      "surface_forms": [
+        "the Basilisk",
+        "serpent",
+        "giant serpent",
+        "GIANT SERPENT",
+        "BASILISK"
+      ],
+      "scene_a_idx_non_omitted": 101,
+      "scene_b_idx_non_omitted": 108,
+      "gap_jump": 7,
+      "gap_absent": 6,
+      "freq_scenes": 3,
+      "coverage": 0.3,
+      "scene_a_label_raw": "124",
+      "scene_b_label_raw": "133",
+      "page_a": 119,
+      "page_b": 129,
+      "heading_a": "INT. CORRIDOR - DUSK (LATER)",
+      "heading_b": "INT. CHAMBER OF SECRETS - NIGHT",
+      "context_a": [
+        "none is more deadly than the Basilisk",
+        "the monster in the Chamber of Secrets is a Basilisk"
+      ],
+      "context_b": [
+        "the Basilisk spills out",
+        "HISSING SERPENT shoots forward"
+      ],
+      "scores": {
+        "narrative_action_centrality": 0.7999999999999999,
+        "visual_grounded_score": 0.8666666666666667,
+        "state_change_potential": 0.5666666666666667,
+        "confidence": 0.9
+      },
+      "provenance": {
+        "scenes_non_omitted_list": [
+          101,
+          108,
+          110
+        ]
+      },
+      "difficulty": {
+        "gap_level": "medium"
+      }
+    },
+    {
+      "entity_key": "mrs norris",
+      "canonical_name": "Mrs. Norris",
+      "entity_type": "creature",
+      "surface_forms": [
+        "Mrs. Norris",
+        "cat",
+        "MRS. NORRIS",
+        "Filch's cat"
+      ],
+      "scene_a_idx_non_omitted": 34,
+      "scene_b_idx_non_omitted": 46,
+      "gap_jump": 12,
+      "gap_absent": 11,
+      "freq_scenes": 3,
+      "coverage": 0.21428571428571427,
+      "scene_a_label_raw": "36",
+      "scene_b_label_raw": "59",
+      "page_a": 33,
+      "page_b": 50,
+      "heading_a": "EXT. STONE STEPS/ENTRANCE HALL - NIGHT",
+      "heading_b": "INT. SECOND FLOOR CORRIDOR - SECOND FLOOR - NIGHT",
+      "context_a": [
+        "his cat -- MRS. NORRIS -- twitching her tail at his feet"
+      ],
+      "context_b": [
+        "That's Filch's cat. Mrs. Norris.",
+        "The cat hangs stiffly by her tail from a torch bracket"
+      ],
+      "scores": {
+        "narrative_action_centrality": 0.5666666666666668,
+        "visual_grounded_score": 0.7333333333333334,
+        "state_change_potential": 0.3666666666666667,
+        "confidence": 0.8166666666666668
+      },
+      "provenance": {
+        "scenes_non_omitted_list": [
+          34,
+          46,
+          47
+        ]
+      },
+      "difficulty": {
+        "gap_level": "medium"
+      }
+    },
+    {
+      "entity_key": "clock",
+      "canonical_name": "Clock",
+      "entity_type": "object",
+      "surface_forms": [
+        "A CLOCK",
+        "clock"
+      ],
+      "scene_a_idx_non_omitted": 18,
+      "scene_b_idx_non_omitted": 29,
+      "gap_jump": 11,
+      "gap_absent": 10,
+      "freq_scenes": 2,
+      "coverage": 0.16666666666666666,
+      "scene_a_label_raw": "19",
+      "scene_b_label_raw": "32B",
+      "page_a": 14,
+      "page_b": 28,
+      "heading_a": "INT. FRONT ROOM - THE BURROW - MOMENTS LATER",
+      "heading_b": "INT. KING'S CROSS 32B",
+      "context_a": [
+        "A CLOCK displays different chores for each family member."
+      ],
+      "context_b": [
+        "Ron glances at the clock.",
+        "The clock chimes."
+      ],
+      "scores": {
+        "narrative_action_centrality": 0.5,
+        "visual_grounded_score": 0.8,
+        "state_change_potential": 0.5,
+        "confidence": 0.9
+      },
+      "provenance": {
+        "scenes_non_omitted_list": [
+          18,
+          29
+        ]
+      },
+      "difficulty": {
+        "gap_level": "medium"
+      }
+    }
+  ]
+}
