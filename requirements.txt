@@ -1,1 +1,5 @@
+# After install:
+# python -m spacy download en_core_web_sm
 pdfplumber==0.11.9
+spacy==3.8.11
+openai>=1.0.0

@@ -1,0 +1,1461 @@
+{
+  "meta": {
+    "segments_returned": 33,
+    "objects_considered": 20,
+    "min_alignment_confidence": 0.15,
+    "padding_sec": 12.0,
+    "merge_gap_sec": 8.0,
+    "max_segments_per_object": 4,
+    "skipped_non_object_specific_alignments": 4,
+    "build_type": "task3_candidate_segment_filtering",
+    "candidates_source": "data\\events\\chekhov_candidates.json",
+    "alignments_source": "data\\aligned_segments\\aligned_candidates.json"
+  },
+  "segments": [
+    {
+      "segment_id": "cand019_basilisk_seg101",
+      "candidate_index": 19,
+      "object_id": "basilisk",
+      "canonical_name": "Basilisk",
+      "candidate_source": "inventory_with_stage1_prior",
+      "possible_chekhov_score": 0.7639,
+      "source_scene_indices": [
+        101
+      ],
+      "source_alignment_indices": [
+        90
+      ],
+      "segment_role": "setup",
+      "segment_start_sec": 7822.818,
+      "segment_end_sec": 7961.641,
+      "priority_score": 0.9351,
+      "alignment_confidence_max": 0.8157,
+      "reason_tags": [
+        "candidate_source:inventory_with_stage1_prior",
+        "role:setup_candidate",
+        "role:gap_anchor_a",
+        "role:high_climax_scene",
+        "role:action_supported_match",
+        "subtitle_object_overlap",
+        "subtitle_lexical_overlap"
+      ],
+      "matched_subtitle_texts": [
+        "Your bird may have blinded the basilisk, but it can still hear you. Yes, Potter. The process is nearly complete. In a few minutes, Ginny Weasley will be dead, and I will cease to be a memory."
+      ],
+      "matched_subtitle_indices": [
+        1349,
+        1350,
+        1351
+      ],
+      "query_terms": [
+        "basilisk",
+        "corridor",
+        "dusk"
+      ]
+    },
+    {
+      "segment_id": "cand019_basilisk_seg108",
+      "candidate_index": 19,
+      "object_id": "basilisk",
+      "canonical_name": "Basilisk",
+      "candidate_source": "inventory_with_stage1_prior",
+      "possible_chekhov_score": 0.7639,
+      "source_scene_indices": [
+        108
+      ],
+      "source_alignment_indices": [
+        91
+      ],
+      "segment_role": "payoff",
+      "segment_start_sec": 8085.331,
+      "segment_end_sec": 8120.55,
+      "priority_score": 0.8887,
+      "alignment_confidence_max": 0.5027,
+      "reason_tags": [
+        "candidate_source:inventory_with_stage1_prior",
+        "role:payoff_candidate",
+        "role:gap_anchor_b",
+        "role:high_climax_scene",
+        "role:action_supported_match",
+        "subtitle_object_overlap",
+        "subtitle_lexical_overlap"
+      ],
+      "matched_subtitle_texts": [
+        "...how quickly the venom of the basilisk penetrates the body? I'd guess you have little more than a minute to live. You'll be with your dear Mudblood mother soon, Harry."
+      ],
+      "matched_subtitle_indices": [
+        1356,
+        1357,
+        1358
+      ],
+      "query_terms": [
+        "basilisk",
+        "chamber",
+        "secrets"
+      ]
+    },
+    {
+      "segment_id": "cand019_basilisk_seg057",
+      "candidate_index": 19,
+      "object_id": "basilisk",
+      "canonical_name": "Basilisk",
+      "candidate_source": "inventory_with_stage1_prior",
+      "possible_chekhov_score": 0.7639,
+      "source_scene_indices": [
+        57
+      ],
+      "source_alignment_indices": [
+        89
+      ],
+      "segment_role": "setup",
+      "segment_start_sec": 4198.903,
+      "segment_end_sec": 4231.745,
+      "priority_score": 0.7595,
+      "alignment_confidence_max": 0.5933,
+      "reason_tags": [
+        "candidate_source:inventory_with_stage1_prior",
+        "role:setup_candidate",
+        "role:scene_inventory_loose_match",
+        "role:action_supported_match",
+        "subtitle_object_overlap",
+        "subtitle_lexical_overlap"
+      ],
+      "matched_subtitle_texts": [
+        "There's a reason the symbol of Slytherin house is a serpent. Salazar Slytherin was a Parselmouth. He could talk to snakes too. Exactly."
+      ],
+      "matched_subtitle_indices": [
+        749,
+        750,
+        751
+      ],
+      "query_terms": [
+        "basilisk",
+        "common",
+        "gryffindor",
+        "serpent"
+      ]
+    },
+    {
+      "segment_id": "cand001_bathroom door_seg093",
+      "candidate_index": 1,
+      "object_id": "bathroom door",
+      "canonical_name": "bathroom door",
+      "candidate_source": "inventory_with_stage1_prior",
+      "possible_chekhov_score": 0.965,
+      "source_scene_indices": [
+        93
+      ],
+      "source_alignment_indices": [
+        20
+      ],
+      "segment_role": "payoff",
+      "segment_start_sec": 7038.868,
+      "segment_end_sec": 7079.843,
+      "priority_score": 0.9432,
+      "alignment_confidence_max": 0.6258,
+      "reason_tags": [
+        "candidate_source:inventory_with_stage1_prior",
+        "role:payoff_candidate",
+        "role:action_supported_match",
+        "subtitle_object_overlap",
+        "subtitle_lexical_overlap"
+      ],
+      "matched_subtitle_texts": [
+        "And I realized it was a boy, so I unlocked the door to tell him to go away and... ...I died. - Just like that? How? I just remember seeing a pair of great, big, yellow eyes..."
+      ],
+      "matched_subtitle_indices": [
+        1241,
+        1242,
+        1243
+      ],
+      "query_terms": [
+        "bathroom",
+        "door",
+        "hagrid's",
+        "hut"
+      ]
+    },
+    {
+      "segment_id": "cand034_bludger_seg051",
+      "candidate_index": 34,
+      "object_id": "bludger",
+      "canonical_name": "Bludger",
+      "candidate_source": "inventory_only",
+      "possible_chekhov_score": 0.5953,
+      "source_scene_indices": [
+        51
+      ],
+      "source_alignment_indices": [
+        137
+      ],
+      "segment_role": "setup",
+      "segment_start_sec": 3601.18,
+      "segment_end_sec": 3636.108,
+      "priority_score": 0.7039,
+      "alignment_confidence_max": 0.4721,
+      "reason_tags": [
+        "candidate_source:inventory_only",
+        "role:setup_candidate",
+        "role:gap_anchor_a",
+        "role:high_climax_scene",
+        "role:scene_inventory_loose_match",
+        "role:action_supported_match",
+        "subtitle_object_overlap",
+        "subtitle_lexical_overlap"
+      ],
+      "matched_subtitle_texts": [
+        "Your Bludger? You made that Bludger chase after me? Dobby feels most aggrieved, sir. Dobby had to iron his hands."
+      ],
+      "matched_subtitle_indices": [
+        638,
+        639,
+        640
+      ],
+      "query_terms": [
+        "bludger",
+        "quidditch",
+        "stadium"
+      ]
+    },
+    {
+      "segment_id": "cand023_circular mirror_seg088",
+      "candidate_index": 23,
+      "object_id": "circular mirror",
+      "canonical_name": "circular mirror",
+      "candidate_source": "inventory_with_stage1_prior",
+      "possible_chekhov_score": 0.7205,
+      "source_scene_indices": [
+        88
+      ],
+      "source_alignment_indices": [
+        102
+      ],
+      "segment_role": "setup",
+      "segment_start_sec": 6771.934,
+      "segment_end_sec": 6808.905,
+      "priority_score": 0.7305,
+      "alignment_confidence_max": 0.5794,
+      "reason_tags": [
+        "candidate_source:inventory_with_stage1_prior",
+        "role:setup_candidate",
+        "role:gap_anchor_a",
+        "role:action_supported_match",
+        "subtitle_object_overlap",
+        "subtitle_lexical_overlap"
+      ],
+      "matched_subtitle_texts": [
+        "I'm pretty sure she didn't have a camera or a mirror, Harry. The water. There was water on the floor that night. She only saw the basilisk's reflection."
+      ],
+      "matched_subtitle_indices": [
+        1183,
+        1184,
+        1185
+      ],
+      "query_terms": [
+        "circular",
+        "hospital",
+        "mirror",
+        "wing"
+      ]
+    },
+    {
+      "segment_id": "cand003_fawkes_seg108",
+      "candidate_index": 3,
+      "object_id": "fawkes",
+      "canonical_name": "Fawkes",
+      "candidate_source": "inventory_with_stage1_prior",
+      "possible_chekhov_score": 0.9368,
+      "source_scene_indices": [
+        108,
+        111,
+        112
+      ],
+      "source_alignment_indices": [
+        25,
+        26,
+        27
+      ],
+      "segment_role": "payoff",
+      "segment_start_sec": 8328.491,
+      "segment_end_sec": 8367.339,
+      "priority_score": 1.0,
+      "alignment_confidence_max": 0.8311,
+      "reason_tags": [
+        "candidate_source:inventory_with_stage1_prior",
+        "role:payoff_candidate",
+        "role:gap_anchor_b",
+        "role:high_climax_scene",
+        "role:action_supported_match",
+        "subtitle_object_overlap",
+        "subtitle_lexical_overlap"
+      ],
+      "matched_subtitle_texts": [
+        "You must have shown me real loyalty down in the Chamber. Nothing but that could have called Fawkes to you. And...",
+        "Nothing but that could have called Fawkes to you. And... ...second..."
+      ],
+      "matched_subtitle_indices": [
+        1391,
+        1392,
+        1393,
+        1394
+      ],
+      "query_terms": [
+        "chamber",
+        "fawkes",
+        "secrets",
+        "tunnel",
+        "134a",
+        "rocky"
+      ]
+    },
+    {
+      "segment_id": "cand003_fawkes_seg063",
+      "candidate_index": 3,
+      "object_id": "fawkes",
+      "canonical_name": "Fawkes",
+      "candidate_source": "inventory_with_stage1_prior",
+      "possible_chekhov_score": 0.9368,
+      "source_scene_indices": [
+        63
+      ],
+      "source_alignment_indices": [
+        24
+      ],
+      "segment_role": "setup",
+      "segment_start_sec": 4527.231,
+      "segment_end_sec": 4560.282,
+      "priority_score": 0.8107,
+      "alignment_confidence_max": 0.459,
+      "reason_tags": [
+        "candidate_source:inventory_with_stage1_prior",
+        "role:setup_candidate",
+        "role:gap_anchor_a",
+        "role:action_supported_match",
+        "subtitle_object_overlap",
+        "subtitle_lexical_overlap"
+      ],
+      "matched_subtitle_texts": [
+        "Fawkes is a phoenix, Harry. They burst into flame when it is time for them to die... ...and then they are..."
+      ],
+      "matched_subtitle_indices": [
+        786,
+        787,
+        788
+      ],
+      "query_terms": [
+        "dumbledore's",
+        "fawkes",
+        "office"
+      ]
+    },
+    {
+      "segment_id": "cand000_flying ford anglia_seg014",
+      "candidate_index": 0,
+      "object_id": "flying ford anglia",
+      "canonical_name": "Flying Ford Anglia",
+      "candidate_source": "inventory_with_stage1_prior",
+      "possible_chekhov_score": 0.9768,
+      "source_scene_indices": [
+        14,
+        16,
+        17
+      ],
+      "source_alignment_indices": [
+        1,
+        2,
+        3
+      ],
+      "segment_role": "setup",
+      "segment_start_sec": 1404.191,
+      "segment_end_sec": 1447.169,
+      "priority_score": 0.7642,
+      "alignment_confidence_max": 0.4916,
+      "reason_tags": [
+        "candidate_source:inventory_with_stage1_prior",
+        "role:setup_candidate",
+        "role:action_supported_match",
+        "role:scene_inventory_loose_match",
+        "subtitle_object_overlap",
+        "subtitle_lexical_overlap"
+      ],
+      "matched_subtitle_texts": [
+        "The car. Ron, I should tell you... ...most Muggles aren't accustomed to seeing a flying car."
+      ],
+      "matched_subtitle_indices": [
+        263,
+        264,
+        265
+      ],
+      "query_terms": [
+        "13d",
+        "anglia",
+        "dursley",
+        "flying",
+        "ford",
+        "house",
+        "bedroom",
+        "car",
+        "harry's",
+        "burrow",
+        "early",
+        "morning"
+      ]
+    },
+    {
+      "segment_id": "cand014_gilderoy lockhart's wand_seg048",
+      "candidate_index": 14,
+      "object_id": "gilderoy lockhart's wand",
+      "canonical_name": "Gilderoy Lockhart's wand",
+      "candidate_source": "inventory_with_stage1_prior",
+      "possible_chekhov_score": 0.8467,
+      "source_scene_indices": [
+        48,
+        51,
+        56
+      ],
+      "source_alignment_indices": [
+        72,
+        73,
+        74
+      ],
+      "segment_role": "reappearance",
+      "segment_start_sec": 3965.544,
+      "segment_end_sec": 4009.523,
+      "priority_score": 0.9095,
+      "alignment_confidence_max": 0.8393,
+      "reason_tags": [
+        "candidate_source:inventory_with_stage1_prior",
+        "role:action_supported_match",
+        "subtitle_object_overlap",
+        "subtitle_lexical_overlap",
+        "role:high_climax_scene",
+        "role:scene_inventory_loose_match"
+      ],
+      "matched_subtitle_texts": [
+        "An excellent suggestion, Professor Snape. Let's have a volunteer pair. Potter, Weasley, how about you? Weasley's wand causes devastation with the simplest spells.",
+        "Let's have a volunteer pair. Potter, Weasley, how about you? Weasley's wand causes devastation with the simplest spells. We'll be sending Potter to the hospital wing in a matchbox.",
+        "Weasley's wand causes devastation with the simplest spells. We'll be sending Potter to the hospital wing in a matchbox. Might I suggest someone from my own house?"
+      ],
+      "matched_subtitle_indices": [
+        715,
+        716,
+        717,
+        718,
+        719
+      ],
+      "query_terms": [
+        "classroom",
+        "gilderoy",
+        "lockhart's",
+        "mcgonagall's",
+        "morning",
+        "professor",
+        "wand",
+        "quidditch",
+        "stadium",
+        "great",
+        "hall"
+      ]
+    },
+    {
+      "segment_id": "cand014_gilderoy lockhart's wand_seg023",
+      "candidate_index": 14,
+      "object_id": "gilderoy lockhart's wand",
+      "canonical_name": "Gilderoy Lockhart's wand",
+      "candidate_source": "inventory_with_stage1_prior",
+      "possible_chekhov_score": 0.8467,
+      "source_scene_indices": [
+        23
+      ],
+      "source_alignment_indices": [
+        66
+      ],
+      "segment_role": "setup",
+      "segment_start_sec": 1610.815,
+      "segment_end_sec": 1681.653,
+      "priority_score": 0.8249,
+      "alignment_confidence_max": 0.6492,
+      "reason_tags": [
+        "candidate_source:inventory_with_stage1_prior",
+        "role:setup_candidate",
+        "role:action_supported_match",
+        "subtitle_object_overlap",
+        "subtitle_lexical_overlap"
+      ],
+      "matched_subtitle_texts": [
+        "- My wand. Look at my wand. - Be thankful it's not your neck. - What's happening? - I don't know. Come on, go! Fast!"
+      ],
+      "matched_subtitle_indices": [
+        286,
+        287,
+        288
+      ],
+      "query_terms": [
+        "action",
+        "alley",
+        "continuous",
+        "diagon",
+        "gilderoy",
+        "lockhart's",
+        "wand"
+      ]
+    },
+    {
+      "segment_id": "cand014_gilderoy lockhart's wand_seg038",
+      "candidate_index": 14,
+      "object_id": "gilderoy lockhart's wand",
+      "canonical_name": "Gilderoy Lockhart's wand",
+      "candidate_source": "inventory_with_stage1_prior",
+      "possible_chekhov_score": 0.8467,
+      "source_scene_indices": [
+        38,
+        39
+      ],
+      "source_alignment_indices": [
+        69,
+        70
+      ],
+      "segment_role": "reappearance",
+      "segment_start_sec": 2928.466,
+      "segment_end_sec": 2963.018,
+      "priority_score": 0.7756,
+      "alignment_confidence_max": 0.7395,
+      "reason_tags": [
+        "candidate_source:inventory_with_stage1_prior",
+        "role:scene_inventory_loose_match",
+        "role:action_supported_match",
+        "subtitle_object_overlap",
+        "subtitle_lexical_overlap"
+      ],
+      "matched_subtitle_texts": [
+        "That wand needs replacing, Mr. Weasley. - Yes, Miss Granger? - Professor... ...I was wondering if you could tell us about the Chamber of Secrets."
+      ],
+      "matched_subtitle_indices": [
+        531,
+        532,
+        533
+      ],
+      "query_terms": [
+        "broken",
+        "gilderoy",
+        "great",
+        "hall",
+        "lockhart's",
+        "lunch",
+        "wand",
+        "classroom"
+      ]
+    },
+    {
+      "segment_id": "cand014_gilderoy lockhart's wand_seg041",
+      "candidate_index": 14,
+      "object_id": "gilderoy lockhart's wand",
+      "canonical_name": "Gilderoy Lockhart's wand",
+      "candidate_source": "inventory_with_stage1_prior",
+      "possible_chekhov_score": 0.8467,
+      "source_scene_indices": [
+        41
+      ],
+      "source_alignment_indices": [
+        71
+      ],
+      "segment_role": "bridge",
+      "segment_start_sec": 3285.698,
+      "segment_end_sec": 3318.29,
+      "priority_score": 0.7748,
+      "alignment_confidence_max": 0.7372,
+      "reason_tags": [
+        "candidate_source:inventory_with_stage1_prior",
+        "role:action_supported_match",
+        "subtitle_object_overlap",
+        "subtitle_lexical_overlap"
+      ],
+      "matched_subtitle_texts": [
+        "That's been tampered with, that has. I'll stop it. No! Even with a proper wand, it's too risky. You could hit Harry."
+      ],
+      "matched_subtitle_indices": [
+        600,
+        601,
+        602
+      ],
+      "query_terms": [
+        "courtyard",
+        "gilderoy",
+        "hogwarts",
+        "lockhart's",
+        "wand"
+      ]
+    },
+    {
+      "segment_id": "cand017_hand of glory_seg060",
+      "candidate_index": 17,
+      "object_id": "hand of glory",
+      "canonical_name": "Hand of Glory",
+      "candidate_source": "inventory_only",
+      "possible_chekhov_score": 0.7787,
+      "source_scene_indices": [
+        60
+      ],
+      "source_alignment_indices": [
+        86
+      ],
+      "segment_role": "payoff",
+      "segment_start_sec": 4897.351,
+      "segment_end_sec": 4932.696,
+      "priority_score": 0.7538,
+      "alignment_confidence_max": 0.4346,
+      "reason_tags": [
+        "candidate_source:inventory_only",
+        "role:payoff_candidate",
+        "role:gap_anchor_b",
+        "role:scene_inventory_loose_match",
+        "role:action_supported_match",
+        "subtitle_object_overlap",
+        "subtitle_lexical_overlap"
+      ],
+      "matched_subtitle_texts": [
+        "I mean, what are you doing down here? I happen to be a school prefect. You, on the other hand, have no business wandering the corridors at night."
+      ],
+      "matched_subtitle_indices": [
+        850,
+        851,
+        852
+      ],
+      "query_terms": [
+        "corridor",
+        "glory",
+        "hagrid's",
+        "hand"
+      ]
+    },
+    {
+      "segment_id": "cand017_hand of glory_seg021",
+      "candidate_index": 17,
+      "object_id": "hand of glory",
+      "canonical_name": "Hand of Glory",
+      "candidate_source": "inventory_only",
+      "possible_chekhov_score": 0.7787,
+      "source_scene_indices": [
+        21
+      ],
+      "source_alignment_indices": [
+        85
+      ],
+      "segment_role": "setup",
+      "segment_start_sec": 1509.755,
+      "segment_end_sec": 1545.517,
+      "priority_score": 0.7289,
+      "alignment_confidence_max": 0.5378,
+      "reason_tags": [
+        "candidate_source:inventory_only",
+        "role:setup_candidate",
+        "role:gap_anchor_a",
+        "role:scene_inventory_loose_match",
+        "role:action_supported_match",
+        "subtitle_object_overlap",
+        "subtitle_lexical_overlap"
+      ],
+      "matched_subtitle_texts": [
+        "Take my hand! Hold on! I'm trying. Your hand's all sweaty."
+      ],
+      "matched_subtitle_indices": [
+        277,
+        278,
+        279
+      ],
+      "query_terms": [
+        "borgin",
+        "burkes",
+        "fireplace",
+        "glory",
+        "hand",
+        "stone"
+      ]
+    },
+    {
+      "segment_id": "cand013_harry's glasses_seg067",
+      "candidate_index": 13,
+      "object_id": "harry's glasses",
+      "canonical_name": "Harry's glasses",
+      "candidate_source": "inventory_only",
+      "possible_chekhov_score": 0.8477,
+      "source_scene_indices": [
+        67
+      ],
+      "source_alignment_indices": [
+        65
+      ],
+      "segment_role": "payoff",
+      "segment_start_sec": 4919.999,
+      "segment_end_sec": 4953.383,
+      "priority_score": 0.8241,
+      "alignment_confidence_max": 0.5275,
+      "reason_tags": [
+        "candidate_source:inventory_only",
+        "role:payoff_candidate",
+        "role:gap_anchor_b",
+        "role:scene_inventory_loose_match",
+        "role:action_supported_match",
+        "subtitle_object_overlap",
+        "subtitle_lexical_overlap"
+      ],
+      "matched_subtitle_texts": [
+        "Why are you wearing glasses? - Reading. - Reading? I didn't know you could read."
+      ],
+      "matched_subtitle_indices": [
+        856,
+        857,
+        858
+      ],
+      "query_terms": [
+        "bathroom",
+        "girls'",
+        "glasses",
+        "harry's"
+      ]
+    },
+    {
+      "segment_id": "cand005_harry's trunk_seg013",
+      "candidate_index": 5,
+      "object_id": "harry's trunk",
+      "canonical_name": "Harry's trunk",
+      "candidate_source": "inventory_with_stage1_prior",
+      "possible_chekhov_score": 0.9141,
+      "source_scene_indices": [
+        13
+      ],
+      "source_alignment_indices": [
+        32
+      ],
+      "segment_role": "setup",
+      "segment_start_sec": 840.127,
+      "segment_end_sec": 872.761,
+      "priority_score": 0.8095,
+      "alignment_confidence_max": 0.4931,
+      "reason_tags": [
+        "candidate_source:inventory_with_stage1_prior",
+        "role:setup_candidate",
+        "role:gap_anchor_a",
+        "role:action_supported_match",
+        "subtitle_object_overlap",
+        "subtitle_lexical_overlap"
+      ],
+      "matched_subtitle_texts": [
+        "But Harry's never traveled by Floo powder before, Mum. Floo powder? You go first, Ron, so that Harry can see how it's done. Yes."
+      ],
+      "matched_subtitle_indices": [
+        158,
+        159,
+        160
+      ],
+      "query_terms": [
+        "13a",
+        "dursley",
+        "harry's",
+        "house",
+        "trunk"
+      ]
+    },
+    {
+      "segment_id": "cand024_hedwig_seg001",
+      "candidate_index": 24,
+      "object_id": "hedwig",
+      "canonical_name": "Hedwig",
+      "candidate_source": "inventory_with_stage1_prior",
+      "possible_chekhov_score": 0.7175,
+      "source_scene_indices": [
+        1
+      ],
+      "source_alignment_indices": [
+        105
+      ],
+      "segment_role": "setup",
+      "segment_start_sec": 61.307,
+      "segment_end_sec": 95.358,
+      "priority_score": 0.8261,
+      "alignment_confidence_max": 0.8657,
+      "reason_tags": [
+        "candidate_source:inventory_with_stage1_prior",
+        "role:setup_candidate",
+        "role:action_supported_match",
+        "subtitle_object_overlap",
+        "subtitle_lexical_overlap"
+      ],
+      "matched_subtitle_texts": [
+        "I can't let you out, Hedwig. I'm not allowed to use magic outside of school. - Besides, if Uncle Vernon... - Harry Potter!"
+      ],
+      "matched_subtitle_indices": [
+        0,
+        1,
+        2
+      ],
+      "query_terms": [
+        "bedroom",
+        "harry's",
+        "hedwig"
+      ]
+    },
+    {
+      "segment_id": "cand020_library books_seg073",
+      "candidate_index": 20,
+      "object_id": "library books",
+      "canonical_name": "library books",
+      "candidate_source": "inventory_only",
+      "possible_chekhov_score": 0.7443,
+      "source_scene_indices": [
+        73
+      ],
+      "source_alignment_indices": [
+        96
+      ],
+      "segment_role": "payoff",
+      "segment_start_sec": 5752.498,
+      "segment_end_sec": 5791.638,
+      "priority_score": 0.785,
+      "alignment_confidence_max": 0.5828,
+      "reason_tags": [
+        "candidate_source:inventory_only",
+        "role:payoff_candidate",
+        "role:gap_anchor_b",
+        "role:scene_inventory_loose_match",
+        "role:action_supported_match",
+        "subtitle_object_overlap",
+        "subtitle_lexical_overlap"
+      ],
+      "matched_subtitle_texts": [
+        "I warn you. This could be a wee bit of a shock. Hermione! She was found near the library..."
+      ],
+      "matched_subtitle_indices": [
+        1003,
+        1004,
+        1005
+      ],
+      "query_terms": [
+        "books",
+        "hospital",
+        "library",
+        "two",
+        "weeks",
+        "wing"
+      ]
+    },
+    {
+      "segment_id": "cand028_mrs norris_seg003",
+      "candidate_index": 28,
+      "object_id": "mrs norris",
+      "canonical_name": "MRS. NORRIS",
+      "candidate_source": "inventory_with_stage1_prior",
+      "possible_chekhov_score": 0.6905,
+      "source_scene_indices": [
+        3
+      ],
+      "source_alignment_indices": [
+        119
+      ],
+      "segment_role": "setup",
+      "segment_start_sec": 193.481,
+      "segment_end_sec": 227.407,
+      "priority_score": 0.8073,
+      "alignment_confidence_max": 0.8547,
+      "reason_tags": [
+        "candidate_source:inventory_with_stage1_prior",
+        "role:setup_candidate",
+        "role:scene_inventory_loose_match",
+        "role:action_supported_match",
+        "subtitle_object_overlap",
+        "subtitle_lexical_overlap"
+      ],
+      "matched_subtitle_texts": [
+        "...but this isn't a great time for me to have a house-elf in my bedroom. Yes, sir. Dobby understands. It's just that Dobby has come to tell you..."
+      ],
+      "matched_subtitle_indices": [
+        32,
+        33,
+        34
+      ],
+      "query_terms": [
+        "bedroom",
+        "dobby",
+        "harry's",
+        "mrs",
+        "norris"
+      ]
+    },
+    {
+      "segment_id": "cand028_mrs norris_seg004",
+      "candidate_index": 28,
+      "object_id": "mrs norris",
+      "canonical_name": "MRS. NORRIS",
+      "candidate_source": "inventory_with_stage1_prior",
+      "possible_chekhov_score": 0.6905,
+      "source_scene_indices": [
+        4
+      ],
+      "source_alignment_indices": [
+        120
+      ],
+      "segment_role": "setup",
+      "segment_start_sec": 252.164,
+      "segment_end_sec": 287.717,
+      "priority_score": 0.7905,
+      "alignment_confidence_max": 0.8053,
+      "reason_tags": [
+        "candidate_source:inventory_with_stage1_prior",
+        "role:setup_candidate",
+        "role:scene_inventory_loose_match",
+        "role:action_supported_match",
+        "subtitle_object_overlap",
+        "subtitle_lexical_overlap"
+      ],
+      "matched_subtitle_texts": [
+        "Don't mind that. It's just the cat. - Bad Dobby. - Stop! Stop, Dobby. Please, be quiet. Are you all right?"
+      ],
+      "matched_subtitle_indices": [
+        46,
+        47,
+        48
+      ],
+      "query_terms": [
+        "cat",
+        "living",
+        "mrs",
+        "norris"
+      ]
+    },
+    {
+      "segment_id": "cand028_mrs norris_seg034",
+      "candidate_index": 28,
+      "object_id": "mrs norris",
+      "canonical_name": "MRS. NORRIS",
+      "candidate_source": "inventory_with_stage1_prior",
+      "possible_chekhov_score": 0.6905,
+      "source_scene_indices": [
+        34
+      ],
+      "source_alignment_indices": [
+        123
+      ],
+      "segment_role": "bridge",
+      "segment_start_sec": 2653.232,
+      "segment_end_sec": 2689.202,
+      "priority_score": 0.7257,
+      "alignment_confidence_max": 0.8501,
+      "reason_tags": [
+        "candidate_source:inventory_with_stage1_prior",
+        "role:gap_anchor_a",
+        "role:action_supported_match",
+        "subtitle_object_overlap",
+        "subtitle_lexical_overlap"
+      ],
+      "matched_subtitle_texts": [
+        "Oh, no. It's Filch's cat. It's Mrs. Norris."
+      ],
+      "matched_subtitle_indices": [
+        474,
+        475,
+        476
+      ],
+      "query_terms": [
+        "entrance",
+        "hall",
+        "mrs",
+        "norris",
+        "steps",
+        "stone"
+      ]
+    },
+    {
+      "segment_id": "cand028_mrs norris_seg006",
+      "candidate_index": 28,
+      "object_id": "mrs norris",
+      "canonical_name": "MRS. NORRIS",
+      "candidate_source": "inventory_with_stage1_prior",
+      "possible_chekhov_score": 0.6905,
+      "source_scene_indices": [
+        6,
+        8
+      ],
+      "source_alignment_indices": [
+        121,
+        122
+      ],
+      "segment_role": "reappearance",
+      "segment_start_sec": 423.794,
+      "segment_end_sec": 460.682,
+      "priority_score": 0.7166,
+      "alignment_confidence_max": 0.8232,
+      "reason_tags": [
+        "candidate_source:inventory_with_stage1_prior",
+        "role:scene_inventory_loose_match",
+        "role:action_supported_match",
+        "subtitle_object_overlap",
+        "subtitle_lexical_overlap"
+      ],
+      "matched_subtitle_texts": [
+        "Then Dobby must do it, sir, for Harry Potter's own good. It spread as far as the eye could see, all over the floor of this building. One plumber said, \"Look at all that water.\""
+      ],
+      "matched_subtitle_indices": [
+        84,
+        85,
+        86
+      ],
+      "query_terms": [
+        "dobby",
+        "living",
+        "mrs",
+        "norris",
+        "hallway",
+        "kitchen",
+        "stairs"
+      ]
+    },
+    {
+      "segment_id": "cand006_owl_seg115",
+      "candidate_index": 6,
+      "object_id": "owl",
+      "canonical_name": "owl",
+      "candidate_source": "inventory_only",
+      "possible_chekhov_score": 0.914,
+      "source_scene_indices": [
+        115
+      ],
+      "source_alignment_indices": [
+        38
+      ],
+      "segment_role": "payoff",
+      "segment_start_sec": 8923.961,
+      "segment_end_sec": 8977.783,
+      "priority_score": 0.9592,
+      "alignment_confidence_max": 0.8159,
+      "reason_tags": [
+        "candidate_source:inventory_only",
+        "role:payoff_candidate",
+        "role:gap_anchor_b",
+        "role:scene_inventory_loose_match",
+        "role:action_supported_match",
+        "subtitle_object_overlap",
+        "subtitle_lexical_overlap"
+      ],
+      "matched_subtitle_texts": [
+        "The owl that delivered my release papers got all lost and confused. Some ruddy bird called Errol. And I'd just like to say that if it hadn't been for you, Harry and Ron..."
+      ],
+      "matched_subtitle_indices": [
+        1500,
+        1501,
+        1502
+      ],
+      "query_terms": [
+        "great",
+        "hall",
+        "owl"
+      ]
+    },
+    {
+      "segment_id": "cand030_polyjuice potion_seg064",
+      "candidate_index": 30,
+      "object_id": "polyjuice potion",
+      "canonical_name": "Polyjuice Potion",
+      "candidate_source": "inventory_only",
+      "possible_chekhov_score": 0.6336,
+      "source_scene_indices": [
+        64
+      ],
+      "source_alignment_indices": [
+        130
+      ],
+      "segment_role": "payoff",
+      "segment_start_sec": 5106.769,
+      "segment_end_sec": 5139.528,
+      "priority_score": 0.787,
+      "alignment_confidence_max": 0.7711,
+      "reason_tags": [
+        "candidate_source:inventory_only",
+        "role:payoff_candidate",
+        "role:gap_anchor_b",
+        "role:scene_inventory_loose_match",
+        "role:action_supported_match",
+        "subtitle_object_overlap",
+        "subtitle_lexical_overlap"
+      ],
+      "matched_subtitle_texts": [
+        "Are you okay? Do you remember me telling you... ...that the Polyjuice Potion was only for human transformations?"
+      ],
+      "matched_subtitle_indices": [
+        901,
+        902,
+        903
+      ],
+      "query_terms": [
+        "castle",
+        "hogwarts",
+        "polyjuice",
+        "potion"
+      ]
+    },
+    {
+      "segment_id": "cand030_polyjuice potion_seg050",
+      "candidate_index": 30,
+      "object_id": "polyjuice potion",
+      "canonical_name": "Polyjuice Potion",
+      "candidate_source": "inventory_only",
+      "possible_chekhov_score": 0.6336,
+      "source_scene_indices": [
+        50
+      ],
+      "source_alignment_indices": [
+        129
+      ],
+      "segment_role": "setup",
+      "segment_start_sec": 3798.252,
+      "segment_end_sec": 3833.68,
+      "priority_score": 0.7483,
+      "alignment_confidence_max": 0.8337,
+      "reason_tags": [
+        "candidate_source:inventory_only",
+        "role:setup_candidate",
+        "role:gap_anchor_a",
+        "role:scene_inventory_loose_match",
+        "role:action_supported_match",
+        "subtitle_object_overlap",
+        "subtitle_lexical_overlap"
+      ],
+      "matched_subtitle_texts": [
+        "We'll have to wait for the Polyjuice Potion to know for sure. Enlighten me. Why are we brewing this potion in broad daylight... ...in the middle of the girls' lavatory? Don't you think we'll get caught?"
+      ],
+      "matched_subtitle_indices": [
+        680,
+        681,
+        682
+      ],
+      "query_terms": [
+        "library",
+        "polyjuice",
+        "potion"
+      ]
+    },
+    {
+      "segment_id": "cand021_slytherin robe_seg067",
+      "candidate_index": 21,
+      "object_id": "slytherin robe",
+      "canonical_name": "Slytherin robe",
+      "candidate_source": "inventory_only",
+      "possible_chekhov_score": 0.7419,
+      "source_scene_indices": [
+        67
+      ],
+      "source_alignment_indices": [
+        98
+      ],
+      "segment_role": "payoff",
+      "segment_start_sec": 5011.966,
+      "segment_end_sec": 5048.937,
+      "priority_score": 0.74,
+      "alignment_confidence_max": 0.4546,
+      "reason_tags": [
+        "candidate_source:inventory_only",
+        "role:payoff_candidate",
+        "role:gap_anchor_b",
+        "role:scene_inventory_loose_match",
+        "role:action_supported_match",
+        "subtitle_object_overlap",
+        "subtitle_lexical_overlap"
+      ],
+      "matched_subtitle_texts": [
+        "And people actually think that he's the Heir of Slytherin? But then you must have some idea who's behind it all. You know I don't, Goyle. I told you yesterday."
+      ],
+      "matched_subtitle_indices": [
+        877,
+        878,
+        879
+      ],
+      "query_terms": [
+        "bathroom",
+        "girls'",
+        "robe",
+        "slytherin"
+      ]
+    },
+    {
+      "segment_id": "cand004_sorting hat_seg108",
+      "candidate_index": 4,
+      "object_id": "sorting hat",
+      "canonical_name": "Sorting Hat",
+      "candidate_source": "inventory_only",
+      "possible_chekhov_score": 0.9173,
+      "source_scene_indices": [
+        108,
+        110
+      ],
+      "source_alignment_indices": [
+        30,
+        31
+      ],
+      "segment_role": "payoff",
+      "segment_start_sec": 8420.958,
+      "segment_end_sec": 8455.677,
+      "priority_score": 1.0,
+      "alignment_confidence_max": 0.8968,
+      "reason_tags": [
+        "candidate_source:inventory_only",
+        "role:payoff_candidate",
+        "role:gap_anchor_b",
+        "role:high_climax_scene",
+        "role:scene_inventory_loose_match",
+        "role:action_supported_match",
+        "subtitle_object_overlap",
+        "subtitle_lexical_overlap"
+      ],
+      "matched_subtitle_texts": [
+        "Why, then, did the Sorting Hat place you in Gryffindor? - Because I asked it to. - Exactly, Harry. Exactly. Which makes you different from Voldemort."
+      ],
+      "matched_subtitle_indices": [
+        1413,
+        1414,
+        1415
+      ],
+      "query_terms": [
+        "chamber",
+        "hat",
+        "secrets",
+        "sorting",
+        "133b"
+      ]
+    },
+    {
+      "segment_id": "cand036_stack of letters_seg007",
+      "candidate_index": 36,
+      "object_id": "stack of letters",
+      "canonical_name": "stack of letters",
+      "candidate_source": "inventory_only",
+      "possible_chekhov_score": 0.5811,
+      "source_scene_indices": [
+        7
+      ],
+      "source_alignment_indices": [
+        141
+      ],
+      "segment_role": "setup",
+      "segment_start_sec": 808.262,
+      "segment_end_sec": 844.232,
+      "priority_score": 0.5807,
+      "alignment_confidence_max": 0.4274,
+      "reason_tags": [
+        "candidate_source:inventory_only",
+        "role:setup_candidate",
+        "role:gap_anchor_a",
+        "role:scene_inventory_loose_match",
+        "role:action_supported_match",
+        "subtitle_object_overlap",
+        "subtitle_lexical_overlap"
+      ],
+      "matched_subtitle_texts": [
+        "Fetch it, will you, Percy, please? - Errol. - He's always doing that. Look, it's our Hogwarts letters. They've sent us Harry's as well."
+      ],
+      "matched_subtitle_indices": [
+        149,
+        150,
+        151
+      ],
+      "query_terms": [
+        "bedroom",
+        "harry's",
+        "letters",
+        "stack"
+      ]
+    },
+    {
+      "segment_id": "cand002_tiny snake_seg056",
+      "candidate_index": 2,
+      "object_id": "tiny snake",
+      "canonical_name": "tiny snake",
+      "candidate_source": "inventory_with_stage1_prior",
+      "possible_chekhov_score": 0.9536,
+      "source_scene_indices": [
+        56
+      ],
+      "source_alignment_indices": [
+        21
+      ],
+      "segment_role": "setup",
+      "segment_start_sec": 4192.605,
+      "segment_end_sec": 4225.781,
+      "priority_score": 0.9918,
+      "alignment_confidence_max": 0.67,
+      "reason_tags": [
+        "candidate_source:inventory_with_stage1_prior",
+        "role:setup_candidate",
+        "role:gap_anchor_a",
+        "role:high_climax_scene",
+        "role:action_supported_match",
+        "subtitle_object_overlap",
+        "subtitle_lexical_overlap"
+      ],
+      "matched_subtitle_texts": [
+        "I don't know, but it sounded like you were egging the snake on or something. Harry, listen to me. There's a reason the symbol of Slytherin house is a serpent."
+      ],
+      "matched_subtitle_indices": [
+        747,
+        748,
+        749
+      ],
+      "query_terms": [
+        "great",
+        "hall",
+        "snake",
+        "tiny"
+      ]
+    },
+    {
+      "segment_id": "cand012_tom riddle's diary_seg110",
+      "candidate_index": 12,
+      "object_id": "tom riddle's diary",
+      "canonical_name": "Tom Riddle's diary",
+      "candidate_source": "inventory_with_stage1_prior",
+      "possible_chekhov_score": 0.8488,
+      "source_scene_indices": [
+        110,
+        113,
+        114
+      ],
+      "source_alignment_indices": [
+        61,
+        62,
+        63
+      ],
+      "segment_role": "payoff",
+      "segment_start_sec": 8659.864,
+      "segment_end_sec": 8696.626,
+      "priority_score": 0.9645,
+      "alignment_confidence_max": 0.5859,
+      "reason_tags": [
+        "candidate_source:inventory_with_stage1_prior",
+        "role:payoff_candidate",
+        "role:high_climax_scene",
+        "role:action_supported_match",
+        "role:scene_inventory_loose_match",
+        "subtitle_object_overlap",
+        "subtitle_lexical_overlap",
+        "role:gap_anchor_b"
+      ],
+      "matched_subtitle_texts": [
+        "Mine? I don't know what you're talking about. I think you do, sir. I think you slipped the diary into Ginny Weasley's cauldron...",
+        "I think you slipped the diary into Ginny Weasley's cauldron... ...that day at Diagon Alley. You do, do you?"
+      ],
+      "matched_subtitle_indices": [
+        1459,
+        1460,
+        1461,
+        1462,
+        1463
+      ],
+      "query_terms": [
+        "133b",
+        "chamber",
+        "diary",
+        "riddle's",
+        "secrets",
+        "tom",
+        "charred",
+        "dumbledore's",
+        "office",
+        "135a"
+      ]
+    },
+    {
+      "segment_id": "cand012_tom riddle's diary_seg108",
+      "candidate_index": 12,
+      "object_id": "tom riddle's diary",
+      "canonical_name": "Tom Riddle's diary",
+      "candidate_source": "inventory_with_stage1_prior",
+      "possible_chekhov_score": 0.8488,
+      "source_scene_indices": [
+        108
+      ],
+      "source_alignment_indices": [
+        60
+      ],
+      "segment_role": "payoff",
+      "segment_start_sec": 8360.69,
+      "segment_end_sec": 8398.036,
+      "priority_score": 0.9486,
+      "alignment_confidence_max": 0.5391,
+      "reason_tags": [
+        "candidate_source:inventory_with_stage1_prior",
+        "role:payoff_candidate",
+        "role:gap_anchor_b",
+        "role:high_climax_scene",
+        "role:action_supported_match",
+        "role:scene_inventory_loose_match",
+        "subtitle_object_overlap",
+        "subtitle_lexical_overlap"
+      ],
+      "matched_subtitle_texts": [
+        "Certain similarities between Tom Riddle and me. I see. Well, you can speak Parseltongue, Harry. Why?"
+      ],
+      "matched_subtitle_indices": [
+        1399,
+        1400,
+        1401
+      ],
+      "query_terms": [
+        "chamber",
+        "diary",
+        "riddle's",
+        "secrets",
+        "tom"
+      ]
+    },
+    {
+      "segment_id": "cand012_tom riddle's diary_seg076",
+      "candidate_index": 12,
+      "object_id": "tom riddle's diary",
+      "canonical_name": "Tom Riddle's diary",
+      "candidate_source": "inventory_with_stage1_prior",
+      "possible_chekhov_score": 0.8488,
+      "source_scene_indices": [
+        76,
+        77,
+        78
+      ],
+      "source_alignment_indices": [
+        56,
+        57,
+        58
+      ],
+      "segment_role": "setup",
+      "segment_start_sec": 5716.212,
+      "segment_end_sec": 5748.678,
+      "priority_score": 0.8525,
+      "alignment_confidence_max": 0.727,
+      "reason_tags": [
+        "candidate_source:inventory_with_stage1_prior",
+        "role:setup_candidate",
+        "role:scene_inventory_loose_match",
+        "role:action_supported_match",
+        "subtitle_object_overlap",
+        "subtitle_lexical_overlap",
+        "role:gap_anchor_a"
+      ],
+      "matched_subtitle_texts": [
+        "Tom Riddle's diary is gone. All right, listen up. We play our game, Hufflepuff doesn't stand a chance."
+      ],
+      "matched_subtitle_indices": [
+        992,
+        993,
+        994
+      ],
+      "query_terms": [
+        "corridor",
+        "diary",
+        "riddle's",
+        "tom",
+        "hospital",
+        "that",
+        "wing",
+        "common",
+        "dormitory",
+        "gryffindor"
+      ]
+    }
+  ]
+}
