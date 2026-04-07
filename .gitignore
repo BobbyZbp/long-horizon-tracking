@@ -1,32 +1,32 @@
+# local environments
 venv/
+.venv/
+.sam3-venv/
+
+# python caches
 __pycache__/
-*.pyc
-data/
-*.ipynb_checkpoints
-.DS_Store
-.env
-
-# big raw media (don't commit)
-data/raw/*.mp4
-data/raw/*.mkv
-data/raw/*.avi
-
-# extracted frames can be huge
-data/frames/
-
-# caches
-__pycache__/
-*.pyc
+*.py[cod]
 .ipynb_checkpoints/
-data/llm_cache/
+.pytest_cache/
 
-# outputs
-data/processed/
-data/events/*.partial.json
+# local environment files / os clutter
+.env
+.DS_Store
 
-# packaging artifacts
-src/*.egg-info/
+# build / packaging artifacts
 *.egg-info/
+build/
+dist/
 
-# random junk files
+# local SAM3 setup and local-only notebook variants
+sam3/
+sam3_video_segmentation_local.ipynb
+sam3_video_segmentation_local_restored.ipynb
+scripts/make_sam3_local_notebook.py
+
+# local data, caches, and generated outputs
+# Data is copied locally or onto the cluster outside Git.
+data/
+
+# random local junk files
 0

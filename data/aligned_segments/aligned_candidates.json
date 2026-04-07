@@ -1,0 +1,4049 @@
+{
+  "meta": {
+    "alignment_method": "coarse_order_plus_subtitle_overlap",
+    "scene_candidates_considered": 40,
+    "subtitle_segments": 1507,
+    "subtitle_windows": 1507,
+    "alignments_returned": 149,
+    "search_radius_sec": 420.0,
+    "default_window_sec": 75.0,
+    "neighborhood": 1,
+    "movie_duration_sec": 8989.765,
+    "candidates_source": "data\\events\\chekhov_candidates.json",
+    "scene_inventory_source": "data\\events\\scene_inventory.json",
+    "subtitles_source": "data\\raw\\hp2_subtitles.srt"
+  },
+  "alignments": [
+    {
+      "candidate_index": 0,
+      "object_id": "flying ford anglia",
+      "canonical_name": "Flying Ford Anglia",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 13,
+      "heading": "EXT. DURSLEY HOUSE - NIGHT 13A",
+      "aligned_start_sec": 978.734,
+      "aligned_end_sec": 1053.734,
+      "expected_time_sec": 1016.234,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "13a",
+        "anglia",
+        "dursley",
+        "flying",
+        "ford",
+        "house"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 0,
+      "object_id": "flying ford anglia",
+      "canonical_name": "Flying Ford Anglia",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 14,
+      "heading": "EXT. DURSLEY HOUSE - NIGHT 13D",
+      "aligned_start_sec": 1416.191,
+      "aligned_end_sec": 1435.169,
+      "expected_time_sec": 1094.406,
+      "confidence": 0.2403,
+      "matched_subtitle_indices": [
+        263,
+        264,
+        265
+      ],
+      "matched_subtitle_text": "The car. Ron, I should tell you... ...most Muggles aren't accustomed to seeing a flying car.",
+      "query_terms": [
+        "13d",
+        "anglia",
+        "dursley",
+        "flying",
+        "ford",
+        "house"
+      ],
+      "component_scores": {
+        "order_score": 0.2007,
+        "lexical_overlap": 0.1667,
+        "object_overlap": 0.3333
+      }
+    },
+    {
+      "candidate_index": 0,
+      "object_id": "flying ford anglia",
+      "canonical_name": "Flying Ford Anglia",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 16,
+      "heading": "INT/EXT. HARRY'S BEDROOM/THE CAR - MOMENTS LATER",
+      "aligned_start_sec": 1416.191,
+      "aligned_end_sec": 1435.169,
+      "expected_time_sec": 1250.75,
+      "confidence": 0.4411,
+      "matched_subtitle_indices": [
+        263,
+        264,
+        265
+      ],
+      "matched_subtitle_text": "The car. Ron, I should tell you... ...most Muggles aren't accustomed to seeing a flying car.",
+      "query_terms": [
+        "anglia",
+        "bedroom",
+        "car",
+        "flying",
+        "ford",
+        "harry's"
+      ],
+      "component_scores": {
+        "order_score": 0.5729,
+        "lexical_overlap": 0.3333,
+        "object_overlap": 0.3333
+      }
+    },
+    {
+      "candidate_index": 0,
+      "object_id": "flying ford anglia",
+      "canonical_name": "Flying Ford Anglia",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 17,
+      "heading": "EXT. THE BURROW - EARLY MORNING",
+      "aligned_start_sec": 1416.191,
+      "aligned_end_sec": 1435.169,
+      "expected_time_sec": 1328.922,
+      "confidence": 0.4916,
+      "matched_subtitle_indices": [
+        263,
+        264,
+        265
+      ],
+      "matched_subtitle_text": "The car. Ron, I should tell you... ...most Muggles aren't accustomed to seeing a flying car.",
+      "query_terms": [
+        "anglia",
+        "burrow",
+        "early",
+        "flying",
+        "ford",
+        "morning"
+      ],
+      "component_scores": {
+        "order_score": 0.759,
+        "lexical_overlap": 0.1667,
+        "object_overlap": 0.3333
+      }
+    },
+    {
+      "candidate_index": 0,
+      "object_id": "flying ford anglia",
+      "canonical_name": "Flying Ford Anglia",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 26,
+      "heading": "EXT. KING'S CROSS - MORNING 30B",
+      "aligned_start_sec": 1994.969,
+      "aligned_end_sec": 2069.969,
+      "expected_time_sec": 2032.469,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "30b",
+        "anglia",
+        "cross",
+        "flying",
+        "ford",
+        "king's",
+        "morning"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 0,
+      "object_id": "flying ford anglia",
+      "canonical_name": "Flying Ford Anglia",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 30,
+      "heading": "EXT. PARKING LOT (KING'S CROSS) - MOMENTS LATER",
+      "aligned_start_sec": 2307.656,
+      "aligned_end_sec": 2382.656,
+      "expected_time_sec": 2345.156,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "anglia",
+        "cross",
+        "flying",
+        "ford",
+        "king's",
+        "lot",
+        "parking"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 0,
+      "object_id": "flying ford anglia",
+      "canonical_name": "Flying Ford Anglia",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 31,
+      "heading": "INT. ANGLIA - DAY 33A",
+      "aligned_start_sec": 2385.828,
+      "aligned_end_sec": 2460.828,
+      "expected_time_sec": 2423.328,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "33a",
+        "anglia",
+        "flying",
+        "ford"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 0,
+      "object_id": "flying ford anglia",
+      "canonical_name": "Flying Ford Anglia",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 32,
+      "heading": "EXT. FLYING CAR (SCOTLAND) - DAY (LATER)",
+      "aligned_start_sec": 2464.0,
+      "aligned_end_sec": 2539.0,
+      "expected_time_sec": 2501.5,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "anglia",
+        "car",
+        "flying",
+        "ford",
+        "scotland"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 0,
+      "object_id": "flying ford anglia",
+      "canonical_name": "Flying Ford Anglia",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 33,
+      "heading": "EXT. HOGWARTS CASTLE - FLYING CAR - NIGHT",
+      "aligned_start_sec": 2542.172,
+      "aligned_end_sec": 2617.172,
+      "expected_time_sec": 2579.672,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "anglia",
+        "car",
+        "castle",
+        "flying",
+        "ford",
+        "hogwarts"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 0,
+      "object_id": "flying ford anglia",
+      "canonical_name": "Flying Ford Anglia",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 35,
+      "heading": "INT. SNAPE'S OFFICE - MOMENTS LATER",
+      "aligned_start_sec": 2698.515,
+      "aligned_end_sec": 2773.515,
+      "expected_time_sec": 2736.015,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "anglia",
+        "flying",
+        "ford",
+        "office",
+        "snape's"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 0,
+      "object_id": "flying ford anglia",
+      "canonical_name": "Flying Ford Anglia",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 95,
+      "heading": "EXT. DARK FOREST - NIGHT",
+      "aligned_start_sec": 7388.828,
+      "aligned_end_sec": 7463.828,
+      "expected_time_sec": 7426.328,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "anglia",
+        "dark",
+        "flying",
+        "ford",
+        "forest"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 0,
+      "object_id": "flying ford anglia",
+      "canonical_name": "Flying Ford Anglia",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 96,
+      "heading": "EXT. SPIDERS' HOLLOW - NIGHT 121A",
+      "aligned_start_sec": 7466.999,
+      "aligned_end_sec": 7541.999,
+      "expected_time_sec": 7504.499,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "121a",
+        "anglia",
+        "flying",
+        "ford",
+        "hollow",
+        "spiders'"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 0,
+      "object_id": "flying ford anglia",
+      "canonical_name": "Flying Ford Anglia",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 97,
+      "heading": "EXT. ANOTHER PART OF THE FOREST - NIGHT 121B",
+      "aligned_start_sec": 7545.171,
+      "aligned_end_sec": 7620.171,
+      "expected_time_sec": 7582.671,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "121b",
+        "anglia",
+        "another",
+        "flying",
+        "ford",
+        "forest",
+        "part"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 0,
+      "object_id": "flying ford anglia",
+      "canonical_name": "Flying Ford Anglia",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 98,
+      "heading": "EXT. ANOTHER PART OF THE FOREST - BLACK PARK - NIGHT 121C",
+      "aligned_start_sec": 7623.343,
+      "aligned_end_sec": 7698.343,
+      "expected_time_sec": 7660.843,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "121c",
+        "anglia",
+        "another",
+        "black",
+        "flying",
+        "ford",
+        "forest",
+        "park",
+        "part"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 0,
+      "object_id": "flying ford anglia",
+      "canonical_name": "Flying Ford Anglia",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 99,
+      "heading": "EXT. HAGRID'S HUT - NIGHT 121D",
+      "aligned_start_sec": 7701.515,
+      "aligned_end_sec": 7776.515,
+      "expected_time_sec": 7739.015,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "121d",
+        "anglia",
+        "flying",
+        "ford",
+        "hagrid's",
+        "hut"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 1,
+      "object_id": "bathroom door",
+      "canonical_name": "bathroom door",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 11,
+      "heading": "EXT/INT. HARRY'S BEDROOM - NEXT DAY",
+      "aligned_start_sec": 822.391,
+      "aligned_end_sec": 897.391,
+      "expected_time_sec": 859.891,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "bathroom",
+        "bedroom",
+        "door",
+        "harry's",
+        "next"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 1,
+      "object_id": "bathroom door",
+      "canonical_name": "bathroom door",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 54,
+      "heading": "EXT. GIRLS BATHROOM 68A",
+      "aligned_start_sec": 4183.781,
+      "aligned_end_sec": 4258.781,
+      "expected_time_sec": 4221.281,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "68a",
+        "bathroom",
+        "door",
+        "girls"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 1,
+      "object_id": "bathroom door",
+      "canonical_name": "bathroom door",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 71,
+      "heading": "INT. SECOND FLOOR CORRIDOR - NIGHT (MOMENTS LATER)",
+      "aligned_start_sec": 5512.703,
+      "aligned_end_sec": 5587.703,
+      "expected_time_sec": 5550.203,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "bathroom",
+        "corridor",
+        "door",
+        "floor",
+        "second"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 1,
+      "object_id": "bathroom door",
+      "canonical_name": "bathroom door",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 72,
+      "heading": "INT. GIRLS BATHROOM - NIGHT",
+      "aligned_start_sec": 5590.875,
+      "aligned_end_sec": 5665.875,
+      "expected_time_sec": 5628.375,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "bathroom",
+        "door",
+        "girls",
+        "stall"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 1,
+      "object_id": "bathroom door",
+      "canonical_name": "bathroom door",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 80,
+      "heading": "INT. CORRIDOR - DUNGEONS - NIGHT (MOMENTS LATER)",
+      "aligned_start_sec": 6216.25,
+      "aligned_end_sec": 6291.25,
+      "expected_time_sec": 6253.75,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "bathroom",
+        "corridor",
+        "door",
+        "dungeons"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 1,
+      "object_id": "bathroom door",
+      "canonical_name": "bathroom door",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 93,
+      "heading": "INT. HAGRID'S HUT - NIGHT",
+      "aligned_start_sec": 7050.868,
+      "aligned_end_sec": 7067.843,
+      "expected_time_sec": 7269.984,
+      "confidence": 0.6258,
+      "matched_subtitle_indices": [
+        1241,
+        1242,
+        1243
+      ],
+      "matched_subtitle_text": "And I realized it was a boy, so I unlocked the door to tell him to go away and... ...I died. - Just like that? How? I just remember seeing a pair of great, big, yellow eyes...",
+      "query_terms": [
+        "bathroom",
+        "door",
+        "hagrid's",
+        "hut"
+      ],
+      "component_scores": {
+        "order_score": 0.5019,
+        "lexical_overlap": 0.25,
+        "object_overlap": 1.0
+      }
+    },
+    {
+      "candidate_index": 2,
+      "object_id": "tiny snake",
+      "canonical_name": "tiny snake",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 56,
+      "heading": "INT. GREAT HALL - DAY",
+      "aligned_start_sec": 4204.605,
+      "aligned_end_sec": 4213.781,
+      "expected_time_sec": 4377.625,
+      "confidence": 0.67,
+      "matched_subtitle_indices": [
+        747,
+        748,
+        749
+      ],
+      "matched_subtitle_text": "I don't know, but it sounded like you were egging the snake on or something. Harry, listen to me. There's a reason the symbol of Slytherin house is a serpent.",
+      "query_terms": [
+        "great",
+        "hall",
+        "snake",
+        "tiny"
+      ],
+      "component_scores": {
+        "order_score": 0.6,
+        "lexical_overlap": 0.25,
+        "object_overlap": 1.0
+      }
+    },
+    {
+      "candidate_index": 2,
+      "object_id": "tiny snake",
+      "canonical_name": "tiny snake",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 105,
+      "heading": "INT. GIRLS' BATHROOM - NIGHT",
+      "aligned_start_sec": 8170.546,
+      "aligned_end_sec": 8245.546,
+      "expected_time_sec": 8208.046,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "bathroom",
+        "girls'",
+        "snake",
+        "tiny"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 2,
+      "object_id": "tiny snake",
+      "canonical_name": "tiny snake",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 109,
+      "heading": "INT. CHAMBER OF SECRETS - SIDE TUNNEL - NIGHT 133A",
+      "aligned_start_sec": 8483.234,
+      "aligned_end_sec": 8558.234,
+      "expected_time_sec": 8520.734,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "133a",
+        "chamber",
+        "secrets",
+        "side",
+        "snake",
+        "tiny",
+        "tunnel"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 3,
+      "object_id": "fawkes",
+      "canonical_name": "Fawkes",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 63,
+      "heading": "INT. DUMBLEDORE'S OFFICE - NIGHT",
+      "aligned_start_sec": 4539.231,
+      "aligned_end_sec": 4548.282,
+      "expected_time_sec": 4924.828,
+      "confidence": 0.459,
+      "matched_subtitle_indices": [
+        786,
+        787,
+        788
+      ],
+      "matched_subtitle_text": "Fawkes is a phoenix, Harry. They burst into flame when it is time for them to die... ...and then they are...",
+      "query_terms": [
+        "dumbledore's",
+        "fawkes",
+        "office"
+      ],
+      "component_scores": {
+        "order_score": 0.094,
+        "lexical_overlap": 0.3333,
+        "object_overlap": 1.0
+      }
+    },
+    {
+      "candidate_index": 3,
+      "object_id": "fawkes",
+      "canonical_name": "Fawkes",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 108,
+      "heading": "INT. CHAMBER OF SECRETS - NIGHT",
+      "aligned_start_sec": 8340.491,
+      "aligned_end_sec": 8353.379,
+      "expected_time_sec": 8442.562,
+      "confidence": 0.8311,
+      "matched_subtitle_indices": [
+        1391,
+        1392,
+        1393
+      ],
+      "matched_subtitle_text": "You must have shown me real loyalty down in the Chamber. Nothing but that could have called Fawkes to you. And...",
+      "query_terms": [
+        "chamber",
+        "fawkes",
+        "secrets"
+      ],
+      "component_scores": {
+        "order_score": 0.7728,
+        "lexical_overlap": 0.6667,
+        "object_overlap": 1.0
+      }
+    },
+    {
+      "candidate_index": 3,
+      "object_id": "fawkes",
+      "canonical_name": "Fawkes",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 111,
+      "heading": "INT. TUNNEL - NIGHT (LATER)",
+      "aligned_start_sec": 8344.87,
+      "aligned_end_sec": 8355.339,
+      "expected_time_sec": 8677.078,
+      "confidence": 0.5524,
+      "matched_subtitle_indices": [
+        1392,
+        1393,
+        1394
+      ],
+      "matched_subtitle_text": "Nothing but that could have called Fawkes to you. And... ...second...",
+      "query_terms": [
+        "fawkes",
+        "tunnel"
+      ],
+      "component_scores": {
+        "order_score": 0.2275,
+        "lexical_overlap": 0.5,
+        "object_overlap": 1.0
+      }
+    },
+    {
+      "candidate_index": 3,
+      "object_id": "fawkes",
+      "canonical_name": "Fawkes",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 112,
+      "heading": "INT. ROCKY TUNNEL - NIGHT (LATER) 134A",
+      "aligned_start_sec": 8344.87,
+      "aligned_end_sec": 8355.339,
+      "expected_time_sec": 8755.249,
+      "confidence": 0.4186,
+      "matched_subtitle_indices": [
+        1392,
+        1393,
+        1394
+      ],
+      "matched_subtitle_text": "Nothing but that could have called Fawkes to you. And... ...second...",
+      "query_terms": [
+        "134a",
+        "fawkes",
+        "rocky",
+        "tunnel"
+      ],
+      "component_scores": {
+        "order_score": 0.0413,
+        "lexical_overlap": 0.25,
+        "object_overlap": 1.0
+      }
+    },
+    {
+      "candidate_index": 3,
+      "object_id": "fawkes",
+      "canonical_name": "Fawkes",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 113,
+      "heading": "INT. DUMBLEDORE'S OFFICE - DAY",
+      "aligned_start_sec": 8795.921,
+      "aligned_end_sec": 8870.921,
+      "expected_time_sec": 8833.421,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "dumbledore's",
+        "fawkes",
+        "office"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 4,
+      "object_id": "sorting hat",
+      "canonical_name": "Sorting Hat",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 63,
+      "heading": "INT. DUMBLEDORE'S OFFICE - NIGHT",
+      "aligned_start_sec": 4887.328,
+      "aligned_end_sec": 4962.328,
+      "expected_time_sec": 4924.828,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "dumbledore's",
+        "hat",
+        "office",
+        "sorting"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 4,
+      "object_id": "sorting hat",
+      "canonical_name": "Sorting Hat",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 108,
+      "heading": "INT. CHAMBER OF SECRETS - NIGHT",
+      "aligned_start_sec": 8432.958,
+      "aligned_end_sec": 8443.677,
+      "expected_time_sec": 8442.562,
+      "confidence": 0.8968,
+      "matched_subtitle_indices": [
+        1413,
+        1414,
+        1415
+      ],
+      "matched_subtitle_text": "Why, then, did the Sorting Hat place you in Gryffindor? - Because I asked it to. - Exactly, Harry. Exactly. Which makes you different from Voldemort.",
+      "query_terms": [
+        "chamber",
+        "hat",
+        "secrets",
+        "sorting"
+      ],
+      "component_scores": {
+        "order_score": 0.993,
+        "lexical_overlap": 0.5,
+        "object_overlap": 1.0
+      }
+    },
+    {
+      "candidate_index": 4,
+      "object_id": "sorting hat",
+      "canonical_name": "Sorting Hat",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 110,
+      "heading": "INT. CHAMBER OF SECRETS - NIGHT 133B",
+      "aligned_start_sec": 8432.958,
+      "aligned_end_sec": 8443.677,
+      "expected_time_sec": 8598.906,
+      "confidence": 0.7093,
+      "matched_subtitle_indices": [
+        1413,
+        1414,
+        1415
+      ],
+      "matched_subtitle_text": "Why, then, did the Sorting Hat place you in Gryffindor? - Because I asked it to. - Exactly, Harry. Exactly. Which makes you different from Voldemort.",
+      "query_terms": [
+        "133b",
+        "chamber",
+        "hat",
+        "secrets",
+        "sorting"
+      ],
+      "component_scores": {
+        "order_score": 0.6207,
+        "lexical_overlap": 0.4,
+        "object_overlap": 1.0
+      }
+    },
+    {
+      "candidate_index": 5,
+      "object_id": "harry's trunk",
+      "canonical_name": "Harry's trunk",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 13,
+      "heading": "EXT. DURSLEY HOUSE - NIGHT 13A",
+      "aligned_start_sec": 852.127,
+      "aligned_end_sec": 860.761,
+      "expected_time_sec": 1016.234,
+      "confidence": 0.4931,
+      "matched_subtitle_indices": [
+        158,
+        159,
+        160
+      ],
+      "matched_subtitle_text": "But Harry's never traveled by Floo powder before, Mum. Floo powder? You go first, Ron, so that Harry can see how it's done. Yes.",
+      "query_terms": [
+        "13a",
+        "dursley",
+        "harry's",
+        "house",
+        "trunk"
+      ],
+      "component_scores": {
+        "order_score": 0.618,
+        "lexical_overlap": 0.2,
+        "object_overlap": 0.5
+      }
+    },
+    {
+      "candidate_index": 5,
+      "object_id": "harry's trunk",
+      "canonical_name": "Harry's trunk",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 34,
+      "heading": "EXT. STONE STEPS/ENTRANCE HALL - NIGHT",
+      "aligned_start_sec": 2620.344,
+      "aligned_end_sec": 2695.344,
+      "expected_time_sec": 2657.844,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "entrance",
+        "hall",
+        "harry's",
+        "steps",
+        "stone",
+        "trunk",
+        "trunks"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 5,
+      "object_id": "harry's trunk",
+      "canonical_name": "Harry's trunk",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 64,
+      "heading": "EXT. HOGWARTS CASTLE - DAY",
+      "aligned_start_sec": 4965.5,
+      "aligned_end_sec": 5040.5,
+      "expected_time_sec": 5003.0,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "castle",
+        "harry's",
+        "hogwarts",
+        "trunk"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 5,
+      "object_id": "harry's trunk",
+      "canonical_name": "Harry's trunk",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 84,
+      "heading": "INT. GRYFFINDOR TOWER DORMITORY - DAY",
+      "aligned_start_sec": 6528.937,
+      "aligned_end_sec": 6603.937,
+      "expected_time_sec": 6566.437,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "dormitory",
+        "gryffindor",
+        "harry's",
+        "tower",
+        "trunk"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 5,
+      "object_id": "harry's trunk",
+      "canonical_name": "Harry's trunk",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 104,
+      "heading": "INT. GILDEROY LOCKHART'S OFFICE - NIGHT",
+      "aligned_start_sec": 8092.374,
+      "aligned_end_sec": 8167.374,
+      "expected_time_sec": 8129.874,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "gilderoy",
+        "harry's",
+        "large",
+        "lockhart's",
+        "office",
+        "trunk",
+        "trunks"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 6,
+      "object_id": "owl",
+      "canonical_name": "owl",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 9,
+      "heading": "EXT. DURSLEY HOUSE - DAY 11A",
+      "aligned_start_sec": 666.047,
+      "aligned_end_sec": 741.047,
+      "expected_time_sec": 703.547,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "11a",
+        "dursley",
+        "house",
+        "owl"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 6,
+      "object_id": "owl",
+      "canonical_name": "owl",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 115,
+      "heading": "INT. GREAT HALL - NIGHT",
+      "aligned_start_sec": 8935.961,
+      "aligned_end_sec": 8965.783,
+      "expected_time_sec": 8989.765,
+      "confidence": 0.8159,
+      "matched_subtitle_indices": [
+        1500,
+        1501,
+        1502
+      ],
+      "matched_subtitle_text": "The owl that delivered my release papers got all lost and confused. Some ruddy bird called Errol. And I'd just like to say that if it hadn't been for you, Harry and Ron...",
+      "query_terms": [
+        "great",
+        "hall",
+        "owl"
+      ],
+      "component_scores": {
+        "order_score": 0.8871,
+        "lexical_overlap": 0.3333,
+        "object_overlap": 1.0
+      }
+    },
+    {
+      "candidate_index": 7,
+      "object_id": "torch",
+      "canonical_name": "torch",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 61,
+      "heading": "INT. ANOTHER CORRIDOR - NIGHT (MOMENTS LATER)",
+      "aligned_start_sec": 4730.984,
+      "aligned_end_sec": 4805.984,
+      "expected_time_sec": 4768.484,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "another",
+        "corridor",
+        "torch"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 7,
+      "object_id": "torch",
+      "canonical_name": "torch",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 79,
+      "heading": "INT. CORRIDOR/ENTRANCE HALL - NIGHT (FIFTY YEARS AGO)",
+      "aligned_start_sec": 6375.943,
+      "aligned_end_sec": 6389.957,
+      "expected_time_sec": 6175.578,
+      "confidence": 0.2852,
+      "matched_subtitle_indices": [
+        1121,
+        1122,
+        1123
+      ],
+      "matched_subtitle_text": "I came to Hagrid from a distant land in the pocket of a traveler. Harry. But if you're not the monster, then what did kill that girl 50 years ago?",
+      "query_terms": [
+        "ago",
+        "corridor",
+        "entrance",
+        "fifty",
+        "hall",
+        "torch",
+        "years"
+      ],
+      "component_scores": {
+        "order_score": 0.5069,
+        "lexical_overlap": 0.2857,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 7,
+      "object_id": "torch",
+      "canonical_name": "torch",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 107,
+      "heading": "INT. TUNNEL - NIGHT",
+      "aligned_start_sec": 8326.89,
+      "aligned_end_sec": 8401.89,
+      "expected_time_sec": 8364.39,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "torch",
+        "tunnel"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 8,
+      "object_id": "goblet",
+      "canonical_name": "goblet",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 48,
+      "heading": "INT. PROFESSOR McGONAGALL'S CLASSROOM - MORNING",
+      "aligned_start_sec": 3714.75,
+      "aligned_end_sec": 3789.75,
+      "expected_time_sec": 3752.25,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "classroom",
+        "goblet",
+        "mcgonagall's",
+        "morning",
+        "professor"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 8,
+      "object_id": "goblet",
+      "canonical_name": "goblet",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 115,
+      "heading": "INT. GREAT HALL - NIGHT",
+      "aligned_start_sec": 8952.265,
+      "aligned_end_sec": 8989.765,
+      "expected_time_sec": 8989.765,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "goblet",
+        "great",
+        "hall"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 9,
+      "object_id": "parchment",
+      "canonical_name": "Parchment",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 41,
+      "heading": "EXT. HOGWARTS - COURTYARD - DAY",
+      "aligned_start_sec": 3167.547,
+      "aligned_end_sec": 3242.547,
+      "expected_time_sec": 3205.047,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "courtyard",
+        "hogwarts",
+        "parchment"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 9,
+      "object_id": "parchment",
+      "canonical_name": "Parchment",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 89,
+      "heading": "INT. GRYFFINDOR COMMON ROOM - NIGHT",
+      "aligned_start_sec": 6919.796,
+      "aligned_end_sec": 6994.796,
+      "expected_time_sec": 6957.296,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "common",
+        "gryffindor",
+        "parchment"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 9,
+      "object_id": "parchment",
+      "canonical_name": "Parchment",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 93,
+      "heading": "INT. HAGRID'S HUT - NIGHT",
+      "aligned_start_sec": 7232.484,
+      "aligned_end_sec": 7307.484,
+      "expected_time_sec": 7269.984,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "hagrid's",
+        "hut",
+        "parchment"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 10,
+      "object_id": "pillowcase",
+      "canonical_name": "pillowcase",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 7,
+      "heading": "INT. HARRY'S BEDROOM - DAY",
+      "aligned_start_sec": 509.703,
+      "aligned_end_sec": 584.703,
+      "expected_time_sec": 547.203,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "bedroom",
+        "harry's",
+        "pillowcase"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 10,
+      "object_id": "pillowcase",
+      "canonical_name": "pillowcase",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 53,
+      "heading": "INT. HOSPITAL WING - NIGHT",
+      "aligned_start_sec": 3989.556,
+      "aligned_end_sec": 4001.276,
+      "expected_time_sec": 4143.109,
+      "confidence": 0.4252,
+      "matched_subtitle_indices": [
+        718,
+        719,
+        720
+      ],
+      "matched_subtitle_text": "We'll be sending Potter to the hospital wing in a matchbox. Might I suggest someone from my own house? Malfoy, perhaps?",
+      "query_terms": [
+        "hospital",
+        "pillowcase",
+        "wing"
+      ],
+      "component_scores": {
+        "order_score": 0.6485,
+        "lexical_overlap": 0.6667,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 11,
+      "object_id": "ancient spider aragog",
+      "canonical_name": "Ancient Spider (Aragog)",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 22,
+      "heading": "EXT. KNOCKTURN ALLEY - DAY (MOMENTS LATER)",
+      "aligned_start_sec": 1682.281,
+      "aligned_end_sec": 1757.281,
+      "expected_time_sec": 1719.781,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "alley",
+        "ancient",
+        "aragog",
+        "knockturn",
+        "spider",
+        "spiders"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 11,
+      "object_id": "ancient spider aragog",
+      "canonical_name": "Ancient Spider (Aragog)",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 46,
+      "heading": "INT. SECOND FLOOR CORRIDOR - SECOND FLOOR - NIGHT",
+      "aligned_start_sec": 3558.406,
+      "aligned_end_sec": 3633.406,
+      "expected_time_sec": 3595.906,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "ancient",
+        "aragog",
+        "corridor",
+        "floor",
+        "second",
+        "spider",
+        "spiders"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 11,
+      "object_id": "ancient spider aragog",
+      "canonical_name": "Ancient Spider (Aragog)",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 61,
+      "heading": "INT. ANOTHER CORRIDOR - NIGHT (MOMENTS LATER)",
+      "aligned_start_sec": 4730.984,
+      "aligned_end_sec": 4805.984,
+      "expected_time_sec": 4768.484,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "ancient",
+        "another",
+        "aragog",
+        "corridor",
+        "spider",
+        "spiders"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 11,
+      "object_id": "ancient spider aragog",
+      "canonical_name": "Ancient Spider (Aragog)",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 93,
+      "heading": "INT. HAGRID'S HUT - NIGHT",
+      "aligned_start_sec": 7232.484,
+      "aligned_end_sec": 7307.484,
+      "expected_time_sec": 7269.984,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "ancient",
+        "aragog",
+        "hagrid's",
+        "hut",
+        "spider",
+        "spiders"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 11,
+      "object_id": "ancient spider aragog",
+      "canonical_name": "Ancient Spider (Aragog)",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 94,
+      "heading": "EXT. HAGRID'S HUT - NIGHT",
+      "aligned_start_sec": 7310.656,
+      "aligned_end_sec": 7385.656,
+      "expected_time_sec": 7348.156,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "ancient",
+        "aragog",
+        "hagrid's",
+        "hut",
+        "spider",
+        "spiders",
+        "trail"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 11,
+      "object_id": "ancient spider aragog",
+      "canonical_name": "Ancient Spider (Aragog)",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 96,
+      "heading": "EXT. SPIDERS' HOLLOW - NIGHT 121A",
+      "aligned_start_sec": 7466.999,
+      "aligned_end_sec": 7541.999,
+      "expected_time_sec": 7504.499,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "121a",
+        "ancient",
+        "aragog",
+        "hollow",
+        "spider",
+        "spiders",
+        "spiders'"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 11,
+      "object_id": "ancient spider aragog",
+      "canonical_name": "Ancient Spider (Aragog)",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 97,
+      "heading": "EXT. ANOTHER PART OF THE FOREST - NIGHT 121B",
+      "aligned_start_sec": 7545.171,
+      "aligned_end_sec": 7620.171,
+      "expected_time_sec": 7582.671,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "121b",
+        "ancient",
+        "another",
+        "aragog",
+        "forest",
+        "part",
+        "spider"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 12,
+      "object_id": "tom riddle's diary",
+      "canonical_name": "Tom Riddle's diary",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 76,
+      "heading": "INT. CORRIDOR - NIGHT (MOMENTS LATER)",
+      "aligned_start_sec": 5728.212,
+      "aligned_end_sec": 5736.678,
+      "expected_time_sec": 5941.062,
+      "confidence": 0.727,
+      "matched_subtitle_indices": [
+        992,
+        993,
+        994
+      ],
+      "matched_subtitle_text": "Tom Riddle's diary is gone. All right, listen up. We play our game, Hufflepuff doesn't stand a chance.",
+      "query_terms": [
+        "corridor",
+        "diary",
+        "riddle's",
+        "tom"
+      ],
+      "component_scores": {
+        "order_score": 0.5044,
+        "lexical_overlap": 0.75,
+        "object_overlap": 1.0
+      }
+    },
+    {
+      "candidate_index": 12,
+      "object_id": "tom riddle's diary",
+      "canonical_name": "Tom Riddle's diary",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 77,
+      "heading": "INT. HOSPITAL WING - LATER THAT NIGHT",
+      "aligned_start_sec": 5728.212,
+      "aligned_end_sec": 5736.678,
+      "expected_time_sec": 6019.234,
+      "confidence": 0.5932,
+      "matched_subtitle_indices": [
+        992,
+        993,
+        994
+      ],
+      "matched_subtitle_text": "Tom Riddle's diary is gone. All right, listen up. We play our game, Hufflepuff doesn't stand a chance.",
+      "query_terms": [
+        "diary",
+        "hospital",
+        "riddle's",
+        "that",
+        "tom",
+        "wing"
+      ],
+      "component_scores": {
+        "order_score": 0.3183,
+        "lexical_overlap": 0.5,
+        "object_overlap": 1.0
+      }
+    },
+    {
+      "candidate_index": 12,
+      "object_id": "tom riddle's diary",
+      "canonical_name": "Tom Riddle's diary",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 78,
+      "heading": "INT. GRYFFINDOR DORMITORY/COMMON ROOM - NIGHT (LATER)",
+      "aligned_start_sec": 5728.212,
+      "aligned_end_sec": 5736.678,
+      "expected_time_sec": 6097.406,
+      "confidence": 0.5095,
+      "matched_subtitle_indices": [
+        992,
+        993,
+        994
+      ],
+      "matched_subtitle_text": "Tom Riddle's diary is gone. All right, listen up. We play our game, Hufflepuff doesn't stand a chance.",
+      "query_terms": [
+        "common",
+        "diary",
+        "dormitory",
+        "gryffindor",
+        "riddle's",
+        "tom"
+      ],
+      "component_scores": {
+        "order_score": 0.1322,
+        "lexical_overlap": 0.5,
+        "object_overlap": 1.0
+      }
+    },
+    {
+      "candidate_index": 12,
+      "object_id": "tom riddle's diary",
+      "canonical_name": "Tom Riddle's diary",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 84,
+      "heading": "INT. GRYFFINDOR TOWER DORMITORY - DAY",
+      "aligned_start_sec": 6528.937,
+      "aligned_end_sec": 6603.937,
+      "expected_time_sec": 6566.437,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "diary",
+        "dormitory",
+        "gryffindor",
+        "riddle's",
+        "tom",
+        "tower"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 12,
+      "object_id": "tom riddle's diary",
+      "canonical_name": "Tom Riddle's diary",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 108,
+      "heading": "INT. CHAMBER OF SECRETS - NIGHT",
+      "aligned_start_sec": 8372.69,
+      "aligned_end_sec": 8386.036,
+      "expected_time_sec": 8442.562,
+      "confidence": 0.5391,
+      "matched_subtitle_indices": [
+        1399,
+        1400,
+        1401
+      ],
+      "matched_subtitle_text": "Certain similarities between Tom Riddle and me. I see. Well, you can speak Parseltongue, Harry. Why?",
+      "query_terms": [
+        "chamber",
+        "diary",
+        "riddle's",
+        "secrets",
+        "tom"
+      ],
+      "component_scores": {
+        "order_score": 0.8498,
+        "lexical_overlap": 0.2,
+        "object_overlap": 0.3333
+      }
+    },
+    {
+      "candidate_index": 12,
+      "object_id": "tom riddle's diary",
+      "canonical_name": "Tom Riddle's diary",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 110,
+      "heading": "INT. CHAMBER OF SECRETS - NIGHT 133B",
+      "aligned_start_sec": 8671.864,
+      "aligned_end_sec": 8679.788,
+      "expected_time_sec": 8598.906,
+      "confidence": 0.5177,
+      "matched_subtitle_indices": [
+        1459,
+        1460,
+        1461
+      ],
+      "matched_subtitle_text": "Mine? I don't know what you're talking about. I think you do, sir. I think you slipped the diary into Ginny Weasley's cauldron...",
+      "query_terms": [
+        "133b",
+        "chamber",
+        "diary",
+        "riddle's",
+        "secrets",
+        "tom"
+      ],
+      "component_scores": {
+        "order_score": 0.817,
+        "lexical_overlap": 0.1667,
+        "object_overlap": 0.3333
+      }
+    },
+    {
+      "candidate_index": 12,
+      "object_id": "tom riddle's diary",
+      "canonical_name": "Tom Riddle's diary",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 113,
+      "heading": "INT. DUMBLEDORE'S OFFICE - DAY",
+      "aligned_start_sec": 8676.702,
+      "aligned_end_sec": 8684.626,
+      "expected_time_sec": 8833.421,
+      "confidence": 0.4947,
+      "matched_subtitle_indices": [
+        1461,
+        1462,
+        1463
+      ],
+      "matched_subtitle_text": "I think you slipped the diary into Ginny Weasley's cauldron... ...that day at Diagon Alley. You do, do you?",
+      "query_terms": [
+        "charred",
+        "diary",
+        "dumbledore's",
+        "office",
+        "riddle's",
+        "tom"
+      ],
+      "component_scores": {
+        "order_score": 0.6363,
+        "lexical_overlap": 0.1667,
+        "object_overlap": 0.5
+      }
+    },
+    {
+      "candidate_index": 12,
+      "object_id": "tom riddle's diary",
+      "canonical_name": "Tom Riddle's diary",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 114,
+      "heading": "EXT. DUMBLEDORE'S OFFICE - DAY (MOMENTS LATER) 135A",
+      "aligned_start_sec": 8676.702,
+      "aligned_end_sec": 8684.626,
+      "expected_time_sec": 8911.593,
+      "confidence": 0.5859,
+      "matched_subtitle_indices": [
+        1461,
+        1462,
+        1463
+      ],
+      "matched_subtitle_text": "I think you slipped the diary into Ginny Weasley's cauldron... ...that day at Diagon Alley. You do, do you?",
+      "query_terms": [
+        "135a",
+        "diary",
+        "dumbledore's",
+        "office",
+        "riddle's",
+        "tom"
+      ],
+      "component_scores": {
+        "order_score": 0.4502,
+        "lexical_overlap": 0.1667,
+        "object_overlap": 1.0
+      }
+    },
+    {
+      "candidate_index": 13,
+      "object_id": "harry's glasses",
+      "canonical_name": "Harry's glasses",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 23,
+      "heading": "EXT. DIAGON ALLEY - CONTINUOUS ACTION - DAY",
+      "aligned_start_sec": 1760.453,
+      "aligned_end_sec": 1835.453,
+      "expected_time_sec": 1797.953,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "action",
+        "alley",
+        "continuous",
+        "diagon",
+        "glasses",
+        "harry's"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 13,
+      "object_id": "harry's glasses",
+      "canonical_name": "Harry's glasses",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 67,
+      "heading": "INT. GIRLS' BATHROOM - NIGHT (MOMENTS LATER)",
+      "aligned_start_sec": 4931.999,
+      "aligned_end_sec": 4941.383,
+      "expected_time_sec": 5237.515,
+      "confidence": 0.5275,
+      "matched_subtitle_indices": [
+        856,
+        857,
+        858
+      ],
+      "matched_subtitle_text": "Why are you wearing glasses? - Reading. - Reading? I didn't know you could read.",
+      "query_terms": [
+        "bathroom",
+        "girls'",
+        "glasses",
+        "harry's"
+      ],
+      "component_scores": {
+        "order_score": 0.2834,
+        "lexical_overlap": 0.25,
+        "object_overlap": 1.0
+      }
+    },
+    {
+      "candidate_index": 14,
+      "object_id": "gilderoy lockhart's wand",
+      "canonical_name": "Gilderoy Lockhart's wand",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 23,
+      "heading": "EXT. DIAGON ALLEY - CONTINUOUS ACTION - DAY",
+      "aligned_start_sec": 1622.815,
+      "aligned_end_sec": 1669.653,
+      "expected_time_sec": 1797.953,
+      "confidence": 0.6492,
+      "matched_subtitle_indices": [
+        286,
+        287,
+        288
+      ],
+      "matched_subtitle_text": "- My wand. Look at my wand. - Be thankful it's not your neck. - What's happening? - I don't know. Come on, go! Fast!",
+      "query_terms": [
+        "action",
+        "alley",
+        "continuous",
+        "diagon",
+        "gilderoy",
+        "lockhart's",
+        "wand"
+      ],
+      "component_scores": {
+        "order_score": 0.6015,
+        "lexical_overlap": 0.1429,
+        "object_overlap": 1.0
+      }
+    },
+    {
+      "candidate_index": 14,
+      "object_id": "gilderoy lockhart's wand",
+      "canonical_name": "Gilderoy Lockhart's wand",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 31,
+      "heading": "INT. ANGLIA - DAY 33A",
+      "aligned_start_sec": 2385.828,
+      "aligned_end_sec": 2460.828,
+      "expected_time_sec": 2423.328,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "33a",
+        "anglia",
+        "gilderoy",
+        "lockhart's",
+        "wand"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 14,
+      "object_id": "gilderoy lockhart's wand",
+      "canonical_name": "Gilderoy Lockhart's wand",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 33,
+      "heading": "EXT. HOGWARTS CASTLE - FLYING CAR - NIGHT",
+      "aligned_start_sec": 2797.448,
+      "aligned_end_sec": 2806.749,
+      "expected_time_sec": 2579.672,
+      "confidence": 0.3511,
+      "matched_subtitle_indices": [
+        503,
+        504,
+        505
+      ],
+      "matched_subtitle_text": "I'm afraid that's my doing, Severus. You see, Harry was helping me answer my fan mail. That's why Ron and I went looking for him, professor.",
+      "query_terms": [
+        "car",
+        "castle",
+        "flying",
+        "gilderoy",
+        "hogwarts",
+        "lockhart's",
+        "ron",
+        "wand",
+        "weasley's"
+      ],
+      "component_scores": {
+        "order_score": 0.4717,
+        "lexical_overlap": 0.1111,
+        "object_overlap": 0.3333
+      }
+    },
+    {
+      "candidate_index": 14,
+      "object_id": "gilderoy lockhart's wand",
+      "canonical_name": "Gilderoy Lockhart's wand",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 38,
+      "heading": "INT. GREAT HALL - LUNCH - DAY",
+      "aligned_start_sec": 2940.466,
+      "aligned_end_sec": 2951.018,
+      "expected_time_sec": 2970.531,
+      "confidence": 0.6268,
+      "matched_subtitle_indices": [
+        531,
+        532,
+        533
+      ],
+      "matched_subtitle_text": "That wand needs replacing, Mr. Weasley. - Yes, Miss Granger? - Professor... ...I was wondering if you could tell us about the Chamber of Secrets.",
+      "query_terms": [
+        "broken",
+        "gilderoy",
+        "great",
+        "hall",
+        "lockhart's",
+        "lunch",
+        "wand"
+      ],
+      "component_scores": {
+        "order_score": 0.9405,
+        "lexical_overlap": 0.1429,
+        "object_overlap": 0.5
+      }
+    },
+    {
+      "candidate_index": 14,
+      "object_id": "gilderoy lockhart's wand",
+      "canonical_name": "Gilderoy Lockhart's wand",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 39,
+      "heading": "INT. GILDEROY LOCKHART'S CLASSROOM - DAY",
+      "aligned_start_sec": 2940.466,
+      "aligned_end_sec": 2951.018,
+      "expected_time_sec": 3048.703,
+      "confidence": 0.7395,
+      "matched_subtitle_indices": [
+        531,
+        532,
+        533
+      ],
+      "matched_subtitle_text": "That wand needs replacing, Mr. Weasley. - Yes, Miss Granger? - Professor... ...I was wondering if you could tell us about the Chamber of Secrets.",
+      "query_terms": [
+        "classroom",
+        "gilderoy",
+        "lockhart's",
+        "wand"
+      ],
+      "component_scores": {
+        "order_score": 0.7544,
+        "lexical_overlap": 0.25,
+        "object_overlap": 1.0
+      }
+    },
+    {
+      "candidate_index": 14,
+      "object_id": "gilderoy lockhart's wand",
+      "canonical_name": "Gilderoy Lockhart's wand",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 41,
+      "heading": "EXT. HOGWARTS - COURTYARD - DAY",
+      "aligned_start_sec": 3297.698,
+      "aligned_end_sec": 3306.29,
+      "expected_time_sec": 3205.047,
+      "confidence": 0.7372,
+      "matched_subtitle_indices": [
+        600,
+        601,
+        602
+      ],
+      "matched_subtitle_text": "That's been tampered with, that has. I'll stop it. No! Even with a proper wand, it's too risky. You could hit Harry.",
+      "query_terms": [
+        "courtyard",
+        "gilderoy",
+        "hogwarts",
+        "lockhart's",
+        "wand"
+      ],
+      "component_scores": {
+        "order_score": 0.7715,
+        "lexical_overlap": 0.2,
+        "object_overlap": 1.0
+      }
+    },
+    {
+      "candidate_index": 14,
+      "object_id": "gilderoy lockhart's wand",
+      "canonical_name": "Gilderoy Lockhart's wand",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 48,
+      "heading": "INT. PROFESSOR McGONAGALL'S CLASSROOM - MORNING",
+      "aligned_start_sec": 3977.544,
+      "aligned_end_sec": 3989.139,
+      "expected_time_sec": 3752.25,
+      "confidence": 0.6095,
+      "matched_subtitle_indices": [
+        715,
+        716,
+        717
+      ],
+      "matched_subtitle_text": "An excellent suggestion, Professor Snape. Let's have a volunteer pair. Potter, Weasley, how about you? Weasley's wand causes devastation with the simplest spells.",
+      "query_terms": [
+        "classroom",
+        "gilderoy",
+        "lockhart's",
+        "mcgonagall's",
+        "morning",
+        "professor",
+        "wand"
+      ],
+      "component_scores": {
+        "order_score": 0.4498,
+        "lexical_overlap": 0.2857,
+        "object_overlap": 1.0
+      }
+    },
+    {
+      "candidate_index": 14,
+      "object_id": "gilderoy lockhart's wand",
+      "canonical_name": "Gilderoy Lockhart's wand",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 51,
+      "heading": "EXT. QUIDDITCH STADIUM - DAY",
+      "aligned_start_sec": 3981.215,
+      "aligned_end_sec": 3993.268,
+      "expected_time_sec": 3986.765,
+      "confidence": 0.8393,
+      "matched_subtitle_indices": [
+        716,
+        717,
+        718
+      ],
+      "matched_subtitle_text": "Let's have a volunteer pair. Potter, Weasley, how about you? Weasley's wand causes devastation with the simplest spells. We'll be sending Potter to the hospital wing in a matchbox.",
+      "query_terms": [
+        "gilderoy",
+        "lockhart's",
+        "quidditch",
+        "stadium",
+        "wand"
+      ],
+      "component_scores": {
+        "order_score": 0.9985,
+        "lexical_overlap": 0.2,
+        "object_overlap": 1.0
+      }
+    },
+    {
+      "candidate_index": 14,
+      "object_id": "gilderoy lockhart's wand",
+      "canonical_name": "Gilderoy Lockhart's wand",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 56,
+      "heading": "INT. GREAT HALL - DAY",
+      "aligned_start_sec": 3985.636,
+      "aligned_end_sec": 3997.523,
+      "expected_time_sec": 4377.625,
+      "confidence": 0.4262,
+      "matched_subtitle_indices": [
+        717,
+        718,
+        719
+      ],
+      "matched_subtitle_text": "Weasley's wand causes devastation with the simplest spells. We'll be sending Potter to the hospital wing in a matchbox. Might I suggest someone from my own house?",
+      "query_terms": [
+        "gilderoy",
+        "great",
+        "hall",
+        "lockhart's",
+        "wand"
+      ],
+      "component_scores": {
+        "order_score": 0.0804,
+        "lexical_overlap": 0.2,
+        "object_overlap": 1.0
+      }
+    },
+    {
+      "candidate_index": 14,
+      "object_id": "gilderoy lockhart's wand",
+      "canonical_name": "Gilderoy Lockhart's wand",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 77,
+      "heading": "INT. HOSPITAL WING - LATER THAT NIGHT",
+      "aligned_start_sec": 5981.734,
+      "aligned_end_sec": 6056.734,
+      "expected_time_sec": 6019.234,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "gilderoy",
+        "hospital",
+        "lockhart's",
+        "that",
+        "wand",
+        "wing"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 14,
+      "object_id": "gilderoy lockhart's wand",
+      "canonical_name": "Gilderoy Lockhart's wand",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 80,
+      "heading": "INT. CORRIDOR - DUNGEONS - NIGHT (MOMENTS LATER)",
+      "aligned_start_sec": 6216.25,
+      "aligned_end_sec": 6291.25,
+      "expected_time_sec": 6253.75,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "corridor",
+        "dungeons",
+        "gilderoy",
+        "lockhart's",
+        "wand"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 14,
+      "object_id": "gilderoy lockhart's wand",
+      "canonical_name": "Gilderoy Lockhart's wand",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 96,
+      "heading": "EXT. SPIDERS' HOLLOW - NIGHT 121A",
+      "aligned_start_sec": 7466.999,
+      "aligned_end_sec": 7541.999,
+      "expected_time_sec": 7504.499,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "121a",
+        "gilderoy",
+        "hollow",
+        "lockhart's",
+        "spiders'",
+        "wand",
+        "wands"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 14,
+      "object_id": "gilderoy lockhart's wand",
+      "canonical_name": "Gilderoy Lockhart's wand",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 104,
+      "heading": "INT. GILDEROY LOCKHART'S OFFICE - NIGHT",
+      "aligned_start_sec": 8092.374,
+      "aligned_end_sec": 8167.374,
+      "expected_time_sec": 8129.874,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "gilderoy",
+        "lockhart's",
+        "office",
+        "wand"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 14,
+      "object_id": "gilderoy lockhart's wand",
+      "canonical_name": "Gilderoy Lockhart's wand",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 107,
+      "heading": "INT. TUNNEL - NIGHT",
+      "aligned_start_sec": 8326.89,
+      "aligned_end_sec": 8401.89,
+      "expected_time_sec": 8364.39,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "gilderoy",
+        "lockhart's",
+        "tunnel",
+        "wand"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 15,
+      "object_id": "bubbling cauldron",
+      "canonical_name": "bubbling cauldron",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 25,
+      "heading": "INT. FLOURISH AND BLOTTS - DAY",
+      "aligned_start_sec": 1916.797,
+      "aligned_end_sec": 1991.797,
+      "expected_time_sec": 1954.297,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "blotts",
+        "bubbling",
+        "cauldron",
+        "flourish"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 15,
+      "object_id": "bubbling cauldron",
+      "canonical_name": "bubbling cauldron",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 55,
+      "heading": "INT. GIRLS BATHROOM - DAY",
+      "aligned_start_sec": 4261.953,
+      "aligned_end_sec": 4336.953,
+      "expected_time_sec": 4299.453,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "bathroom",
+        "bubbling",
+        "cauldron",
+        "girls"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 15,
+      "object_id": "bubbling cauldron",
+      "canonical_name": "bubbling cauldron",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 67,
+      "heading": "INT. GIRLS' BATHROOM - NIGHT (MOMENTS LATER)",
+      "aligned_start_sec": 5200.015,
+      "aligned_end_sec": 5275.015,
+      "expected_time_sec": 5237.515,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "bathroom",
+        "bubbling",
+        "cauldron",
+        "girls'"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 16,
+      "object_id": "copper taps",
+      "canonical_name": "copper taps",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 75,
+      "heading": "INT. GIRLS BATHROOM - NIGHT (MOMENTS LATER)",
+      "aligned_start_sec": 5825.39,
+      "aligned_end_sec": 5900.39,
+      "expected_time_sec": 5862.89,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "bathroom",
+        "copper",
+        "girls",
+        "taps"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 16,
+      "object_id": "copper taps",
+      "canonical_name": "copper taps",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 105,
+      "heading": "INT. GIRLS' BATHROOM - NIGHT",
+      "aligned_start_sec": 8170.546,
+      "aligned_end_sec": 8245.546,
+      "expected_time_sec": 8208.046,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "bathroom",
+        "copper",
+        "girls'",
+        "taps"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 17,
+      "object_id": "hand of glory",
+      "canonical_name": "Hand of Glory",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 21,
+      "heading": "INT. BORGIN AND BURKES - STONE FIREPLACE - DAY",
+      "aligned_start_sec": 1521.755,
+      "aligned_end_sec": 1533.517,
+      "expected_time_sec": 1641.609,
+      "confidence": 0.5378,
+      "matched_subtitle_indices": [
+        277,
+        278,
+        279
+      ],
+      "matched_subtitle_text": "Take my hand! Hold on! I'm trying. Your hand's all sweaty.",
+      "query_terms": [
+        "borgin",
+        "burkes",
+        "fireplace",
+        "glory",
+        "hand",
+        "stone"
+      ],
+      "component_scores": {
+        "order_score": 0.7322,
+        "lexical_overlap": 0.1667,
+        "object_overlap": 0.5
+      }
+    },
+    {
+      "candidate_index": 17,
+      "object_id": "hand of glory",
+      "canonical_name": "Hand of Glory",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 60,
+      "heading": "INT. CORRIDOR - NIGHT (MOMENTS LATER)",
+      "aligned_start_sec": 4909.351,
+      "aligned_end_sec": 4920.696,
+      "expected_time_sec": 4690.312,
+      "confidence": 0.4346,
+      "matched_subtitle_indices": [
+        850,
+        851,
+        852
+      ],
+      "matched_subtitle_text": "I mean, what are you doing down here? I happen to be a school prefect. You, on the other hand, have no business wandering the corridors at night.",
+      "query_terms": [
+        "corridor",
+        "glory",
+        "hagrid's",
+        "hand"
+      ],
+      "component_scores": {
+        "order_score": 0.4658,
+        "lexical_overlap": 0.25,
+        "object_overlap": 0.5
+      }
+    },
+    {
+      "candidate_index": 18,
+      "object_id": "wall",
+      "canonical_name": "wall",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 44,
+      "heading": "INT. CORRIDOR - NIGHT (MOMENTS LATER) 49A",
+      "aligned_start_sec": 3402.062,
+      "aligned_end_sec": 3477.062,
+      "expected_time_sec": 3439.562,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "49a",
+        "corridor",
+        "wall"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 18,
+      "object_id": "wall",
+      "canonical_name": "wall",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 86,
+      "heading": "INT. MARBLE STAIRCASE - DAY 105A",
+      "aligned_start_sec": 6685.281,
+      "aligned_end_sec": 6760.281,
+      "expected_time_sec": 6722.781,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "105a",
+        "marble",
+        "staircase",
+        "wall"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 19,
+      "object_id": "basilisk",
+      "canonical_name": "Basilisk",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 57,
+      "heading": "INT. GRYFFINDOR COMMON ROOM - DAY (LATER)",
+      "aligned_start_sec": 4210.903,
+      "aligned_end_sec": 4219.745,
+      "expected_time_sec": 4455.797,
+      "confidence": 0.5933,
+      "matched_subtitle_indices": [
+        749,
+        750,
+        751
+      ],
+      "matched_subtitle_text": "There's a reason the symbol of Slytherin house is a serpent. Salazar Slytherin was a Parselmouth. He could talk to snakes too. Exactly.",
+      "query_terms": [
+        "basilisk",
+        "common",
+        "gryffindor",
+        "serpent"
+      ],
+      "component_scores": {
+        "order_score": 0.4295,
+        "lexical_overlap": 0.25,
+        "object_overlap": 1.0
+      }
+    },
+    {
+      "candidate_index": 19,
+      "object_id": "basilisk",
+      "canonical_name": "Basilisk",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 101,
+      "heading": "INT. CORRIDOR - DUSK (LATER)",
+      "aligned_start_sec": 7834.818,
+      "aligned_end_sec": 7949.641,
+      "expected_time_sec": 7895.359,
+      "confidence": 0.8157,
+      "matched_subtitle_indices": [
+        1349,
+        1350,
+        1351
+      ],
+      "matched_subtitle_text": "Your bird may have blinded the basilisk, but it can still hear you. Yes, Potter. The process is nearly complete. In a few minutes, Ginny Weasley will be dead, and I will cease to be a memory.",
+      "query_terms": [
+        "basilisk",
+        "corridor",
+        "dusk"
+      ],
+      "component_scores": {
+        "order_score": 0.8867,
+        "lexical_overlap": 0.3333,
+        "object_overlap": 1.0
+      }
+    },
+    {
+      "candidate_index": 19,
+      "object_id": "basilisk",
+      "canonical_name": "Basilisk",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 108,
+      "heading": "INT. CHAMBER OF SECRETS - NIGHT",
+      "aligned_start_sec": 8097.331,
+      "aligned_end_sec": 8108.55,
+      "expected_time_sec": 8442.562,
+      "confidence": 0.5027,
+      "matched_subtitle_indices": [
+        1356,
+        1357,
+        1358
+      ],
+      "matched_subtitle_text": "...how quickly the venom of the basilisk penetrates the body? I'd guess you have little more than a minute to live. You'll be with your dear Mudblood mother soon, Harry.",
+      "query_terms": [
+        "basilisk",
+        "chamber",
+        "secrets"
+      ],
+      "component_scores": {
+        "order_score": 0.1911,
+        "lexical_overlap": 0.3333,
+        "object_overlap": 1.0
+      }
+    },
+    {
+      "candidate_index": 19,
+      "object_id": "basilisk",
+      "canonical_name": "Basilisk",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 110,
+      "heading": "INT. CHAMBER OF SECRETS - NIGHT 133B",
+      "aligned_start_sec": 8561.406,
+      "aligned_end_sec": 8636.406,
+      "expected_time_sec": 8598.906,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "133b",
+        "basilisk",
+        "chamber",
+        "secrets"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 20,
+      "object_id": "library books",
+      "canonical_name": "library books",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 24,
+      "heading": "EXT. FLOURISH AND BLOTTS - DAY 29A",
+      "aligned_start_sec": 1838.625,
+      "aligned_end_sec": 1913.625,
+      "expected_time_sec": 1876.125,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "29a",
+        "autobiography",
+        "blotts",
+        "books",
+        "flourish",
+        "library"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 20,
+      "object_id": "library books",
+      "canonical_name": "library books",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 25,
+      "heading": "INT. FLOURISH AND BLOTTS - DAY",
+      "aligned_start_sec": 1916.797,
+      "aligned_end_sec": 1991.797,
+      "expected_time_sec": 1954.297,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "blotts",
+        "book",
+        "books",
+        "flourish",
+        "library"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 20,
+      "object_id": "library books",
+      "canonical_name": "library books",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 39,
+      "heading": "INT. GILDEROY LOCKHART'S CLASSROOM - DAY",
+      "aligned_start_sec": 3011.203,
+      "aligned_end_sec": 3086.203,
+      "expected_time_sec": 3048.703,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "books",
+        "classroom",
+        "gilderoy",
+        "library",
+        "lockhart's"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 20,
+      "object_id": "library books",
+      "canonical_name": "library books",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 73,
+      "heading": "INT. HOSPITAL WING - DAY (TWO WEEKS LATER)",
+      "aligned_start_sec": 5764.498,
+      "aligned_end_sec": 5779.638,
+      "expected_time_sec": 5706.546,
+      "confidence": 0.5828,
+      "matched_subtitle_indices": [
+        1003,
+        1004,
+        1005
+      ],
+      "matched_subtitle_text": "I warn you. This could be a wee bit of a shock. Hermione! She was found near the library...",
+      "query_terms": [
+        "books",
+        "hospital",
+        "library",
+        "two",
+        "weeks",
+        "wing"
+      ],
+      "component_scores": {
+        "order_score": 0.8321,
+        "lexical_overlap": 0.1667,
+        "object_overlap": 0.5
+      }
+    },
+    {
+      "candidate_index": 21,
+      "object_id": "slytherin robe",
+      "canonical_name": "Slytherin robe",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 40,
+      "heading": "INT. SEVENTH FLOOR - CORRIDOR - LATER 42B",
+      "aligned_start_sec": 3089.375,
+      "aligned_end_sec": 3164.375,
+      "expected_time_sec": 3126.875,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "42b",
+        "corridor",
+        "floor",
+        "robe",
+        "robes",
+        "seventh",
+        "slytherin"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 21,
+      "object_id": "slytherin robe",
+      "canonical_name": "Slytherin robe",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 67,
+      "heading": "INT. GIRLS' BATHROOM - NIGHT (MOMENTS LATER)",
+      "aligned_start_sec": 5023.966,
+      "aligned_end_sec": 5036.937,
+      "expected_time_sec": 5237.515,
+      "confidence": 0.4546,
+      "matched_subtitle_indices": [
+        877,
+        878,
+        879
+      ],
+      "matched_subtitle_text": "And people actually think that he's the Heir of Slytherin? But then you must have some idea who's behind it all. You know I don't, Goyle. I told you yesterday.",
+      "query_terms": [
+        "bathroom",
+        "girls'",
+        "robe",
+        "slytherin"
+      ],
+      "component_scores": {
+        "order_score": 0.5102,
+        "lexical_overlap": 0.25,
+        "object_overlap": 0.5
+      }
+    },
+    {
+      "candidate_index": 22,
+      "object_id": "quill",
+      "canonical_name": "quill",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 43,
+      "heading": "INT. GILDEROY LOCKHART'S OFFICE - EVENING (HOURS LATER)",
+      "aligned_start_sec": 3323.89,
+      "aligned_end_sec": 3398.89,
+      "expected_time_sec": 3361.39,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "evening",
+        "gilderoy",
+        "hours",
+        "lockhart's",
+        "office",
+        "quill"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 22,
+      "object_id": "quill",
+      "canonical_name": "quill",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 78,
+      "heading": "INT. GRYFFINDOR DORMITORY/COMMON ROOM - NIGHT (LATER)",
+      "aligned_start_sec": 6059.906,
+      "aligned_end_sec": 6134.906,
+      "expected_time_sec": 6097.406,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "common",
+        "dormitory",
+        "gryffindor",
+        "quill"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 23,
+      "object_id": "circular mirror",
+      "canonical_name": "circular mirror",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 67,
+      "heading": "INT. GIRLS' BATHROOM - NIGHT (MOMENTS LATER)",
+      "aligned_start_sec": 5200.015,
+      "aligned_end_sec": 5275.015,
+      "expected_time_sec": 5237.515,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "bathroom",
+        "circular",
+        "girls'",
+        "mirror"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 23,
+      "object_id": "circular mirror",
+      "canonical_name": "circular mirror",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 88,
+      "heading": "INT. HOSPITAL WING - DAY",
+      "aligned_start_sec": 6783.934,
+      "aligned_end_sec": 6796.905,
+      "expected_time_sec": 6879.125,
+      "confidence": 0.5794,
+      "matched_subtitle_indices": [
+        1183,
+        1184,
+        1185
+      ],
+      "matched_subtitle_text": "I'm pretty sure she didn't have a camera or a mirror, Harry. The water. There was water on the floor that night. She only saw the basilisk's reflection.",
+      "query_terms": [
+        "circular",
+        "hospital",
+        "mirror",
+        "wing"
+      ],
+      "component_scores": {
+        "order_score": 0.7876,
+        "lexical_overlap": 0.25,
+        "object_overlap": 0.5
+      }
+    },
+    {
+      "candidate_index": 23,
+      "object_id": "circular mirror",
+      "canonical_name": "circular mirror",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 100,
+      "heading": "INT. HOSPITAL WING - DAY",
+      "aligned_start_sec": 7779.687,
+      "aligned_end_sec": 7854.687,
+      "expected_time_sec": 7817.187,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "circular",
+        "hospital",
+        "mirror",
+        "wing"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 23,
+      "object_id": "circular mirror",
+      "canonical_name": "circular mirror",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 101,
+      "heading": "INT. CORRIDOR - DUSK (LATER)",
+      "aligned_start_sec": 7857.859,
+      "aligned_end_sec": 7932.859,
+      "expected_time_sec": 7895.359,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "circular",
+        "corridor",
+        "dusk",
+        "mirror"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 24,
+      "object_id": "hedwig",
+      "canonical_name": "Hedwig",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 1,
+      "heading": "INT. HARRY'S BEDROOM - DAY",
+      "aligned_start_sec": 73.307,
+      "aligned_end_sec": 83.358,
+      "expected_time_sec": 78.172,
+      "confidence": 0.8657,
+      "matched_subtitle_indices": [
+        0,
+        1,
+        2
+      ],
+      "matched_subtitle_text": "I can't let you out, Hedwig. I'm not allowed to use magic outside of school. - Besides, if Uncle Vernon... - Harry Potter!",
+      "query_terms": [
+        "bedroom",
+        "harry's",
+        "hedwig"
+      ],
+      "component_scores": {
+        "order_score": 0.9978,
+        "lexical_overlap": 0.3333,
+        "object_overlap": 1.0
+      }
+    },
+    {
+      "candidate_index": 24,
+      "object_id": "hedwig",
+      "canonical_name": "Hedwig",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 12,
+      "heading": "INT. HARRY'S BEDROOM - NIGHT",
+      "aligned_start_sec": 900.562,
+      "aligned_end_sec": 975.562,
+      "expected_time_sec": 938.062,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "bedroom",
+        "harry's",
+        "hedwig"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 24,
+      "object_id": "hedwig",
+      "canonical_name": "Hedwig",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 16,
+      "heading": "INT/EXT. HARRY'S BEDROOM/THE CAR - MOMENTS LATER",
+      "aligned_start_sec": 1213.25,
+      "aligned_end_sec": 1288.25,
+      "expected_time_sec": 1250.75,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "bedroom",
+        "car",
+        "harry's",
+        "hedwig"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 24,
+      "object_id": "hedwig",
+      "canonical_name": "Hedwig",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 58,
+      "heading": "EXT. HOGWARTS' LANDSCAPE - DAY",
+      "aligned_start_sec": 4496.468,
+      "aligned_end_sec": 4571.468,
+      "expected_time_sec": 4533.968,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "hedwig",
+        "hogwarts'",
+        "landscape"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 25,
+      "object_id": "camera",
+      "canonical_name": "camera",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 25,
+      "heading": "INT. FLOURISH AND BLOTTS - DAY",
+      "aligned_start_sec": 1916.797,
+      "aligned_end_sec": 1991.797,
+      "expected_time_sec": 1954.297,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "blotts",
+        "camera",
+        "flourish"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 25,
+      "object_id": "camera",
+      "canonical_name": "camera",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 38,
+      "heading": "INT. GREAT HALL - LUNCH - DAY",
+      "aligned_start_sec": 2933.031,
+      "aligned_end_sec": 3008.031,
+      "expected_time_sec": 2970.531,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "camera",
+        "great",
+        "hall",
+        "lunch"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 25,
+      "object_id": "camera",
+      "canonical_name": "camera",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 53,
+      "heading": "INT. HOSPITAL WING - NIGHT",
+      "aligned_start_sec": 3989.556,
+      "aligned_end_sec": 4001.276,
+      "expected_time_sec": 4143.109,
+      "confidence": 0.4252,
+      "matched_subtitle_indices": [
+        718,
+        719,
+        720
+      ],
+      "matched_subtitle_text": "We'll be sending Potter to the hospital wing in a matchbox. Might I suggest someone from my own house? Malfoy, perhaps?",
+      "query_terms": [
+        "camera",
+        "hospital",
+        "wing"
+      ],
+      "component_scores": {
+        "order_score": 0.6485,
+        "lexical_overlap": 0.6667,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 26,
+      "object_id": "fang",
+      "canonical_name": "Fang",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 93,
+      "heading": "INT. HAGRID'S HUT - NIGHT",
+      "aligned_start_sec": 7232.484,
+      "aligned_end_sec": 7307.484,
+      "expected_time_sec": 7269.984,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "fang",
+        "hagrid's",
+        "hut"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 26,
+      "object_id": "fang",
+      "canonical_name": "Fang",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 94,
+      "heading": "EXT. HAGRID'S HUT - NIGHT",
+      "aligned_start_sec": 7310.656,
+      "aligned_end_sec": 7385.656,
+      "expected_time_sec": 7348.156,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "fang",
+        "hagrid's",
+        "hut"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 26,
+      "object_id": "fang",
+      "canonical_name": "Fang",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 95,
+      "heading": "EXT. DARK FOREST - NIGHT",
+      "aligned_start_sec": 7388.828,
+      "aligned_end_sec": 7463.828,
+      "expected_time_sec": 7426.328,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "dark",
+        "fang",
+        "forest"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 26,
+      "object_id": "fang",
+      "canonical_name": "Fang",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 99,
+      "heading": "EXT. HAGRID'S HUT - NIGHT 121D",
+      "aligned_start_sec": 7701.515,
+      "aligned_end_sec": 7776.515,
+      "expected_time_sec": 7739.015,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "121d",
+        "fang",
+        "hagrid's",
+        "hut"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 26,
+      "object_id": "fang",
+      "canonical_name": "Fang",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 110,
+      "heading": "INT. CHAMBER OF SECRETS - NIGHT 133B",
+      "aligned_start_sec": 8561.406,
+      "aligned_end_sec": 8636.406,
+      "expected_time_sec": 8598.906,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "133b",
+        "chamber",
+        "fang",
+        "secrets"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 27,
+      "object_id": "large covered cage",
+      "canonical_name": "large covered cage",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 16,
+      "heading": "INT/EXT. HARRY'S BEDROOM/THE CAR - MOMENTS LATER",
+      "aligned_start_sec": 1213.25,
+      "aligned_end_sec": 1288.25,
+      "expected_time_sec": 1250.75,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "bedroom",
+        "cage",
+        "car",
+        "covered",
+        "harry's",
+        "hedwig's",
+        "large"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 27,
+      "object_id": "large covered cage",
+      "canonical_name": "large covered cage",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 39,
+      "heading": "INT. GILDEROY LOCKHART'S CLASSROOM - DAY",
+      "aligned_start_sec": 3011.203,
+      "aligned_end_sec": 3086.203,
+      "expected_time_sec": 3048.703,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "cage",
+        "classroom",
+        "covered",
+        "gilderoy",
+        "large",
+        "lockhart's"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 28,
+      "object_id": "mrs norris",
+      "canonical_name": "MRS. NORRIS",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 3,
+      "heading": "INT. HARRY'S BEDROOM - DAY",
+      "aligned_start_sec": 205.481,
+      "aligned_end_sec": 215.407,
+      "expected_time_sec": 234.516,
+      "confidence": 0.8547,
+      "matched_subtitle_indices": [
+        32,
+        33,
+        34
+      ],
+      "matched_subtitle_text": "...but this isn't a great time for me to have a house-elf in my bedroom. Yes, sir. Dobby understands. It's just that Dobby has come to tell you...",
+      "query_terms": [
+        "bedroom",
+        "dobby",
+        "harry's",
+        "mrs",
+        "norris"
+      ],
+      "component_scores": {
+        "order_score": 0.9437,
+        "lexical_overlap": 0.4,
+        "object_overlap": 1.0
+      }
+    },
+    {
+      "candidate_index": 28,
+      "object_id": "mrs norris",
+      "canonical_name": "MRS. NORRIS",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 4,
+      "heading": "INT. LIVING ROOM - DAY",
+      "aligned_start_sec": 264.164,
+      "aligned_end_sec": 275.717,
+      "expected_time_sec": 312.687,
+      "confidence": 0.8053,
+      "matched_subtitle_indices": [
+        46,
+        47,
+        48
+      ],
+      "matched_subtitle_text": "Don't mind that. It's just the cat. - Bad Dobby. - Stop! Stop, Dobby. Please, be quiet. Are you all right?",
+      "query_terms": [
+        "cat",
+        "living",
+        "mrs",
+        "norris"
+      ],
+      "component_scores": {
+        "order_score": 0.9007,
+        "lexical_overlap": 0.25,
+        "object_overlap": 1.0
+      }
+    },
+    {
+      "candidate_index": 28,
+      "object_id": "mrs norris",
+      "canonical_name": "MRS. NORRIS",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 6,
+      "heading": "INT. LIVING ROOM - DAY",
+      "aligned_start_sec": 435.794,
+      "aligned_end_sec": 448.682,
+      "expected_time_sec": 469.031,
+      "confidence": 0.8232,
+      "matched_subtitle_indices": [
+        84,
+        85,
+        86
+      ],
+      "matched_subtitle_text": "Then Dobby must do it, sir, for Harry Potter's own good. It spread as far as the eye could see, all over the floor of this building. One plumber said, \"Look at all that water.\"",
+      "query_terms": [
+        "dobby",
+        "living",
+        "mrs",
+        "norris"
+      ],
+      "component_scores": {
+        "order_score": 0.9405,
+        "lexical_overlap": 0.25,
+        "object_overlap": 1.0
+      }
+    },
+    {
+      "candidate_index": 28,
+      "object_id": "mrs norris",
+      "canonical_name": "MRS. NORRIS",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 8,
+      "heading": "INT. HALLWAY/STAIRS/KITCHEN - DAY",
+      "aligned_start_sec": 435.794,
+      "aligned_end_sec": 448.682,
+      "expected_time_sec": 625.375,
+      "confidence": 0.6391,
+      "matched_subtitle_indices": [
+        84,
+        85,
+        86
+      ],
+      "matched_subtitle_text": "Then Dobby must do it, sir, for Harry Potter's own good. It spread as far as the eye could see, all over the floor of this building. One plumber said, \"Look at all that water.\"",
+      "query_terms": [
+        "dobby",
+        "hallway",
+        "kitchen",
+        "mrs",
+        "norris",
+        "stairs"
+      ],
+      "component_scores": {
+        "order_score": 0.5683,
+        "lexical_overlap": 0.1667,
+        "object_overlap": 1.0
+      }
+    },
+    {
+      "candidate_index": 28,
+      "object_id": "mrs norris",
+      "canonical_name": "MRS. NORRIS",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 34,
+      "heading": "EXT. STONE STEPS/ENTRANCE HALL - NIGHT",
+      "aligned_start_sec": 2665.232,
+      "aligned_end_sec": 2677.202,
+      "expected_time_sec": 2657.844,
+      "confidence": 0.8501,
+      "matched_subtitle_indices": [
+        474,
+        475,
+        476
+      ],
+      "matched_subtitle_text": "Oh, no. It's Filch's cat. It's Mrs. Norris.",
+      "query_terms": [
+        "entrance",
+        "hall",
+        "mrs",
+        "norris",
+        "steps",
+        "stone"
+      ],
+      "component_scores": {
+        "order_score": 0.9633,
+        "lexical_overlap": 0.3333,
+        "object_overlap": 1.0
+      }
+    },
+    {
+      "candidate_index": 28,
+      "object_id": "mrs norris",
+      "canonical_name": "MRS. NORRIS",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 46,
+      "heading": "INT. SECOND FLOOR CORRIDOR - SECOND FLOOR - NIGHT",
+      "aligned_start_sec": 3558.406,
+      "aligned_end_sec": 3633.406,
+      "expected_time_sec": 3595.906,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "corridor",
+        "floor",
+        "mrs",
+        "norris",
+        "second"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 28,
+      "object_id": "mrs norris",
+      "canonical_name": "MRS. NORRIS",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 47,
+      "heading": "INT. CORRIDOR - NIGHT (A BIT LATER) 60A",
+      "aligned_start_sec": 3636.578,
+      "aligned_end_sec": 3711.578,
+      "expected_time_sec": 3674.078,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "60a",
+        "bit",
+        "corridor",
+        "mrs",
+        "norris"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 29,
+      "object_id": "small black book",
+      "canonical_name": "small black book",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 38,
+      "heading": "INT. GREAT HALL - LUNCH - DAY",
+      "aligned_start_sec": 2933.031,
+      "aligned_end_sec": 3008.031,
+      "expected_time_sec": 2970.531,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "black",
+        "book",
+        "great",
+        "hall",
+        "lunch",
+        "small"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 29,
+      "object_id": "small black book",
+      "canonical_name": "small black book",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 59,
+      "heading": "INT. LIBRARY - NIGHT",
+      "aligned_start_sec": 4574.64,
+      "aligned_end_sec": 4649.64,
+      "expected_time_sec": 4612.14,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "black",
+        "book",
+        "library",
+        "small"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 29,
+      "object_id": "small black book",
+      "canonical_name": "small black book",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 75,
+      "heading": "INT. GIRLS BATHROOM - NIGHT (MOMENTS LATER)",
+      "aligned_start_sec": 5825.39,
+      "aligned_end_sec": 5900.39,
+      "expected_time_sec": 5862.89,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "bathroom",
+        "black",
+        "book",
+        "girls",
+        "small"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 30,
+      "object_id": "polyjuice potion",
+      "canonical_name": "Polyjuice Potion",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 50,
+      "heading": "INT. LIBRARY - NIGHT",
+      "aligned_start_sec": 3810.252,
+      "aligned_end_sec": 3821.68,
+      "expected_time_sec": 3908.593,
+      "confidence": 0.8337,
+      "matched_subtitle_indices": [
+        680,
+        681,
+        682
+      ],
+      "matched_subtitle_text": "We'll have to wait for the Polyjuice Potion to know for sure. Enlighten me. Why are we brewing this potion in broad daylight... ...in the middle of the girls' lavatory? Don't you think we'll get caught?",
+      "query_terms": [
+        "library",
+        "polyjuice",
+        "potion"
+      ],
+      "component_scores": {
+        "order_score": 0.7785,
+        "lexical_overlap": 0.6667,
+        "object_overlap": 1.0
+      }
+    },
+    {
+      "candidate_index": 30,
+      "object_id": "polyjuice potion",
+      "canonical_name": "Polyjuice Potion",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 64,
+      "heading": "EXT. HOGWARTS CASTLE - DAY",
+      "aligned_start_sec": 5118.769,
+      "aligned_end_sec": 5127.528,
+      "expected_time_sec": 5003.0,
+      "confidence": 0.7711,
+      "matched_subtitle_indices": [
+        901,
+        902,
+        903
+      ],
+      "matched_subtitle_text": "Are you okay? Do you remember me telling you... ...that the Polyjuice Potion was only for human transformations?",
+      "query_terms": [
+        "castle",
+        "hogwarts",
+        "polyjuice",
+        "potion"
+      ],
+      "component_scores": {
+        "order_score": 0.7135,
+        "lexical_overlap": 0.5,
+        "object_overlap": 1.0
+      }
+    },
+    {
+      "candidate_index": 31,
+      "object_id": "sword",
+      "canonical_name": "Sword",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 110,
+      "heading": "INT. CHAMBER OF SECRETS - NIGHT 133B",
+      "aligned_start_sec": 8561.406,
+      "aligned_end_sec": 8636.406,
+      "expected_time_sec": 8598.906,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "133b",
+        "chamber",
+        "secrets",
+        "sword"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 31,
+      "object_id": "sword",
+      "canonical_name": "Sword",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 113,
+      "heading": "INT. DUMBLEDORE'S OFFICE - DAY",
+      "aligned_start_sec": 8795.921,
+      "aligned_end_sec": 8870.921,
+      "expected_time_sec": 8833.421,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "dumbledore's",
+        "office",
+        "sword"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 32,
+      "object_id": "flowerpot",
+      "canonical_name": "flowerpot",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 19,
+      "heading": "INT. LIVING ROOM - THE BURROW - DAY (LATER)",
+      "aligned_start_sec": 1447.766,
+      "aligned_end_sec": 1522.766,
+      "expected_time_sec": 1485.266,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "burrow",
+        "flowerpot",
+        "living"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 32,
+      "object_id": "flowerpot",
+      "canonical_name": "flowerpot",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 37,
+      "heading": "INT. GREENHOUSE THREE - MORNING",
+      "aligned_start_sec": 2854.859,
+      "aligned_end_sec": 2929.859,
+      "expected_time_sec": 2892.359,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "flowerpot",
+        "greenhouse",
+        "morning",
+        "pot",
+        "three"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 33,
+      "object_id": "lantern",
+      "canonical_name": "lantern",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 93,
+      "heading": "INT. HAGRID'S HUT - NIGHT",
+      "aligned_start_sec": 7232.484,
+      "aligned_end_sec": 7307.484,
+      "expected_time_sec": 7269.984,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "hagrid's",
+        "hut",
+        "lantern"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 33,
+      "object_id": "lantern",
+      "canonical_name": "lantern",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 96,
+      "heading": "EXT. SPIDERS' HOLLOW - NIGHT 121A",
+      "aligned_start_sec": 7466.999,
+      "aligned_end_sec": 7541.999,
+      "expected_time_sec": 7504.499,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "121a",
+        "hollow",
+        "lantern",
+        "spiders'"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 34,
+      "object_id": "bludger",
+      "canonical_name": "Bludger",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 51,
+      "heading": "EXT. QUIDDITCH STADIUM - DAY",
+      "aligned_start_sec": 3613.18,
+      "aligned_end_sec": 3624.108,
+      "expected_time_sec": 3986.765,
+      "confidence": 0.4721,
+      "matched_subtitle_indices": [
+        638,
+        639,
+        640
+      ],
+      "matched_subtitle_text": "Your Bludger? You made that Bludger chase after me? Dobby feels most aggrieved, sir. Dobby had to iron his hands.",
+      "query_terms": [
+        "bludger",
+        "quidditch",
+        "stadium"
+      ],
+      "component_scores": {
+        "order_score": 0.1232,
+        "lexical_overlap": 0.3333,
+        "object_overlap": 1.0
+      }
+    },
+    {
+      "candidate_index": 34,
+      "object_id": "bludger",
+      "canonical_name": "Bludger",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 53,
+      "heading": "INT. HOSPITAL WING - NIGHT",
+      "aligned_start_sec": 3989.556,
+      "aligned_end_sec": 4001.276,
+      "expected_time_sec": 4143.109,
+      "confidence": 0.4252,
+      "matched_subtitle_indices": [
+        718,
+        719,
+        720
+      ],
+      "matched_subtitle_text": "We'll be sending Potter to the hospital wing in a matchbox. Might I suggest someone from my own house? Malfoy, perhaps?",
+      "query_terms": [
+        "bludger",
+        "hospital",
+        "wing"
+      ],
+      "component_scores": {
+        "order_score": 0.6485,
+        "lexical_overlap": 0.6667,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 35,
+      "object_id": "hogwarts express",
+      "canonical_name": "Hogwarts Express",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 28,
+      "heading": "INT. PLATFORM NINE AND THREE QUARTERS - DAY 32A",
+      "aligned_start_sec": 2151.312,
+      "aligned_end_sec": 2226.312,
+      "expected_time_sec": 2188.812,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "32a",
+        "express",
+        "hogwarts",
+        "nine",
+        "platform",
+        "quarters",
+        "three"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 35,
+      "object_id": "hogwarts express",
+      "canonical_name": "Hogwarts Express",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 32,
+      "heading": "EXT. FLYING CAR (SCOTLAND) - DAY (LATER)",
+      "aligned_start_sec": 2464.0,
+      "aligned_end_sec": 2539.0,
+      "expected_time_sec": 2501.5,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "car",
+        "express",
+        "flying",
+        "hogwarts",
+        "scotland"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 36,
+      "object_id": "stack of letters",
+      "canonical_name": "stack of letters",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 7,
+      "heading": "INT. HARRY'S BEDROOM - DAY",
+      "aligned_start_sec": 820.262,
+      "aligned_end_sec": 832.232,
+      "expected_time_sec": 547.203,
+      "confidence": 0.4274,
+      "matched_subtitle_indices": [
+        149,
+        150,
+        151
+      ],
+      "matched_subtitle_text": "Fetch it, will you, Percy, please? - Errol. - He's always doing that. Look, it's our Hogwarts letters. They've sent us Harry's as well.",
+      "query_terms": [
+        "bedroom",
+        "harry's",
+        "letters",
+        "stack"
+      ],
+      "component_scores": {
+        "order_score": 0.3386,
+        "lexical_overlap": 0.5,
+        "object_overlap": 0.5
+      }
+    },
+    {
+      "candidate_index": 36,
+      "object_id": "stack of letters",
+      "canonical_name": "stack of letters",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 18,
+      "heading": "INT. FRONT ROOM - THE BURROW - MOMENTS LATER",
+      "aligned_start_sec": 1369.594,
+      "aligned_end_sec": 1444.594,
+      "expected_time_sec": 1407.094,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "burrow",
+        "front",
+        "letters",
+        "stack"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 37,
+      "object_id": "pudding",
+      "canonical_name": "pudding",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 2,
+      "heading": "INT. KITCHEN - DAY",
+      "aligned_start_sec": 118.844,
+      "aligned_end_sec": 193.844,
+      "expected_time_sec": 156.344,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "kitchen",
+        "pudding"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 37,
+      "object_id": "pudding",
+      "canonical_name": "pudding",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 8,
+      "heading": "INT. HALLWAY/STAIRS/KITCHEN - DAY",
+      "aligned_start_sec": 587.875,
+      "aligned_end_sec": 662.875,
+      "expected_time_sec": 625.375,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "hallway",
+        "kitchen",
+        "pudding",
+        "stairs"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 38,
+      "object_id": "errol",
+      "canonical_name": "Errol",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 18,
+      "heading": "INT. FRONT ROOM - THE BURROW - MOMENTS LATER",
+      "aligned_start_sec": 1369.594,
+      "aligned_end_sec": 1444.594,
+      "expected_time_sec": 1407.094,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "burrow",
+        "errol",
+        "front"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 38,
+      "object_id": "errol",
+      "canonical_name": "Errol",
+      "candidate_source": "inventory_with_stage1_prior",
+      "scene_idx_non_omitted": 38,
+      "heading": "INT. GREAT HALL - LUNCH - DAY",
+      "aligned_start_sec": 2933.031,
+      "aligned_end_sec": 3008.031,
+      "expected_time_sec": 2970.531,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "errol",
+        "great",
+        "hall",
+        "lunch"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 39,
+      "object_id": "crossbow",
+      "canonical_name": "Crossbow",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 92,
+      "heading": "EXT. HAGRID'S HUT - NIGHT",
+      "aligned_start_sec": 7154.312,
+      "aligned_end_sec": 7229.312,
+      "expected_time_sec": 7191.812,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "crossbow",
+        "hagrid's",
+        "hut"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    },
+    {
+      "candidate_index": 39,
+      "object_id": "crossbow",
+      "canonical_name": "Crossbow",
+      "candidate_source": "inventory_only",
+      "scene_idx_non_omitted": 93,
+      "heading": "INT. HAGRID'S HUT - NIGHT",
+      "aligned_start_sec": 7232.484,
+      "aligned_end_sec": 7307.484,
+      "expected_time_sec": 7269.984,
+      "confidence": 0.0,
+      "matched_subtitle_indices": [],
+      "matched_subtitle_text": "",
+      "query_terms": [
+        "crossbow",
+        "hagrid's",
+        "hut"
+      ],
+      "component_scores": {
+        "order_score": 0.0,
+        "lexical_overlap": 0.0,
+        "object_overlap": 0.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,895 @@
+{
+  "meta": {
+    "pdf": "data/raw/harry-potter-and-the-chamber-of-secrets-2002.pdf",
+    "events_source": "data/events/run1.json",
+    "scenes_non_omitted": 116,
+    "object_source": "scene_level_extraction",
+    "llm_model": "gpt-4o-mini"
+  },
+  "scenes": {
+    "0": {
+      "heading": "EXT. PRIVET DRIVE - DAY",
+      "climax_score": 5,
+      "objects": [
+        "second floor window"
+      ]
+    },
+    "1": {
+      "heading": "INT. HARRY'S BEDROOM - DAY",
+      "climax_score": 10,
+      "objects": [
+        "scrapbook",
+        "Hedwig"
+      ]
+    },
+    "2": {
+      "heading": "INT. KITCHEN - DAY",
+      "climax_score": 10,
+      "objects": []
+    },
+    "3": {
+      "heading": "INT. HARRY'S BEDROOM - DAY",
+      "climax_score": 15,
+      "objects": [
+        "Dobby"
+      ]
+    },
+    "4": {
+      "heading": "INT. LIVING ROOM - DAY",
+      "climax_score": 10,
+      "objects": [
+        "champagne",
+        "cat"
+      ]
+    },
+    "5": {
+      "heading": "INT. HARRY'S BEDROOM - DAY",
+      "climax_score": 30,
+      "objects": [
+        "bedside lamp"
+      ]
+    },
+    "6": {
+      "heading": "INT. LIVING ROOM - DAY",
+      "climax_score": 10,
+      "objects": [
+        "Dobby"
+      ]
+    },
+    "7": {
+      "heading": "INT. HARRY'S BEDROOM - DAY",
+      "climax_score": 20,
+      "objects": [
+        "lamp",
+        "wardrobe",
+        "pillowcase",
+        "stack of letters"
+      ]
+    },
+    "8": {
+      "heading": "INT. HALLWAY/STAIRS/KITCHEN - DAY",
+      "climax_score": 30,
+      "objects": [
+        "Dobby"
+      ]
+    },
+    "9": {
+      "heading": "EXT. DURSLEY HOUSE - DAY 11A",
+      "climax_score": 20,
+      "objects": [
+        "Masons' car",
+        "letter",
+        "owl"
+      ]
+    },
+    "10": {
+      "heading": "INT. DURSLEY HOUSE - NIGHT 11B",
+      "climax_score": 20,
+      "objects": [
+        "letter"
+      ]
+    },
+    "11": {
+      "heading": "EXT/INT. HARRY'S BEDROOM - NEXT DAY",
+      "climax_score": 20,
+      "objects": [
+        "iron bars",
+        "door"
+      ]
+    },
+    "12": {
+      "heading": "INT. HARRY'S BEDROOM - NIGHT",
+      "climax_score": 10,
+      "objects": [
+        "bowl",
+        "tinned soup",
+        "stale bread",
+        "Hedwig"
+      ]
+    },
+    "13": {
+      "heading": "EXT. DURSLEY HOUSE - NIGHT 13A",
+      "climax_score": 20,
+      "objects": [
+        "Ford Anglia",
+        "Harry's trunk"
+      ]
+    },
+    "14": {
+      "heading": "EXT. DURSLEY HOUSE - NIGHT 13D",
+      "climax_score": 30,
+      "objects": [
+        "Flying Ford Anglia"
+      ]
+    },
+    "15": {
+      "heading": "INT. UNCLE VERNON'S BEDROOM - NIGHT 13E",
+      "climax_score": 10,
+      "objects": []
+    },
+    "16": {
+      "heading": "INT/EXT. HARRY'S BEDROOM/THE CAR - MOMENTS LATER",
+      "climax_score": 30,
+      "objects": [
+        "Flying Ford Anglia",
+        "Hedwig's cage",
+        "Hedwig"
+      ]
+    },
+    "17": {
+      "heading": "EXT. THE BURROW - EARLY MORNING",
+      "climax_score": 10,
+      "objects": [
+        "Flying Ford Anglia"
+      ]
+    },
+    "18": {
+      "heading": "INT. FRONT ROOM - THE BURROW - MOMENTS LATER",
+      "climax_score": 20,
+      "objects": [
+        "Clock",
+        "Needles",
+        "Playing Cards",
+        "Errol",
+        "Letters"
+      ]
+    },
+    "19": {
+      "heading": "INT. LIVING ROOM - THE BURROW - DAY (LATER)",
+      "climax_score": 20,
+      "objects": [
+        "flowerpot",
+        "Floo Powder",
+        "fireplace"
+      ]
+    },
+    "20": {
+      "heading": "INT. SPIRALING TUNNEL",
+      "climax_score": 60,
+      "objects": []
+    },
+    "21": {
+      "heading": "INT. BORGIN AND BURKES - STONE FIREPLACE - DAY",
+      "climax_score": 45,
+      "objects": [
+        "Hand of Glory",
+        "large black cabinet",
+        "Crushing Cabinet"
+      ]
+    },
+    "22": {
+      "heading": "EXT. KNOCKTURN ALLEY - DAY (MOMENTS LATER)",
+      "climax_score": 30,
+      "objects": [
+        "Street sign",
+        "Human fingernails",
+        "Tray"
+      ]
+    },
+    "23": {
+      "heading": "EXT. DIAGON ALLEY - CONTINUOUS ACTION - DAY",
+      "climax_score": 20,
+      "objects": [
+        "wand",
+        "Harry's glasses"
+      ]
+    },
+    "24": {
+      "heading": "EXT. FLOURISH AND BLOTTS - DAY 29A",
+      "climax_score": 10,
+      "objects": [
+        "moving photograph",
+        "placard",
+        "autobiography"
+      ]
+    },
+    "25": {
+      "heading": "INT. FLOURISH AND BLOTTS - DAY",
+      "climax_score": 40,
+      "objects": [
+        "book",
+        "Cauldron"
+      ]
+    },
+    "26": {
+      "heading": "EXT. KING'S CROSS - MORNING 30B",
+      "climax_score": 10,
+      "objects": [
+        "Flying Ford Anglia"
+      ]
+    },
+    "27": {
+      "heading": "INT. KING'S CROSS - DAY",
+      "climax_score": 10,
+      "objects": [
+        "TROLLEY",
+        "STONE BARRIER"
+      ]
+    },
+    "28": {
+      "heading": "INT. PLATFORM NINE AND THREE QUARTERS - DAY 32A",
+      "climax_score": 10,
+      "objects": [
+        "Hogwarts Express"
+      ]
+    },
+    "29": {
+      "heading": "INT. KING'S CROSS 32B",
+      "climax_score": 20,
+      "objects": [
+        "Clock",
+        "Trolley",
+        "Barrier"
+      ]
+    },
+    "30": {
+      "heading": "EXT. PARKING LOT (KING'S CROSS) - MOMENTS LATER",
+      "climax_score": 20,
+      "objects": [
+        "Flying Ford Anglia"
+      ]
+    },
+    "31": {
+      "heading": "INT. ANGLIA - DAY 33A",
+      "climax_score": 20,
+      "objects": [
+        "Flying Ford Anglia"
+      ]
+    },
+    "32": {
+      "heading": "EXT. FLYING CAR (SCOTLAND) - DAY (LATER)",
+      "climax_score": 40,
+      "objects": [
+        "Flying Ford Anglia",
+        "Hogwarts Express"
+      ]
+    },
+    "33": {
+      "heading": "EXT. HOGWARTS CASTLE - FLYING CAR - NIGHT",
+      "climax_score": 45,
+      "objects": [
+        "Flying Ford Anglia",
+        "Giant Willow Tree"
+      ]
+    },
+    "34": {
+      "heading": "EXT. STONE STEPS/ENTRANCE HALL - NIGHT",
+      "climax_score": 20,
+      "objects": [
+        "trunks",
+        "caged pets",
+        "MRS. NORRIS"
+      ]
+    },
+    "35": {
+      "heading": "INT. SNAPE'S OFFICE - MOMENTS LATER",
+      "climax_score": 30,
+      "objects": [
+        "envelope"
+      ]
+    },
+    "36": {
+      "heading": "EXT. HOGWARTS CASTLE - MORNING",
+      "climax_score": 10,
+      "objects": [
+        "Whomping Willow"
+      ]
+    },
+    "37": {
+      "heading": "INT. GREENHOUSE THREE - MORNING",
+      "climax_score": 15,
+      "objects": [
+        "Mandrake",
+        "Earmuffs",
+        "Pot"
+      ]
+    },
+    "38": {
+      "heading": "INT. GREAT HALL - LUNCH - DAY",
+      "climax_score": 20,
+      "objects": [
+        "broken wand",
+        "Errol",
+        "Damp Red Envelope"
+      ]
+    },
+    "39": {
+      "heading": "INT. GILDEROY LOCKHART'S CLASSROOM - DAY",
+      "climax_score": 45,
+      "objects": [
+        "large covered cage",
+        "Cornish pixies",
+        "wand"
+      ]
+    },
+    "40": {
+      "heading": "INT. SEVENTH FLOOR - CORRIDOR - LATER 42B",
+      "climax_score": 30,
+      "objects": [
+        "robes"
+      ]
+    },
+    "41": {
+      "heading": "EXT. HOGWARTS - COURTYARD - DAY",
+      "climax_score": 25,
+      "objects": [
+        "broomstick",
+        "Parchment",
+        "wand"
+      ]
+    },
+    "42": {
+      "heading": "INT. HAGRID'S HUT - DAY",
+      "climax_score": 30,
+      "objects": [
+        "BUCKET",
+        "CHAIR"
+      ]
+    },
+    "43": {
+      "heading": "INT. GILDEROY LOCKHART'S OFFICE - EVENING (HOURS LATER)",
+      "climax_score": 20,
+      "objects": [
+        "ornate desk",
+        "glossy photos",
+        "envelopes",
+        "quill"
+      ]
+    },
+    "44": {
+      "heading": "INT. CORRIDOR - NIGHT (MOMENTS LATER) 49A",
+      "climax_score": 65,
+      "objects": [
+        "wall"
+      ]
+    },
+    "45": {
+      "heading": "INT. MARBLE STAIRCASE - MOMENTS LATER",
+      "climax_score": 30,
+      "objects": [
+        "stairs"
+      ]
+    },
+    "46": {
+      "heading": "INT. SECOND FLOOR CORRIDOR - SECOND FLOOR - NIGHT",
+      "climax_score": 70,
+      "objects": [
+        "Mrs. Norris"
+      ]
+    },
+    "47": {
+      "heading": "INT. CORRIDOR - NIGHT (A BIT LATER) 60A",
+      "climax_score": 30,
+      "objects": [
+        "Mrs. Norris"
+      ]
+    },
+    "48": {
+      "heading": "INT. PROFESSOR McGONAGALL'S CLASSROOM - MORNING",
+      "climax_score": 30,
+      "objects": [
+        "animal",
+        "wand",
+        "goblet"
+      ]
+    },
+    "49": {
+      "heading": "INT. CORRIDOR - DAY",
+      "climax_score": 20,
+      "objects": []
+    },
+    "50": {
+      "heading": "INT. LIBRARY - NIGHT",
+      "climax_score": 25,
+      "objects": [
+        "Moste Potente Potions"
+      ]
+    },
+    "51": {
+      "heading": "EXT. QUIDDITCH STADIUM - DAY",
+      "climax_score": 75,
+      "objects": [
+        "broom",
+        "Golden Snitch",
+        "Bludger"
+      ]
+    },
+    "52": {
+      "heading": "INT. HOSPITAL WING - DAY",
+      "climax_score": 30,
+      "objects": [
+        "Skele-Gro",
+        "beaker"
+      ]
+    },
+    "53": {
+      "heading": "INT. HOSPITAL WING - NIGHT",
+      "climax_score": 70,
+      "objects": [
+        "sponge",
+        "Bludger",
+        "camera"
+      ]
+    },
+    "54": {
+      "heading": "EXT. GIRLS BATHROOM 68A",
+      "climax_score": 15,
+      "objects": [
+        "bathroom wall",
+        "bathroom door"
+      ]
+    },
+    "55": {
+      "heading": "INT. GIRLS BATHROOM - DAY",
+      "climax_score": 30,
+      "objects": [
+        "bubbling cauldron",
+        "ghost of a young girl"
+      ]
+    },
+    "56": {
+      "heading": "INT. GREAT HALL - DAY",
+      "climax_score": 85,
+      "objects": [
+        "Wand",
+        "Snake"
+      ]
+    },
+    "57": {
+      "heading": "INT. GRYFFINDOR COMMON ROOM - DAY (LATER)",
+      "climax_score": 65,
+      "objects": []
+    },
+    "58": {
+      "heading": "EXT. HOGWARTS' LANDSCAPE - DAY",
+      "climax_score": 15,
+      "objects": [
+        "Hedwig"
+      ]
+    },
+    "59": {
+      "heading": "INT. LIBRARY - NIGHT",
+      "climax_score": 30,
+      "objects": [
+        "small black book"
+      ]
+    },
+    "60": {
+      "heading": "INT. CORRIDOR - NIGHT (MOMENTS LATER)",
+      "climax_score": 30,
+      "objects": [
+        "Dead Rooster"
+      ]
+    },
+    "61": {
+      "heading": "INT. ANOTHER CORRIDOR - NIGHT (MOMENTS LATER)",
+      "climax_score": 45,
+      "objects": [
+        "torch",
+        "windowpane",
+        "Nearly Headless Nick"
+      ]
+    },
+    "62": {
+      "heading": "INT. GARGOYLE CORRIDOR - NIGHT (MOMENTS LATER)",
+      "climax_score": 15,
+      "objects": [
+        "Gargoyle",
+        "Elevator"
+      ]
+    },
+    "63": {
+      "heading": "INT. DUMBLEDORE'S OFFICE - NIGHT",
+      "climax_score": 50,
+      "objects": [
+        "Sorting Hat",
+        "Fawkes"
+      ]
+    },
+    "64": {
+      "heading": "EXT. HOGWARTS CASTLE - DAY",
+      "climax_score": 40,
+      "objects": [
+        "trunk",
+        "Polyjuice Potion"
+      ]
+    },
+    "65": {
+      "heading": "INT. GREAT HALL - NIGHT",
+      "climax_score": 30,
+      "objects": [
+        "Small Cakes",
+        "Small Vial"
+      ]
+    },
+    "66": {
+      "heading": "INT. ENTRANCE HALL - NIGHT (A BIT LATER)",
+      "climax_score": 25,
+      "objects": [
+        "Suit of Armor",
+        "Cakes",
+        "Cupboard"
+      ]
+    },
+    "67": {
+      "heading": "INT. GIRLS' BATHROOM - NIGHT (MOMENTS LATER)",
+      "climax_score": 60,
+      "objects": [
+        "Slytherin robe",
+        "cauldron",
+        "potion"
+      ]
+    },
+    "68": {
+      "heading": "EXT. MARBLE STAIRCASE - NIGHT (MOMENTS LATER)",
+      "climax_score": 30,
+      "objects": []
+    },
+    "69": {
+      "heading": "INT. SLYTHERIN COMMON ROOM - NIGHT (LATER)",
+      "climax_score": 40,
+      "objects": [
+        "The Daily Prophet"
+      ]
+    },
+    "70": {
+      "heading": "INT. ENTRANCE HALL - NIGHT (MOMENTS LATER)",
+      "climax_score": 20,
+      "objects": []
+    },
+    "71": {
+      "heading": "INT. SECOND FLOOR CORRIDOR - NIGHT (MOMENTS LATER)",
+      "climax_score": 60,
+      "objects": [
+        "door"
+      ]
+    },
+    "72": {
+      "heading": "INT. GIRLS BATHROOM - NIGHT",
+      "climax_score": 30,
+      "objects": [
+        "stall door",
+        "Hermione's face",
+        "tail"
+      ]
+    },
+    "73": {
+      "heading": "INT. HOSPITAL WING - DAY (TWO WEEKS LATER)",
+      "climax_score": 20,
+      "objects": [
+        "library books",
+        "get-well card"
+      ]
+    },
+    "74": {
+      "heading": "EXT. SECOND-FLOOR CORRIDOR - NIGHT (MOMENTS LATER)",
+      "climax_score": 20,
+      "objects": [
+        "flood of water"
+      ]
+    },
+    "75": {
+      "heading": "INT. GIRLS BATHROOM - NIGHT (MOMENTS LATER)",
+      "climax_score": 30,
+      "objects": [
+        "small black book"
+      ]
+    },
+    "76": {
+      "heading": "INT. CORRIDOR - NIGHT (MOMENTS LATER)",
+      "climax_score": 45,
+      "objects": [
+        "diary"
+      ]
+    },
+    "77": {
+      "heading": "INT. HOSPITAL WING - LATER THAT NIGHT",
+      "climax_score": 45,
+      "objects": [
+        "diary",
+        "wand"
+      ]
+    },
+    "78": {
+      "heading": "INT. GRYFFINDOR DORMITORY/COMMON ROOM - NIGHT (LATER)",
+      "climax_score": 65,
+      "objects": [
+        "diary",
+        "quill",
+        "pages"
+      ]
+    },
+    "79": {
+      "heading": "INT. CORRIDOR/ENTRANCE HALL - NIGHT (FIFTY YEARS AGO)",
+      "climax_score": 50,
+      "objects": [
+        "boy",
+        "Dumbledore"
+      ]
+    },
+    "80": {
+      "heading": "INT. CORRIDOR - DUNGEONS - NIGHT (MOMENTS LATER)",
+      "climax_score": 75,
+      "objects": [
+        "door",
+        "wand",
+        "creature"
+      ]
+    },
+    "81": {
+      "heading": "INT. BOYS' DORMITORY - NIGHT 100A",
+      "climax_score": 30,
+      "objects": []
+    },
+    "82": {
+      "heading": "EXT. HOGWARTS - ESTABLISHING SHOT - DAY 100B",
+      "climax_score": 10,
+      "objects": []
+    },
+    "83": {
+      "heading": "EXT/INT. HOGWARTS GROUNDS - DAY (LATER)",
+      "climax_score": 45,
+      "objects": [
+        "Hagrid's canister",
+        "Flesh-Eating Slug Repellent"
+      ]
+    },
+    "84": {
+      "heading": "INT. GRYFFINDOR TOWER DORMITORY - DAY",
+      "climax_score": 40,
+      "objects": [
+        "Harry's trunk",
+        "Tom Riddle's diary"
+      ]
+    },
+    "85": {
+      "heading": "EXT. HOGWARTS GROUNDS - DAY",
+      "climax_score": 15,
+      "objects": []
+    },
+    "86": {
+      "heading": "INT. MARBLE STAIRCASE - DAY 105A",
+      "climax_score": 25,
+      "objects": [
+        "Quidditch robes"
+      ]
+    },
+    "87": {
+      "heading": "EXT. REAR OF QUIDDITCH STADIUM - DAY (LATER)",
+      "climax_score": 30,
+      "objects": []
+    },
+    "88": {
+      "heading": "INT. HOSPITAL WING - DAY",
+      "climax_score": 60,
+      "objects": [
+        "circular mirror"
+      ]
+    },
+    "89": {
+      "heading": "INT. GRYFFINDOR COMMON ROOM - NIGHT",
+      "climax_score": 45,
+      "objects": [
+        "Cloak"
+      ]
+    },
+    "90": {
+      "heading": "INT. TOWER DORMITORY - NIGHT (LATER)",
+      "climax_score": 25,
+      "objects": [
+        "invisibility cloak"
+      ]
+    },
+    "91": {
+      "heading": "INT. ENTRANCE HALL - NIGHT",
+      "climax_score": 20,
+      "objects": [
+        "cloak"
+      ]
+    },
+    "92": {
+      "heading": "EXT. HAGRID'S HUT - NIGHT",
+      "climax_score": 35,
+      "objects": [
+        "Crossbow"
+      ]
+    },
+    "93": {
+      "heading": "INT. HAGRID'S HUT - NIGHT",
+      "climax_score": 60,
+      "objects": [
+        "Fang",
+        "door"
+      ]
+    },
+    "94": {
+      "heading": "EXT. HAGRID'S HUT - NIGHT",
+      "climax_score": 30,
+      "objects": [
+        "trail of spiders",
+        "Fang"
+      ]
+    },
+    "95": {
+      "heading": "EXT. DARK FOREST - NIGHT",
+      "climax_score": 30,
+      "objects": [
+        "Fang",
+        "Ford Anglia"
+      ]
+    },
+    "96": {
+      "heading": "EXT. SPIDERS' HOLLOW - NIGHT 121A",
+      "climax_score": 70,
+      "objects": [
+        "Ancient Spider (Aragog)",
+        "Spiders",
+        "Ford Anglia"
+      ]
+    },
+    "97": {
+      "heading": "EXT. ANOTHER PART OF THE FOREST - NIGHT 121B",
+      "climax_score": 60,
+      "objects": [
+        "Flying Ford Anglia",
+        "spider"
+      ]
+    },
+    "98": {
+      "heading": "EXT. ANOTHER PART OF THE FOREST - BLACK PARK - NIGHT 121C",
+      "climax_score": 65,
+      "objects": [
+        "Flying Ford Anglia",
+        "Giant Tarantula"
+      ]
+    },
+    "99": {
+      "heading": "EXT. HAGRID'S HUT - NIGHT 121D",
+      "climax_score": 30,
+      "objects": [
+        "Flying Ford Anglia",
+        "Fang"
+      ]
+    },
+    "100": {
+      "heading": "INT. HOSPITAL WING - DAY",
+      "climax_score": 30,
+      "objects": [
+        "circular mirror",
+        "Hermione's hand"
+      ]
+    },
+    "101": {
+      "heading": "INT. CORRIDOR - DUSK (LATER)",
+      "climax_score": 75,
+      "objects": [
+        "crinkled paper",
+        "Basilisk",
+        "mirror"
+      ]
+    },
+    "102": {
+      "heading": "INT. SECOND FLOOR - CORRIDOR - DUSK (MOMENTS LATER)",
+      "climax_score": 75,
+      "objects": [
+        "message"
+      ]
+    },
+    "103": {
+      "heading": "INT. CORRIDOR - NIGHT (MOMENTS LATER)",
+      "climax_score": 40,
+      "objects": []
+    },
+    "104": {
+      "heading": "INT. GILDEROY LOCKHART'S OFFICE - NIGHT",
+      "climax_score": 45,
+      "objects": [
+        "Gilderoy Lockhart's wand"
+      ]
+    },
+    "105": {
+      "heading": "INT. GIRLS' BATHROOM - NIGHT",
+      "climax_score": 75,
+      "objects": [
+        "copper taps",
+        "tiny snake",
+        "large open pipe"
+      ]
+    },
+    "106": {
+      "heading": "INT. PIPE - NIGHT",
+      "climax_score": 25,
+      "objects": []
+    },
+    "107": {
+      "heading": "INT. TUNNEL - NIGHT",
+      "climax_score": 75,
+      "objects": [
+        "torch",
+        "snake skin",
+        "wand",
+        "broken rock"
+      ]
+    },
+    "108": {
+      "heading": "INT. CHAMBER OF SECRETS - NIGHT",
+      "climax_score": 95,
+      "objects": [
+        "Tom Riddle's Diary",
+        "Basilisk",
+        "Fawkes"
+      ]
+    },
+    "109": {
+      "heading": "INT. CHAMBER OF SECRETS - SIDE TUNNEL - NIGHT 133A",
+      "climax_score": 75,
+      "objects": [
+        "snake"
+      ]
+    },
+    "110": {
+      "heading": "INT. CHAMBER OF SECRETS - NIGHT 133B",
+      "climax_score": 95,
+      "objects": [
+        "Basilisk",
+        "Sword",
+        "Tom Riddle's diary"
+      ]
+    },
+    "111": {
+      "heading": "INT. TUNNEL - NIGHT (LATER)",
+      "climax_score": 60,
+      "objects": [
+        "Fawkes"
+      ]
+    },
+    "112": {
+      "heading": "INT. ROCKY TUNNEL - NIGHT (LATER) 134A",
+      "climax_score": 30,
+      "objects": [
+        "Fawkes"
+      ]
+    },
+    "113": {
+      "heading": "INT. DUMBLEDORE'S OFFICE - DAY",
+      "climax_score": 75,
+      "objects": [
+        "charred diary",
+        "sword",
+        "diary"
+      ]
+    },
+    "114": {
+      "heading": "EXT. DUMBLEDORE'S OFFICE - DAY (MOMENTS LATER) 135A",
+      "climax_score": 70,
+      "objects": [
+        "diary"
+      ]
+    },
+    "115": {
+      "heading": "INT. GREAT HALL - NIGHT",
+      "climax_score": 45,
+      "objects": []
+    }
+  }
+}
