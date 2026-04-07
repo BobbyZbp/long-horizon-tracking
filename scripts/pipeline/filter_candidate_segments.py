@@ -2,27 +2,44 @@
 """
 filter_candidate_segments.py
 
-CLI entry point for the candidate segment filtering layer.
+Consolidate coarse aligned windows into object-level candidate segments.
 
-Pipeline position
+What this file does
+-------------------
+- loads candidate objects plus coarse aligned windows
+- expands aligned windows into broader visual search segments
+- merges nearby windows that likely belong to the same object-level interval
+- scores and caps the surviving segments per object
+
+Inputs
+------
+- `--candidates`: `chekhov_candidates.json`
+- `--alignments`: `aligned_candidates.json`
+- filtering parameters such as confidence threshold, padding, merge gap, and
+  per-object segment cap
+
+Outputs
+-------
+- writes one candidate-segment JSON file, typically `candidate_segments.json`
+- output records include segment time bounds, priority score, reason tags, and
+  source scene/alignment provenance
+
+Workflow position
 -----------------
-- prior layer: coarse alignment
-- current layer: candidate segment filtering
-- next layer: frame sampling
-
-This script reduces coarse aligned scene windows into a smaller number of
-object-level candidate segments that are worth inspecting and sampling.
+- upstream: coarse script-to-video alignment
+- current stage: candidate segment filtering
+- downstream: default frame sampling or manual object-centric refinement
 """
 from __future__ import annotations
 
 import argparse
-import os
+from pathlib import Path
 import sys
 
-ROOT = os.path.dirname(os.path.dirname(__file__))
-SRC = os.path.join(ROOT, "src")
-if SRC not in sys.path:
-    sys.path.insert(0, SRC)
+ROOT = Path(__file__).resolve().parents[2]
+SRC = ROOT / "src"
+if str(SRC) not in sys.path:
+    sys.path.insert(0, str(SRC))
 
 from tracking_project.io.jsonio import load_json, safe_write_json
 from tracking_project.pipeline.candidate_segments import build_candidate_segments

@@ -1,6 +1,45 @@
 #!/usr/bin/env python
+"""
+mine_stage1_llm.py
+
+Run the LLM-first Stage-1 long-gap object mining pipeline.
+
+What this file does
+-------------------
+- parses the screenplay into scenes
+- extracts physical visualizable entities from action text
+- aggregates them across scenes
+- ranks long-gap re-occurrence events
+
+Inputs
+------
+- `--pdf`: screenplay PDF
+- `--out`: destination JSON path
+- optional model, cache, threshold, category, and scene-parse debug settings
+
+Outputs
+-------
+- writes one Stage-1 events JSON file, typically `run1.json`
+- output records include gap statistics, canonical names, surface forms,
+  semantic scores, contexts, and provenance
+
+Workflow position
+-----------------
+- upstream: screenplay parsing and scene-level extraction
+- current stage: Stage-1 precision-oriented long-gap event mining
+- downstream: used as an optional strong prior for later Chekhov candidate
+  validation
+"""
+
 import argparse
 import os
+from pathlib import Path
+import sys
+
+ROOT = Path(__file__).resolve().parents[2]
+SRC = ROOT / "src"
+if str(SRC) not in sys.path:
+    sys.path.insert(0, str(SRC))
 
 from tracking_project.pipeline.stage1_mine import mine_stage1_llm
 

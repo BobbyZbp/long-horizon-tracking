@@ -2,28 +2,44 @@
 """
 sample_candidate_frames.py
 
-CLI entry point for the frame sampling layer.
+Sample representative still frames from candidate video segments.
 
-Pipeline position
+What this file does
+-------------------
+- loads candidate segments and an extracted frame directory
+- converts segment timestamps into target frame indices
+- copies representative frames into per-segment output folders
+- records the exact timestamp-to-frame mapping in a manifest
+
+Inputs
+------
+- `--segments`: `candidate_segments.json`
+- `--frame_dir`: directory of pre-extracted movie frames
+- `--fps`: fps used when frames were extracted
+- `--out_manifest` and `--out_frames_dir`
+- optional sampling strategy parameters
+
+Outputs
+-------
+- writes a sampled-frame manifest JSON
+- writes copied representative frame images under the requested output folder
+
+Workflow position
 -----------------
-- prior layer: candidate segment filtering
-- current layer: frame sampling
-- next layer: SAM-based tracking demo
-
-This script converts candidate segment timestamps into concrete frame files
-copied into per-segment folders, plus a manifest that records the exact
-timestamp-to-frame mapping used.
+- upstream: candidate segment filtering
+- current stage: default broad frame sampling for visual review
+- downstream: manual inspection or a later tracking demo
 """
 from __future__ import annotations
 
 import argparse
-import os
+from pathlib import Path
 import sys
 
-ROOT = os.path.dirname(os.path.dirname(__file__))
-SRC = os.path.join(ROOT, "src")
-if SRC not in sys.path:
-    sys.path.insert(0, SRC)
+ROOT = Path(__file__).resolve().parents[2]
+SRC = ROOT / "src"
+if str(SRC) not in sys.path:
+    sys.path.insert(0, str(SRC))
 
 from tracking_project.io.jsonio import load_json, safe_write_json
 from tracking_project.pipeline.frame_sampling import sample_candidate_frames

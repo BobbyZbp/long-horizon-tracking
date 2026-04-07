@@ -2,28 +2,44 @@
 """
 mine_scene_inventory.py
 
-CLI entry point for building the high-recall double-channel scene inventory
-required before cross-scene narrative validation and any video-facing
-alignment.
+Build a high-recall per-scene object inventory from the screenplay.
 
-This script should be run before loose candidate mining and before any
-script-to-video alignment work. It produces:
-    - action_objects
-    - dialogue_objects
-    - merged_loose_objects
+What this file does
+-------------------
+- parses screenplay scenes
+- extracts object evidence from action text and optionally dialogue
+- merges both channels into a loose scene inventory with aliases and source
+  channels preserved
 
-for every non-omitted scene in the screenplay.
+Inputs
+------
+- `--pdf`: screenplay PDF
+- `--out`: destination JSON path
+- optional LLM/cache configuration and dialogue extraction mode
+
+Outputs
+-------
+- writes one scene inventory JSON file, typically `scene_inventory.json`
+- each scene contains `action_objects`, `dialogue_objects`, and
+  `merged_loose_objects`
+
+Workflow position
+-----------------
+- upstream: structural scene parsing and LLM extraction
+- current stage: high-recall scene inventory
+- downstream: climax scoring, Chekhov candidate mining, and later alignment
 """
 from __future__ import annotations
 
 import argparse
 import os
+from pathlib import Path
 import sys
 
-ROOT = os.path.dirname(os.path.dirname(__file__))
-SRC = os.path.join(ROOT, "src")
-if SRC not in sys.path:
-    sys.path.insert(0, SRC)
+ROOT = Path(__file__).resolve().parents[2]
+SRC = ROOT / "src"
+if str(SRC) not in sys.path:
+    sys.path.insert(0, str(SRC))
 
 from tracking_project.io.jsonio import safe_write_json
 from tracking_project.pipeline.scene_inventory import build_scene_inventory

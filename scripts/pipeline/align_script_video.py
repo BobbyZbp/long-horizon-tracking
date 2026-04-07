@@ -2,23 +2,44 @@
 """
 align_script_video.py
 
-CLI entry point for the coarse script-to-video alignment layer.
+Build coarse subtitle-backed video windows for narrative candidates.
 
-This script consumes the narrative candidate layer produced before any
-video-facing processing and
-aligns candidate scene-chain steps to approximate subtitle-backed video time
-windows.
+What this file does
+-------------------
+- loads validated narrative candidates, scene inventory, and subtitle timing
+- aligns each supported scene step to an approximate movie interval
+- records matched subtitle evidence plus fallback windows when dialogue overlap
+  is weak
+
+Inputs
+------
+- `--candidates`: `chekhov_candidates.json`
+- `--scene_inventory`: `scene_inventory.json`
+- `--subtitles`: `.srt`, `.vtt`, or normalized subtitle `.json`
+- alignment hyperparameters such as search radius and default fallback window
+
+Outputs
+-------
+- writes one alignment JSON file, typically `aligned_candidates.json`
+- output records include aligned start/end times, matched subtitle text,
+  confidence, and component scores
+
+Workflow position
+-----------------
+- upstream: scene inventory + climax + candidate validation
+- current stage: coarse script-to-video alignment
+- downstream: candidate segment filtering and later frame/clip generation
 """
 from __future__ import annotations
 
 import argparse
-import os
+from pathlib import Path
 import sys
 
-ROOT = os.path.dirname(os.path.dirname(__file__))
-SRC = os.path.join(ROOT, "src")
-if SRC not in sys.path:
-    sys.path.insert(0, SRC)
+ROOT = Path(__file__).resolve().parents[2]
+SRC = ROOT / "src"
+if str(SRC) not in sys.path:
+    sys.path.insert(0, str(SRC))
 
 from tracking_project.io.jsonio import load_json, safe_write_json
 from tracking_project.io.subtitles import load_subtitle_segments

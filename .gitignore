@@ -1,62 +1,32 @@
+# local environments
 venv/
 .venv/
 .sam3-venv/
-__pycache__/
-*.pyc
-*.ipynb_checkpoints
-.DS_Store
-.env
 
-# big raw media (don't commit)
-data/raw/*.mp4
-data/raw/*.mkv
-data/raw/*.avi
-
-# caches
+# python caches
 __pycache__/
-*.pyc
+*.py[cod]
 .ipynb_checkpoints/
-data/llm_cache/
+.pytest_cache/
 
-# generated media / local experiment outputs
-data/processed/
-data/frames/
-data/sampled_frames*/
-data/tier1_sampling/
-data/sorting hat/
-data/sorting hat refinement/
-data/sam3_results/
-data/events/*.partial.json
+# local environment files / os clutter
+.env
+.DS_Store
 
-# keep only selected core JSON outputs under data/
-data/*
-!data/.gitkeep
-!data/events/
-!data/aligned_segments/
-!data/candidate_objects/
-
-data/events/*
-!data/events/run1.json
-!data/events/run2.json
-!data/events/scene_climax.json
-!data/events/scene_inventory.json
-!data/events/chekhov_candidates.json
-
-data/aligned_segments/*
-!data/aligned_segments/aligned_candidates.json
-
-data/candidate_objects/*
-!data/candidate_objects/candidate_segments.json
-
-# packaging artifacts
-src/*.egg-info/
+# build / packaging artifacts
 *.egg-info/
+build/
+dist/
 
-# local SAM3 setup / notebooks
+# local SAM3 setup and local-only notebook variants
 sam3/
 sam3_video_segmentation_local.ipynb
 sam3_video_segmentation_local_restored.ipynb
 scripts/make_sam3_local_notebook.py
 
-# random junk files
+# local data, caches, and generated outputs
+# Data is copied locally or onto the cluster outside Git.
+data/
+
+# random local junk files
 0

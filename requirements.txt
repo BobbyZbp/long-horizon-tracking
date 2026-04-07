@@ -1,5 +1,12 @@
-# After install:
+# Convenience environment for development and Ubuntu / cluster runs.
+# This installs:
+# - the package itself
+# - test dependencies
+# - refinement/video helpers
+#
+# It does not install a local SAM3 checkout or model weights.
+-e .[dev,video]
+
+# Optional archived baseline tools:
+# pip install -e .[legacy]
 # python -m spacy download en_core_web_sm
-pdfplumber==0.11.9
-spacy==3.8.11
-openai>=1.0.0

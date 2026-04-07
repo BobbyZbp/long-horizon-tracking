@@ -2,28 +2,47 @@
 """
 mine_chekhov_candidates.py
 
-CLI entry point for narrative candidate mining before any alignment work.
+Build cross-scene narrative candidates before any video alignment work.
 
-This script should be run before any subtitle-based alignment or frame
-sampling work.
-It combines:
-    - high-recall double-channel scene inventory
-    - scene-level climax summaries
-    - Stage-1 re-occurrence events as an optional strong prior
+What this file does
+-------------------
+- combines scene-level inventory support, climax scores, and optional Stage-1
+  long-gap priors
+- validates which objects exhibit a plausible setup -> absence -> payoff
+  pattern
+- produces a smaller set of narratively supported object candidates for later
+  alignment
 
-and exports a smaller set of "possible Chekhov" candidates with loose scene
-chains plus cross-scene narrative validation reasons.
+Inputs
+------
+- `--events`: Stage-1 events JSON, usually `run1.json`
+- `--scene_inventory`: `scene_inventory.json`
+- `--scene_climax`: `scene_climax.json`
+- candidate-selection parameters such as minimum validation score and optional
+  top-k cap
+
+Outputs
+-------
+- writes one candidate JSON file, typically `chekhov_candidates.json`
+- output records include setup/payoff scenes, loose scene chains, support
+  traces, and narrative validation reasons
+
+Workflow position
+-----------------
+- upstream: Stage-1 priors, scene inventory, and climax summaries
+- current stage: loose candidate mining + cross-scene narrative validation
+- downstream: coarse script-to-video alignment
 """
 from __future__ import annotations
 
 import argparse
-import os
+from pathlib import Path
 import sys
 
-ROOT = os.path.dirname(os.path.dirname(__file__))
-SRC = os.path.join(ROOT, "src")
-if SRC not in sys.path:
-    sys.path.insert(0, SRC)
+ROOT = Path(__file__).resolve().parents[2]
+SRC = ROOT / "src"
+if str(SRC) not in sys.path:
+    sys.path.insert(0, str(SRC))
 
 from tracking_project.io.jsonio import load_json, safe_write_json
 from tracking_project.pipeline.chekhov_candidates import build_chekhov_candidates
